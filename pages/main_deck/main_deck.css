@@ -1,0 +1,78 @@
+/*
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: center;
+    list-style-type: none;
+}
+
+.nav_menu>li{
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: skyblue;
+}
+
+
+.jumbotron{
+    margin: 100px 100px;
+    margin-bottom: 0px;
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slogan{
+    font-size: 80px;
+    margin: 30px;
+}
+
+h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    text-align: center;
+
+    background-color: skyblue;
+    border-radius: 60px;
+    padding: 30px;
+}
+
+.deck-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bubble-section{
+    width: 60%
+}
+
+.deck-ubong{
+    width: 500px;
+    height: 400px;
+    align-self: flex-end;
+}
+
