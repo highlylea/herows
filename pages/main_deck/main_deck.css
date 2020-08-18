@@ -80,16 +80,21 @@ h3{
 
 /* Onboard */
 
+.onboard{
+    width: 100%
+}
+
 .profile-section{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     margin: 100px 100px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .profile {
-    background-color: ghostwhite;
-    border-radius: 30px;
+    background-color: rgb(255, 210, 61);
+    border-radius: 20px;
     border: 1px solid black;
     width: 100%;
     margin: 10px;
@@ -104,7 +109,7 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 0px;
     font-size: 12px;
     color: grey;
 }
@@ -116,6 +121,9 @@ h3{
 .user_emoji{
     font-size: 70px;
     margin: 0px;
+    border: none;
+    background: transparent;
+    outline: none;
 }
 
 .user_name{
@@ -131,18 +139,36 @@ h3{
 .hot{
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .hot_icon{
     margin-right: 5px;
 }
 
-.hot_milestone>a{
+.hot_milestone{
     font-size: 18px;
-    color: skyblue;
+    color: black;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.hot_milestone>a:hover{
+.hot_milestone:hover{
+    text-decoration: underline;
     color: black;
+}
+
+.user_name>input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    width: 80%;
+    color: black;
+    background: transparent;
+    border: none;
+}
+
+.user_name>input::placeholder{
+    color: black;
+    
 }
