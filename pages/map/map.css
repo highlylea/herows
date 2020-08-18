@@ -72,7 +72,7 @@ h3{
     align-self: flex-end;
 }
 
-/* map*/ 
+/* map menu */ 
 
 .desti-section{
     display:flex;
@@ -81,22 +81,66 @@ h3{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* team vision in destination section*/
+
 .desti-vision{
     background-color:#5AC8FA;
     color:white;
     text-align:center;
     border-radius: 30px;
     border: 0.5px white;
-    width: 130vw;
+    width: 180vw;
     margin: 10px;
+    padding-top:140px;
+    padding-bottom:140px;
 }
 
+/* destination block in general */
 .desti{
-    background-color: ghostwhite;
+    background-color: #5AC8FA;
     border-radius: 30px;
     border: 0.5px white;
     width: 100%;
     margin: 10px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif; font-weight: bold;
+    padding-top:100px;
+    padding-bottom:100px;
+    color:white;
+}
+
+/*d-day*/
+.desti-empty-img{
+    position: relative;
+}
+
+.desti-dday {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+/* visited destination */ 
+
+#visited-desti
+    {
+        background: rgb(255,204,0);
+        background: linear-gradient(174deg, rgba(255,204,0,1) 9%, rgba(129,212,250,1) 70%);        border-radius: 30px;
+        border: 0.5px white;
+        width: 100%;
+        margin: 10px;
+        text-align:center;
+        font-family: 'Montserrat', sans-serif; font-weight: bold;
+        padding-top:100px;
+        padding-bottom:100px;
+        color:white; 
+    }    
+
+
+.visited-desti-img{
+    align-content: space-between;
 }
 
 .milestone_username{
@@ -107,13 +151,16 @@ h3{
 }
 
 .map_username{
-    background-color: white;
-    text-align:center;
+    background-color: ghostwhite;
     border-radius: 30px;
+    border:1px black;
     width:100%;
     margin: 5px;
+    text-align:center;
     font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Montserrat', sans-serif; font-weight: bold;
-}
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
 
 
