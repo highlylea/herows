@@ -121,6 +121,9 @@ h3{
 .user_emoji{
     font-size: 70px;
     margin: 0px;
+    border: none;
+    background: transparent;
+    outline: none;
 }
 
 .user_name{
