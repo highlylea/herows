@@ -45,10 +45,6 @@ h1{
     font-family: 'Montserrat', sans-serif;
 }
 
-.slogan{
-    font-size: 80px;
-    margin: 30px;
-}
 
 h3{
     font-family: 'Noto Sans KR', sans-serif;
@@ -76,5 +72,48 @@ h3{
     align-self: flex-end;
 }
 
-
 /* map*/ 
+
+.desti-section{
+    display:flex;
+    flex-direction:row;
+    margin: 100px 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.desti-vision{
+    background-color:#5AC8FA;
+    color:white;
+    text-align:center;
+    border-radius: 30px;
+    border: 0.5px white;
+    width: 130vw;
+    margin: 10px;
+}
+
+.desti{
+    background-color: ghostwhite;
+    border-radius: 30px;
+    border: 0.5px white;
+    width: 100%;
+    margin: 10px;
+}
+
+.milestone_username{
+    display:flex;
+    flex-direction:row;
+    margin: 100px 100px;
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+.map_username{
+    background-color: white;
+    text-align:center;
+    border-radius: 30px;
+    width:100%;
+    margin: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Montserrat', sans-serif; font-weight: bold;
+}
+
+
