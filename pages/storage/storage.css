@@ -4,7 +4,63 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+table {
+    width : 770px;
+    overflow-x: hidden;
+    /*overflow-y: auto; */
+   
+}
 
+
+
+
+.store_person{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 16px;
+/* or 80% */
+
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.store_text{
+font-family: Noto Sans KR;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+
+color: #000000;
+
+}
+
+.store_info{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 187% */
+
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+
+color: #000000;
+}
 
 body {
     background: #E5E5E5;
@@ -66,29 +122,14 @@ h3 {
     padding: 30px;
 }
 
-.deck-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.bubble-section {
-    width: 60%
-}
-
-.deck-ubong {
-    width: 500px;
-    height: 430px;
-    align-self: flex-end;
-}
-
-
-
-/* Onboard */
-
-.profile {
-    background-color: gray;
-    border-radius: 30px;
+.storage_block{
+overflow: scroll;
+position: absolute;
+width: 789px;
+height: 581px;
+left: 418px;
+top: 180px;
+background-color: #E5E5E5;
 
 }
 
@@ -133,7 +174,8 @@ color: #5AC8FA;
     position: absolute;
 width: 193px;
 height: 35px;
-left: 416px;
+/* left: 416px; */
+left: 30px;
 top: 198px;
 
 font-family: Montserrat;
