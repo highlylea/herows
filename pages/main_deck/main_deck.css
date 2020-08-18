@@ -80,8 +80,69 @@ h3{
 
 /* Onboard */
 
-.profile {
-    background-color: gray;
-    border-radius: 30px;
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
+.profile {
+    background-color: ghostwhite;
+    border-radius: 30px;
+    border: 1px solid black;
+    width: 100%;
+    margin: 10px;
+}
+
+.profile>p, .profile>h5, .profile>div{
+    margin:0px 15px;
+}
+
+.user_xp{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 12px;
+    color: grey;
+}
+
+.user_xp>p{
+    margin: 10px 2px;
+}
+
+.user_emoji{
+    font-size: 70px;
+    margin: 0px;
+}
+
+.user_name{
+    font-size: 24px;
+    color: black;
+}
+
+.user_status{
+    font-size: 16px;
+    color: black;
+}
+
+.hot{
+    display: flex;
+    flex-direction: row;
+}
+
+.hot_icon{
+    margin-right: 5px;
+}
+
+.hot_milestone>a{
+    font-size: 18px;
+    color: skyblue;
+    font-weight: 700;
+}
+
+.hot_milestone>a:hover{
+    color: black;
 }
