@@ -114,6 +114,12 @@ h3{
     position: relative;
 }
 
+.desti-empty-img-gray{
+    position: relative;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 .desti-dday {
     position: absolute;
     top: 50%;
@@ -142,14 +148,32 @@ h3{
     align-content: space-between;
 }
 
-.milestone_username{
+/* adding new destination */
+/* help me : how can i align text right in the middle?*/
+
+#add-desti{
+    background: ghostwhite;
+    border: 0.5px white;
+    width: 100%;
+    margin: 10px;
+    text-align:center;
+    align-content: space-between;
+    color:gray;
+    font-family: 'Montserrat', sans-serif; font-weight: bold;
+    padding-top:100px;
+    padding-bottom:100px;
+     }
+
+/*milestone section*/
+
+.milest_username{
     display:flex;
     flex-direction:row;
     margin: 100px 100px;
     font-family:'Noto Sans KR', sans-serif;
 }
 
-.map_username{
+.flip-card{
     background-color: ghostwhite;
     border-radius: 30px;
     border:1px black;
@@ -162,4 +186,68 @@ h3{
     padding-bottom: 20px;
 } 
 
+
+/* flipping test */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    width: 300px;
+    height: 20px;
+    background-color:white;
+    color: white;
+    transform: rotateY(180deg);
+    align-content: center;
+  }
+
+  .milest_user_xp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    font-size: 6px;
+    color:black;
+  }
+
+  .milest_user_xp>p{
+    margin: 3px 3px;
+}
 
