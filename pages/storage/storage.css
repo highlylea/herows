@@ -78,14 +78,18 @@ height: 581px;
 left: 418px;
 top: 180px;
 background-color: #E5E5E5;
-
 }
+
+
 
 table {
     width : 770px;
- }
+    border-spacing: 12px;
+}
 
- 
+th, td{
+    padding: 5px;
+}
 
 .store_person{
 font-family: Montserrat;
@@ -161,29 +165,6 @@ text-transform: uppercase;
 color: #5AC8FA;
 }
 
-#ssol {
-    position: absolute;
-width: 193px;
-height: 35px;
-/* left: 416px; */
-left: 30px;
-top: 198px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 16px;
-/* or 80% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.75px;
-text-transform: uppercase;
-
-color: #000000;
-
-}
 
 .store_date {
     position: absolute;
