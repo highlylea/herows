@@ -77,7 +77,7 @@ h3{
 .desti-section{
     display:flex;
     flex-direction:row;
-    margin: 100px 100px;
+    margin: 50px 100px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -91,8 +91,8 @@ h3{
     border: 0.5px white;
     width: 180vw;
     margin: 10px;
-    padding-top:140px;
-    padding-bottom:140px;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 /* destination block in general */
@@ -104,8 +104,8 @@ h3{
     margin: 10px;
     text-align:center;
     font-family: 'Montserrat', sans-serif; font-weight: bold;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:60px;
+    padding-bottom:60px;
     color:white;
 }
 
@@ -120,14 +120,6 @@ h3{
     filter: grayscale(100%);
 }
 
-.desti-dday {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
 /* visited destination */ 
 
 #visited-desti
@@ -139,8 +131,8 @@ h3{
         margin: 10px;
         text-align:center;
         font-family: 'Montserrat', sans-serif; font-weight: bold;
-        padding-top:100px;
-        padding-bottom:100px;
+        padding-top:60px;
+        padding-bottom:60px;
         color:white; 
     }    
 
@@ -160,17 +152,24 @@ h3{
     align-content: space-between;
     color:gray;
     font-family: 'Montserrat', sans-serif; font-weight: bold;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:60px;
+    padding-bottom:60px;
      }
 
 /*milestone section*/
 
+.milest-username-section{
+    display:flex;
+    flex-direction:row;
+}
+
 .milest_username{
     display:flex;
     flex-direction:row;
-    margin: 100px 100px;
+    align-items: flex-end;
+    margin: 10px 100px; 
     font-family:'Noto Sans KR', sans-serif;
+    justify-items: center;
 }
 
 .flip-card{
@@ -251,3 +250,78 @@ h3{
     margin: 3px 3px;
 }
 
+
+/*team goal area - text input*/
+
+input{
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+
+.upcoming-desti>input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.upcoming-desti>input::placeholder{
+    color:white;
+}
+
+.desti-vision>input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.desti-vision>input::placeholder{
+    color:white;
+}
+
+/*mileston list testing */
+
+/*this is section of mileston list*/
+
+.milest-section{
+    display:flex;
+    flex-direction:row;
+    margin: 20px 100px; 
+}
+
+.milest-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.milest-log{
+    white-space:nowrap;
+    display:flex;
+    flex-direction:column; 
+
+    border-radius: 20px;
+    border:1px #5AC8FA;
+    width:100%;
+    margin: 5px;
+    background-color: transparent;
+
+    width: 300px;
+    height: 15px;
+    border: 1px solid #f1f1f1;
+      
+    text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Montserrat', sans-serif; font-weight:500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
