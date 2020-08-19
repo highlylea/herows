@@ -29,6 +29,7 @@ html{
     margin: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 1.6rem;
 }
 
 a{
@@ -37,7 +38,7 @@ a{
 }
 
 a:hover{
-    color: skyblue;
+    color: rgb(241, 197, 0);
 }
 
 
@@ -46,13 +47,14 @@ a:hover{
     margin-bottom: 0rem;
 }
 
-
-h1{
+.navigator>h1{
     font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 .slogan{
-    font-size:6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
     margin: 2rem;
 }
 
@@ -228,24 +230,27 @@ h1{
 
 .daily_date{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    margin-left: 8rem;
+    margin-left: 10rem;
+    margin-right: 11rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+    height: 2rem;
 }
 
 .today_date{
-    top: 0.9rem;
-    left: 0rem;
-
+    position: relative;
+    top: 1rem;
+    right: 4.2rem;
+    margin: 0rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 3.6rem;
 }
 
-.date_divider{
-    width: 86%;
-
-    border-top: 1px solid black;
+.blank_space{
+    height: 0.1rem;
     margin-bottom: 2rem;
 }
 
@@ -266,6 +271,7 @@ h1{
     border-radius: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -275,7 +281,7 @@ h1{
     border-radius: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
-    background-color: red;
+    background-color: yellowgreen;
 }
 
 .log_info{
