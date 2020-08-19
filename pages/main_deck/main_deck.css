@@ -4,11 +4,15 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+html{
+    font-size: 10px;
+}
+
 .navigator{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 0rem 3rem;
 }
 
 .nav_menu{
@@ -20,7 +24,7 @@ font-family: 'Noto Sans KR', sans-serif;
 }
 
 .nav_menu>li{
-    margin: 10px;
+    margin: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -36,8 +40,8 @@ a:hover{
 
 
 .jumbotron{
-    margin: 100px 100px;
-    margin-bottom: 0px;
+    margin: 0rem 10rem;
+    margin-bottom: 0rem;
 }
 
 
@@ -46,18 +50,36 @@ h1{
 }
 
 .slogan{
-    font-size: 80px;
-    margin: 30px;
+    font-size:6rem;
+    margin: 2rem;
 }
 
-h3{
+.bubble, .bubble>h3, .bubble>input{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     text-align: center;
+}
 
+.team_vision{
+    font-weight: 700;
+    width: 80%;
+    color: black;
+    background: transparent;
+    border: none;
+}
+
+.team_vision::placeholder{
+    color: black;
+}
+
+
+.bubble{
     background-color: skyblue;
-    border-radius: 60px;
-    padding: 30px;
+    border-radius: 6rem;
+    padding: 3rem;
+    margin-top: 2.4rem;
 }
 
 .deck-section{
@@ -67,12 +89,12 @@ h3{
 }
 
 .bubble-section{
-    width: 60%
+    width: 70rem;
 }
 
 .deck-ubong{
-    width: 500px;
-    height: 430px;
+    width: 50rem;
+    height: 43rem;
     align-self: flex-end;
 }
 
@@ -88,20 +110,20 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: 100px 100px;
+    margin: 10rem 10rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .profile {
     background-color: rgb(255, 210, 61);
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
     width: 100%;
-    margin: 10px;
+    margin: 1rem;
 }
 
-.profile>p, .profile>h5, .profile>div{
-    margin:0px 15px;
+.profile>p, .profile>h5, .profile>div, .profile>input{
+    margin:0px 1.5rem;
 }
 
 .user_xp{
@@ -109,30 +131,50 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 0px;
-    font-size: 12px;
+    padding-right: 0rem;
+    font-size: 1.2rem;
     color: grey;
 }
 
 .user_xp>p{
-    margin: 10px 2px;
+    margin: 1rem 0.2rem;
 }
 
 .user_emoji{
-    font-size: 70px;
-    margin: 0px;
+    font-size: 6rem;
+    margin: 0rem;
     border: none;
     background: transparent;
     outline: none;
 }
 
+
 .user_name{
-    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    width: 80%;
+    color: black;
+    background: transparent;
+    border: none;
+}
+
+.user_name::placeholder{
     color: black;
 }
 
+
 .user_status{
-    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    width: 80%;
+    color: black;
+    background: transparent;
+    border: none;
+}
+
+.user_status::placeholder{
     color: black;
 }
 
@@ -143,14 +185,14 @@ h3{
 }
 
 .hot_icon{
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 
 .hot_milestone{
-    font-size: 18px;
+    font-size: 1.4rem;
     color: black;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .hot_milestone:hover{
@@ -158,17 +200,11 @@ h3{
     color: black;
 }
 
-.user_name>input{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    width: 80%;
-    color: black;
-    background: transparent;
-    border: none;
-}
 
-.user_name>input::placeholder{
-    color: black;
-    
+/*Log Section*/
+
+.log-section{
+    display: flex;
+    flex-direction: column;
+
 }
