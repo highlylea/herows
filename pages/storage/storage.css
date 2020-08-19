@@ -237,38 +237,6 @@ color: #000000;
 
 }
 
-.
-
-.box_location1{
-    position: absolute;
-    width: 350px;
-    height: 97px;
-    left: 135px;
-    top: 884.36px;
-    
-    transform: rotate(-5.47deg);
-}
-
-.box_location2{
-position: absolute;
-width: 283.5px;
-height: 164.85px;
-left: 608.2px;
-top: 815px;
-
-transform: rotate(11.97deg);
-}
-
-.box_location3{
-    position: absolute;
-    width: 350px;
-    height: 97px;
-    left: 952px;
-    top: 883.35px;
-    
-    transform: rotate(-5.47deg);
-}
-
 /*footer*/
 
 .deco_section { 
@@ -280,7 +248,9 @@ font-size: 15px;
 line-height: 16px;
 /* or 107% */
 
-display: flex;
+/* display: flex;
+flex-direction: row;
+justify-content: space-evenly;	 */
 align-items: center;
 text-align: center;
 letter-spacing: 0.75px;
@@ -290,13 +260,17 @@ color: #000000;
 }
 
 .box_location1{
-    position: absolute;
+    /* position: absolute;
     width: 350px;
     height: 110px;
     left: 135px;
     top: 860px;
-    
-    /* palette / yellow */
+     */
+    position: fixed;
+    left: 15%;
+    bottom: 9%;
+    width: 15%;
+    height: 10%;
     
     background: #FFCC00;
     border-radius: 50px 50px 0px 0px;
@@ -304,62 +278,43 @@ color: #000000;
 }
 
 .box_location2 {
-    position: absolute;
+    /* position: absolute;
     width: 271.49px;
     height: 139.78px;
     left: 602.87px;
-    top: 860px;
+    top: 860px;  */
     
-    /* palette / orange */
+    position: fixed;
+    left: 40%;
+    bottom: 8%;
+    width: 15%;
+    height: 11%;
     
+
     background: #FF9500;
     border-radius: 50px 50px 0px 0px;
     transform: rotate(6.54deg);
 }
 
 .box_location3{
-    position: absolute;
+    /* position: absolute;
     width: 350px;
     height: 97px;
     left: 952px;
     top: 860px;
-    
+      */
     /* palette / yellow */
+    position: fixed;
+    right: 15%;
+    bottom: 7%;
+    width: 20%;
+    height: 13%;
     
+
     background: #FFCC00;
     border-radius: 50px 50px 0px 0px;
     transform: rotate(-5.47deg);
 }
-
-.storage_deco1{
-    position: absolute;
-width: 350px;
-height: 97px;
-left: 0px;
-top: 33.35px;
-
-transform: rotate(-5.47deg);
-}
-
-.storage_deco2{
-    position: absolute;
-width: 155px;
-height: 37px;
-left: 70.13px;
-top: 36.41px;
-
-transform: rotate(6.54deg);
-}
-
-.storage_deco3{
-    position: absolute;
-width: 350px;
-height: 97px;
-left: 0px;
-top: 33.35px;
-transform: rotate(-5.47deg);
-}
-
 
 
 .fluid {
