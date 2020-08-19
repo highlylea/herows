@@ -1,7 +1,7 @@
-$('.user_emoji').click(function(){
+$('.emoji').click(function(){
     new FgEmojiPicker({
         // trigger: ['button', 'textarea'],
-        trigger:['.user_emoji'],
+        trigger:['.emoji'],
         position: ['top', 'right'],
         emit(obj, triggerElement) {
             console.log(triggerElement);

@@ -4,6 +4,8 @@
         <title>AOAS_Storage</title>
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../storage/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="storage.css">
     </head>
     <body>
@@ -13,10 +15,11 @@
                 <li><a href="../onboard/onboard.html">ONBOARD</a></li>
                 <li><a href="../map/map.html">MAP</a></li>
                 <li><a href="../storage/storage.html">STORAGE</a></li>
-                <li><img class="notification" src="../image/notice.png"/></li>
+                <li><img class="notification" src="../image/notification.png" width="20px"  data-toggle="modal" data-target="#myModal">
+                </li>
             </ul>
-    
         </nav>
+
     <div class="storage_section">
         <div class="storage_title"> STORAGE</div>
         <div class="storage_contents">
@@ -153,5 +156,36 @@
         </div>
         <div class="fluid"><img src="../image/storage_water.png" width=100%></div>
     </footer>
-    </body>
+
+    
+              
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"> 🔔 AOAS에게 알립니다! </h4>
+                    </div>
+                    <div class="modal-body">
+                      노를 저어라 이 자식아!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+
+<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+<script script type="text/javascript" src="../storage/js/bootstrap.js"></script>    
+
+</body>
 </html>
