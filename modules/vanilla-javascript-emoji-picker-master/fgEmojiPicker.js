@@ -275,8 +275,15 @@ const FgEmojiPicker = function(options) {
                     const emojiPickerMain = document.querySelector('.fg-emoji-picker');
                     const emojiFooter = emojiPickerMain.querySelector('.fg-emoji-picker-footer');
                     const emojiBody = emojiPickerMain.querySelector('.fg-emoji-picker-all-categories')
-
-
+                    if (this.triggerer.classList[2] === 'last_column_emoji'){
+                        this.variable.position=['top','left'];
+                    }
+                    else{
+                        this.variable.position = this.options.position;
+                    }
+                    
+                    // console.log(this.triggerer.id)
+                    
                     let positions = {
                         buttonTop:              e.pageY,
                         buttonWidth:            el.offsetWidth,
