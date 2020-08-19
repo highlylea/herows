@@ -120,14 +120,6 @@ h3{
     filter: grayscale(100%);
 }
 
-.desti-dday {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
 /* visited destination */ 
 
 #visited-desti
@@ -249,5 +241,29 @@ h3{
 
   .milest_user_xp>p{
     margin: 3px 3px;
+}
+
+
+/*team goal area*/
+
+input{
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+
+.upcoming-desti>input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.upcoming-desti>input::placeholder{
+    color:white;
 }
 
