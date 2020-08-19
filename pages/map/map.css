@@ -87,12 +87,13 @@ h3{
     background-color:#5AC8FA;
     color:white;
     text-align:center;
+    align-content: center;
     border-radius: 30px;
     border: 0.5px white;
     width: 180vw;
     margin: 10px;
-    padding-top:140px;
-    padding-bottom:140px;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 /* destination block in general */
@@ -104,8 +105,8 @@ h3{
     margin: 10px;
     text-align:center;
     font-family: 'Montserrat', sans-serif; font-weight: bold;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:60px;
+    padding-bottom:60px;
     color:white;
 }
 
@@ -131,8 +132,8 @@ h3{
         margin: 10px;
         text-align:center;
         font-family: 'Montserrat', sans-serif; font-weight: bold;
-        padding-top:100px;
-        padding-bottom:100px;
+        padding-top:60px;
+        padding-bottom:60px;
         color:white; 
     }    
 
@@ -152,8 +153,8 @@ h3{
     align-content: space-between;
     color:gray;
     font-family: 'Montserrat', sans-serif; font-weight: bold;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:60px;
+    padding-bottom:60px;
      }
 
 /*milestone section*/
@@ -161,6 +162,7 @@ h3{
 .milest_username{
     display:flex;
     flex-direction:row;
+    align-items: flex-end;
     margin: 100px 100px;
     font-family:'Noto Sans KR', sans-serif;
 }
@@ -244,7 +246,7 @@ h3{
 }
 
 
-/*team goal area*/
+/*team goal area - text input*/
 
 input{
     background-color: transparent;
@@ -266,4 +268,21 @@ input{
 .upcoming-desti>input::placeholder{
     color:white;
 }
+
+.desti-vision>input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.desti-vision>input::placeholder{
+    color:white;
+}
+
+/*milestone section*/
 
