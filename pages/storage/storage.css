@@ -4,6 +4,14 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+.alert_button{
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    /* width: 15%;
+    height: 11%;  */
+}
+
 
 body {
     background: #E5E5E5;
@@ -39,7 +47,7 @@ a:hover {
     color: skyblue;
 }
 
-.notiPopup:hover {
+.notification:hover {
     filter: opacity(50%);
 }
 
@@ -335,3 +343,37 @@ color: #000000;
 
     /* background: #5AC8FA; */
 } 
+
+.modal-title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 20px;
+/* or 83% */
+
+letter-spacing: 0.25px;
+
+color: #000000;
+}
+
+.modal-body{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 111% */
+
+    letter-spacing: 0.25px;
+    
+    color: #000000;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
