@@ -39,6 +39,9 @@ a:hover {
     color: skyblue;
 }
 
+.notiPopup:hover {
+    filter: opacity(50%);
+}
 
 .jumbotron {
     margin: 100px 100px;
