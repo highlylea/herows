@@ -174,7 +174,8 @@ h3{
 }
 
 .flip-card{
-    background-color: ghostwhite;
+    display:flex;
+    flex-direction:row;
     border-radius: 30px;
     border:1px black;
     width:100%;
@@ -185,7 +186,6 @@ h3{
     padding-top: 20px;
     padding-bottom: 20px;
 } 
-
 
 /* flipping test */
 
@@ -219,7 +219,7 @@ h3{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Style the front side */
   .flip-card-front {
     width: 300px;
     height: 20px;
