@@ -70,11 +70,13 @@ h3 {
 
 
 .storage_block{
+display: flex;
+flex-direction: column;
 overflow-x: hidden;
 overflow-y: auto;
 position: absolute;
-width: 789px;
-height: 581px;
+width: 100%;
+height: 510px;
 left: 418px;
 top: 180px;
 background-color: #E5E5E5;
@@ -83,7 +85,7 @@ background-color: #E5E5E5;
 
 
 table {
-    width : 770px;
+    width : 70%;
     border-spacing: 12px;
 }
 
@@ -267,7 +269,10 @@ transform: rotate(11.97deg);
     transform: rotate(-5.47deg);
 }
 
-.deco_section {
+/*footer*/
+
+.deco_section { 
+
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -355,15 +360,20 @@ top: 33.35px;
 transform: rotate(-5.47deg);
 }
 
+
+
 .fluid {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
   
-
-    position: absolute;
-    width: 1440px;
-    height: 102px;
+    /* position: absolute;
+    width: 100%;
     left: 0px;
-    top: 922px;
-
+    top: 922px; */
 
     /* background: #5AC8FA; */
 } 
