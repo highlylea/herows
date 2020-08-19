@@ -6,7 +6,9 @@ font-family: 'Noto Sans KR', sans-serif;
 
 html{
     font-size: 10px;
+    background-color: rgb(235, 235, 235);
 }
+
 
 .navigator{
     display: flex;
@@ -106,18 +108,22 @@ h1{
     width: 100%
 }
 
+
+
 .profile-section{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    margin: 10rem 10rem;
+    margin: 5rem 10rem;
+    margin-bottom: 0rem;
     font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 .profile {
-    background-color: rgb(255, 210, 61);
+    background-color: white;
     border-radius: 2rem;
-    border: 0.1rem solid black;
+    /*border-bottom: 0.1rem solid gray;*/
     width: 100%;
     margin: 1rem;
 }
@@ -203,8 +209,100 @@ h1{
 
 /*Log Section*/
 
-.log-section{
+.log_section{
     display: flex;
     flex-direction: column;
 
 }
+
+.daily_row{
+    position: relative;
+    left: -1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 0rem 10rem;
+}
+
+.daily_date{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+}
+
+.today_date{
+    top: 0.9rem;
+    left: 0rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.date_divider{
+    width: 86%;
+
+    border-top: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.daily_log{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1.3rem;
+    width: 100%;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    width: 100%;
+    
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+
+}
+
+.category_color{
+    width: 4rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: red;
+}
+
+.log_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(179, 174, 174);
+    margin: 0rem 0rem 0rem 1rem;
+
+}
+
+.log_info>p{
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.log_emoji{
+    font-size: 2rem;
+    margin: 0rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0rem;
+}
+
+
