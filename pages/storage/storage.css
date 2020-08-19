@@ -319,7 +319,7 @@ color: #000000;
     right: 15%;
     bottom: 7%;
     width: 20%;
-    height: 13%;
+    height: 11%;
     
 
     background: #FFCC00;
@@ -327,6 +327,11 @@ color: #000000;
     transform: rotate(-5.47deg);
 }
 
+#storage_woobong{
+    position:fixed;
+    right: 10%;
+    top:5%;
+}
 
 .fluid {
 
