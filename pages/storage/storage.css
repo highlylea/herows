@@ -15,6 +15,7 @@ font-family: 'Noto Sans KR', sans-serif;
 
 body {
 background: white; 
+overflow-x:hidden;
 
     /* background: #E5E5E5; */
 }
@@ -99,7 +100,7 @@ background-color:white;
 
 
 table {
-    width : 70%;
+    width : 55%;
     border-spacing: 12px;
     table-layout: fixed;
 }
