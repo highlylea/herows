@@ -113,7 +113,8 @@ a:hover{
 
 
 
-.profile-section{
+
+.profile_section{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -210,18 +211,33 @@ a:hover{
 }
 
 
-/*newlog_section*/
+/*new_section*/
 
-.add_section{
+
+.new_section{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    margin: 0rem 10rem;
+    margin-bottom: 0rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 2.5rem;
 }
 
+.new_block{
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+    height: 1rem;
+    margin: 0rem 1rem;
 
-
-.new_log>p{
-    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: skyblue;
+    text-align: right;
 }
+
 
 
 /*Log Section*/
