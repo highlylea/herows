@@ -1,4 +1,3 @@
-
 //to do list test
 
 
@@ -17,7 +16,7 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
   }
@@ -25,7 +24,7 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
+list.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
@@ -51,7 +50,7 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+    close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
     }
@@ -61,10 +60,8 @@ function newElement() {
 
 // 가로슬라이더 테스트
 var swiper = new Swiper('.swiper-container', {
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
-    },
-  });
-
-
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },
+});
