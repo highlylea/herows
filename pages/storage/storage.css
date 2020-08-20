@@ -101,6 +101,7 @@ background-color:white;
 table {
     width : 70%;
     border-spacing: 12px;
+    table-layout: fixed;
 }
 
 th, td{
@@ -155,6 +156,27 @@ text-transform: uppercase;
 color: #000000;
 border-bottom: 1px solid #D1D1D6;
 padding-bottom: 13px;
+}
+
+.store_url{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 187% */
+
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+
+color: #000000;
+border-bottom: 1px solid #D1D1D6;
+padding-bottom: 13px;
+    overflow: hidden;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
 }
 
 
