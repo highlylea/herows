@@ -102,6 +102,16 @@ a:hover{
     align-self: flex-end;
 }
 
+/*load buttons*/
+
+.load_future{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
 
 
 /* Onboard */
