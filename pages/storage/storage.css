@@ -14,7 +14,9 @@ font-family: 'Noto Sans KR', sans-serif;
 
 
 body {
-    background: #E5E5E5;
+background: white; 
+
+    /* background: #E5E5E5; */
 }
 
 .navigator {
@@ -90,7 +92,8 @@ width: 100%;
 height: 510px;
 left: 418px;
 top: 180px;
-background-color: #E5E5E5;
+background-color:white;
+/* background-color: #E5E5E5; */
 }
 
 
@@ -98,10 +101,11 @@ background-color: #E5E5E5;
 table {
     width : 70%;
     border-spacing: 12px;
+    table-layout: fixed;
 }
 
 th, td{
-    padding: 5px;
+    padding: 4px;
 }
 
 .store_person{
@@ -116,7 +120,7 @@ line-height: 16px;
 align-items: center; */
 letter-spacing: 0.75px;
 text-transform: uppercase;
-
+width: 15%;
 color: #000000;
 }
 
@@ -151,11 +155,33 @@ text-transform: uppercase;
 
 color: #000000;
 border-bottom: 1px solid #D1D1D6;
+padding-bottom: 13px;
+}
+
+.store_url{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 187% */
+
+/* display: flex;
+align-items: center; */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+
+color: #000000;
+border-bottom: 1px solid #D1D1D6;
+padding-bottom: 13px;
+    overflow: hidden;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
 }
 
 
 .storage_title{
-    position: absolute;
+position: absolute;
 width: 225px;
 height: 96px;
 left: 211px;
@@ -256,7 +282,7 @@ font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
 font-size: 15px;
-line-height: 16px;
+line-height: 18px;
 /* or 107% */
 
 /* display: flex;
@@ -264,7 +290,7 @@ flex-direction: row;
 justify-content: space-evenly;	 */
 align-items: center;
 text-align: center;
-letter-spacing: 0.75px;
+letter-spacing: 0.9px;
 text-transform: uppercase;
 
 color: #000000;
@@ -319,7 +345,7 @@ color: #000000;
     right: 15%;
     bottom: 7%;
     width: 20%;
-    height: 13%;
+    height: 11%;
     
 
     background: #FFCC00;
@@ -327,6 +353,12 @@ color: #000000;
     transform: rotate(-5.47deg);
 }
 
+#storage_woobong{
+    position: fixed;
+    right: 10%;
+    top:5%;
+    width: 200px;
+}
 
 .fluid {
 
@@ -342,18 +374,17 @@ color: #000000;
     top: 922px; */
 
     /* background: #5AC8FA; */
-} 
+
 
 .modal-title{
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 50px;
+font-size: 18px;
 line-height: 20px;
 /* or 83% */
-
+text-align: center;
 letter-spacing: 0.25px;
-
 color: #000000;
 }
 
@@ -361,12 +392,12 @@ color: #000000;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     /* or 111% */
 
     letter-spacing: 0.25px;
-    
+    text-align: center;
     color: #000000;
     
     
@@ -376,4 +407,15 @@ color: #000000;
     order: 0;
     align-self: center;
     margin: 0px 0px;
+}
+
+
+.storage-woobong{
+    width: 200px;  
+}
+
+.modal-header{
+   
+box-sizing: border-box;
+border-radius: 20px;
 }

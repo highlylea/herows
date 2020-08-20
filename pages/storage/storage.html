@@ -2,23 +2,52 @@
 <html>
     <head>
         <title>AOAS_Storage</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="../storage/css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="storage.css">
     </head>
     <body>
         <nav class="navigator"> 
             <h1 class="logo">HEROWS</h1>
             <ul class="nav_menu">
-                <li><a href="../onboard/onboard.html">ONBOARD</a></li>
+                <li><a href="../main_deck/index.html">ONBOARD</a></li>
                 <li><a href="../map/map.html">MAP</a></li>
                 <li><a href="../storage/storage.html">STORAGE</a></li>
-                <li><img class="notification" src="../image/notification.png" width="20px"  data-toggle="modal" data-target="#myModal">
+                <li>  
+                  <class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" title="우봉이 알림">
+                    <img class="notification" src="../image/notification.png" width="20px">
                 </li>
             </ul>
         </nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title" id="myModalLabel"> 🚨 AOAS에게 알립니다 🚨 </p>
+      </div>
+      <div class="modal-body">
+        <br>
+        <br>
+        오늘도 포션 충전 완료?
+        <br>
+        <br>
+        <img class="storage-woobong" src="../image/woobongpotion.png">
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="storage_section">
         <div class="storage_title"> STORAGE</div>
@@ -29,6 +58,7 @@
                 <div class="storage_content">“깃 거의 다 이해, 협업도구 (브랜칭 게임)”</div>
                 <div class="contents_link">Http://try.github.io/</div> -->
                
+                
                 <table class="first_table">
                     <!-- <th>생성자, 생성일자</th>
                     <th>자료 내용, 링크</th> -->
@@ -38,7 +68,10 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/Http://try.github.io/
+                          Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/
+                          Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/
+                          Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/Http://try.github.io/"</a></td>
                     </tr>
                     
                     <!--자료 생성자 추가-->
@@ -49,7 +82,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.16</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -59,7 +92,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.15</td>
-                        <td class="store_info">herokuapp.wenno/home</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -69,7 +102,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -79,7 +112,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -89,7 +122,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -99,7 +132,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -109,7 +142,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -119,7 +152,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -129,7 +162,7 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
                       <!--자료 생성자 추가-->
                     
@@ -139,15 +172,14 @@
                     </tr>
                     <tr>
                         <td class="store_info">2020.08.17</td>
-                        <td class="store_info">Http://try.github.io/</td>
+                        <td class="store_url"><a href= "Http://try.github.io/">"Http://try.github.io/"</a></td>
                     </tr>
-
-                    </table>
-
-                    
+                    </table>        
             </div>
         </div>
     </div>   
+
+    
     <footer>
         <div class="deco_section">
             <div class="box_location1"><br><br>Here we row! <br> 열심히 노를 저어보자구!</div>
@@ -156,36 +188,15 @@
         </div>
         <div class="fluid"><img src="../image/storage_water.png" width=100%></div>
     </footer>
-
-    
-              
-              <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel"> 🔔 AOAS에게 알립니다! </h4>
-                    </div>
-                    <div class="modal-body">
-                      노를 저어라 이 자식아!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
+    <div id="storage_woobong">
+    <a href="#" data-toggle="popover" title="우봉이 알림" data-content="죽을 것 같지만, 사람은 그렇게 쉽게 죽지 않아😇" data-placement="left">
+      <img class="storage-woobong" src="../image/woobongmain.png"></a>
+    </div>
 
 
 
-<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-<script script type="text/javascript" src="../storage/js/bootstrap.js"></script>    
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+            <script src="storage.js"></script>
 
 </body>
 </html>
