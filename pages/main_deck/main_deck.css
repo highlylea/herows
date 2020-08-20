@@ -325,7 +325,51 @@ a:hover{
 
 
 
-/*future section*/
+/*future load button*/
+
+.micro_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0rem;
+    height: 0px;
+}
+
+
+.load_future{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+
+    position: relative;
+    right: 9rem;
+    bottom: 6.5rem;
+}
+
+.load_month{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    
+    position: relative;
+    left: 7rem;
+    bottom: 2rem;
+}
+
+
+
+/*future-section*/
 
 .future_section{
     display: flex;
@@ -336,37 +380,10 @@ a:hover{
 
 
 
-
-/*future load button*/
-.load_future_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-
 .future{
     display: none;
 }
 
-.load_future{
-    font-family: 'Montserrat', sans-serif;
-    width: 2rem;
-    height: 2rem;
-    align-self: flex-end;
-
-    border: none;
-    outline: none;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-
-    position: relative;
-    right: 9rem;
-
-}
 
 
 /*past-section*/
