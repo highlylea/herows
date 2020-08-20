@@ -210,6 +210,19 @@ a:hover{
 }
 
 
+/*newlog_section*/
+
+.add_section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.new_log>p{
+    color: grey;
+}
+
 
 /*Log Section*/
 
@@ -219,20 +232,24 @@ a:hover{
     height: 70vh;
 }
 
-.present_section{
+.log_section::-webkit-scrollbar-thumb{
+    background-color: skyblue;
+}
+
+.rows_container{
     display: flex;
     flex-direction: column;
-
 }
 
 .daily_row{
-    position: relative;
-    left: -1rem;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-
+    
+    position: relative;
+    left: -1rem;
     margin: 0rem 10rem;
 }
 
