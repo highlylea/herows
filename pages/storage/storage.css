@@ -100,7 +100,7 @@ background-color:white;
 
 
 table {
-    width : 60a%;
+    width : 60%;
     border-spacing: 12px;
     table-layout: fixed;
 }
@@ -160,7 +160,7 @@ padding-bottom: 13px;
 }
 
 .store_url{
-    font-family: Montserrat;
+font-family: Montserrat;
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
@@ -175,9 +175,8 @@ text-transform: uppercase;
 color: #000000;
 border-bottom: 1px solid #D1D1D6;
 padding-bottom: 13px;
-    overflow: hidden;
-    text-overflow: Ellipsis;
-    white-space: nowrap;
+overflow: hidden;    text-overflow: Ellipsis;
+white-space: nowrap;
 }
 
 
