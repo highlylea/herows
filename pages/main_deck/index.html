@@ -44,6 +44,7 @@
     <!--Member Profile-->
 
     <a id="onboard_anchor"></a>
+
     <div class="profile-section">
         <div class="profile user1">
             <div class="user_xp"> <p>⏰</p> <p>10:35</p> <p>💎</p> <p>45</p> </div>
@@ -71,7 +72,7 @@
             <div class="user_xp"> <p>⏰</p> <p>10:35</p> <p>💎</p> <p>45</p> </div>
             <button class="emoji user_emoji">💖</button>
             <h5><input type="textarea" placeholder="ZOZE 조제" class="user_name"></h5>
-            <input class="user_status" placeholder="죽을 것 같겠지만 죽지 않는다">
+            <input class="user_status" placeholder="꼬우면 니가 고쳐!">
                 <div class="hot">
                 <p class="hot_icon">🔥</p>
                 <a class="hot_milestone" href="../map/map.html">웹사이트 강의 다 올리기!</a>
@@ -110,16 +111,17 @@
 
 
 
+<!--log_section에는 overflow:scroll이 걸려 있음!-->
 <div class="log_section">
             <!--Future Log-->
-    <div class="future_section">
+    <div class="rows_container future_section">
         <div class="future "></div>
         <!--future row 들어갈 곳-->
     </div>
 
     <!--Daily Log-->    
 
-    <div class="present_section">
+    <div class="rows_container present_section">
 
         <div class="daily_date_id" id="08-12">
             <div class="daily_date">
@@ -552,7 +554,7 @@
     </div>
 
 
-    <div class="past_section">
+    <div class="rows_container past_section">
         <!--past row 들어갈 -->
         <button class="load_past">+ 과거 2주 더보기</button>
     </div>
