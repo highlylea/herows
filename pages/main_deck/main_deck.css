@@ -393,6 +393,8 @@ a:hover{
     outline: none;
     border: none;
     background-color: skyblue;
+
+    margin-bottom: 1rem;
 }
 
 .load_past:active{
