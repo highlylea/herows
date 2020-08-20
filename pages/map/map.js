@@ -1,5 +1,5 @@
-//to do list test
 
+//to do list test
 
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -56,6 +56,11 @@ function newElement() {
     }
   }
 }
+
+
+
+
+
 
 
 // 가로슬라이더 테스트

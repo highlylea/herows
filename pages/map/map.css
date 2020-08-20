@@ -299,8 +299,6 @@ Input:focus {
 }
 
 
-
-
 /*mileston list testing */
 
 /*this is section of mileston list*/
@@ -309,7 +307,6 @@ Input:focus {
   display: flex;
   flex-direction: row;
   margin: 10px 100px;
-  width: 100%;
 }
 
 .milest-column {
@@ -442,12 +439,11 @@ Input:focus {
   padding: 20px 20px;
   color: black;
   text-align: center;
-
 }
 
 /* Clear floats after the header */
 .header:after {
-  content: "";
+  content: ""; 
   display: table;
   clear: both;
 }
