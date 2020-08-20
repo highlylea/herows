@@ -285,6 +285,10 @@ a:hover{
 
 }
 
+.hidden{
+    display: none;
+}
+
 .category_color{
     width: 4rem;
     height: 0.7rem;

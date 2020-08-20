@@ -166,20 +166,29 @@ body{
 .milest-username-section{
     display:flex;
     flex-direction:row;
+    width: 100%;
 }
 
 .milest_username{
     display:flex;
     flex-direction:row;
+    width: 100%;
+    justify-content: center;
     align-items: flex-end;
     margin: 10px 100px; 
     font-family:'Noto Sans KR', sans-serif;
-    justify-items: center;
+    
+
 }
+
+
+
 
 .flip-card{
     display:flex;
     flex-direction:row;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border:1px black;
     margin: 5px;
@@ -194,7 +203,6 @@ body{
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
     height: 20px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -203,8 +211,8 @@ body{
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
-    width: 300px;
     height: 20px;
+  
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -224,7 +232,6 @@ body{
   
   /* Style the front side */
   .flip-card-front {
-    width: 300px;
     height: 20px;
     background-color: white;
     color: black;
@@ -232,13 +239,20 @@ body{
   
   /* Style the back side */
   .flip-card-back {
-    width: 300px;
+
     height: 20px;
     background-color:white;
     color: white;
     transform: rotateY(180deg);
     align-content: center;
   }
+
+  
+  .map-block{
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
 
   .milest_user_xp{
     display: flex;
