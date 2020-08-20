@@ -18,7 +18,7 @@
             <li><a href="#onboard_anchor">ONBOARD</a></li>
             <li><a href="../map/map.html">MAP</a></li>
             <li><a href="../storage/storage.html">STORAGE</a></li>
-            <li><img class="notification" src="notification-icon.svg"/></li>
+            <li><img class="notification" src="../image/notification.png"/></li>
         </ul>
 
     </nav>
@@ -116,20 +116,20 @@
     
     <!--Adding New Block-->
     <div class="new_section">
-        <div class="new_block user1">
-            <p>+ Add Log</p>
+        <div class="new_log user1">
+            <button id="modal_btn">+ Add Log</button>
         </div>
-        <div class="new_block user2">
-            <p>+ Add Log</p>
+        <div class="new_log user2">
+            <p class="modal_btn">+ Add Log</p>
         </div>
-        <div class="new_block user3">
-            <p>+ Add Log</p>
+        <div class="new_log user3">
+            <p class="modal_btn">+ Add Log</p>
         </div>
-        <div class="new_block user4">
-            <p>+ Add Log</p>
+        <div class="new_log user4">
+            <p class="modal_btn">+ Add Log</p>
         </div>
-        <div class="new_block user5">
-            <p>+ Add Log</p>
+        <div class="new_log user5">
+            <p class="modal_btn">+ Add Log</p>
         </div>
 
     </div>
@@ -148,7 +148,7 @@
 
     <div class="rows_container present_section">
 
-        <div class="daily_date_id" id="08-12">
+        <div class="daily_date_id" id="08-80">
             <div class="daily_date">
                 <p class="today_date">12</p>
                 <div class="blank_space"></div>
@@ -589,8 +589,11 @@
 </div>
 
 
-<div class="block_modal">
-
+<div class="modal" id="block_modal">
+    <div class="modal_content">
+        <img src="../image/close.png" class="close">
+        <p>Some Text in Modal...</p>
+    </div>
 </div>
 
 
