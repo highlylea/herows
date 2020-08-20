@@ -271,7 +271,6 @@ body {
   margin: 3px 3px;
 }
 
-
 /*team goal area - text input*/
 
 .upcoming-desti>input,
@@ -349,7 +348,7 @@ Input:focus {
 
 
 /* Remove margins and padding from the list */
-#miUl {
+#miUl, #miUl2, #miUl3, #miUl4, #miUl5 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -357,11 +356,11 @@ Input:focus {
 
 /* Style the list items */
 
-#miUl>li {
+#miUl>li, #miUl2>li, #miUl3>li, #miUl4>li, #miUl5>li {
 
   /* width:300px; */
   height: 60px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 1em;
 
   cursor: pointer;
@@ -425,8 +424,7 @@ Input:focus {
   color: white;
 }
 
-/* Style the header */
-
+/* Style the milestone adding header */
 .header {
   /* width:300px; */
   height: 60px;
@@ -449,7 +447,7 @@ Input:focus {
 }
 
 /* Style of MILESTONE input */
-#myInput {
+#myInput, #myInput1, #myInput2, #myInput3, #myInput4, #myInput5 {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -460,16 +458,17 @@ Input:focus {
   color: black;
 }
 
-#myInput:focus {
+/* Style of input box when typing */
+#myInput:focus, #myInput2:focus, #myInput3:focus ,#myInput4:focus,#myInput5:focus  {
   outline: none;
 }
 
-.milset-underline {
+.milest-underline {
   width: 2%;
 }
 
 /* Style the "Add" button */
-.addBtn {
+#Btn1, #Btn2, #Btn3, #Btn4, #Btn5 {
   padding: 3px;
   width: 9%;
   /* background: #d9d9d9; */
@@ -484,7 +483,8 @@ Input:focus {
   border-radius: 2em;
 }
 
-.addBtn:hover {
+/* color changes when hovering on adding button */
+#Btn1:hover, #Btn2:hover, #Btn3:hover,#Btn4:hover, {
   background-color: #bbb;
 }
 
