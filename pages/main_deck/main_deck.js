@@ -1,3 +1,6 @@
+month_names = {'Jan':1, 'Feb':2, 'Mar':3, 'Apr':4, 'May':5, 'Jun':6, 
+'Jul':7, 'Aug':8, 'Sep':9, 'Oct':10, 'Nov':11, 'Dec':12};
+
 function setBlockDay() {
     const today = new Date()
     const yesterday = new Date(today)
@@ -16,7 +19,7 @@ $(document).ready(function () {
         while ($('.daily_date_id').eq(a).length != 0) {
             if (950 <= $('.daily_date_id').eq(a).position().top && $('.daily_date_id').eq(a).position().top <= 1200) {
                 $('.load_month').each(function () {
-                    this.innerHTML = $('.daily_date_id').eq(a).find('.today_date')[0].classList[1];
+                    this.innerHTML = month_names[$('.daily_date_id').eq(a).find('.today_date')[0].classList[1]]+'월';
                 });
                 break;
             };
@@ -26,11 +29,14 @@ $(document).ready(function () {
 });
 
 $('.load_past').click(function () {
+    var i = 0;
+    for (i=0;i<14;i++){
     var position = $('.log_section').scrollTop();
     var a = $('.daily_date_id').clone()[0];
     document.querySelector('.past_section').prepend(a);
     $('.log_section')[0].scrollTop = position;
-    setBlockDay(false);
+    setBlockDay();
+    };
 });
 // let d = document.querySelectorAll('.daily_date_id');
 
