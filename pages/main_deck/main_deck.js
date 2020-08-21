@@ -1,4 +1,4 @@
-function setBlockDay(isFirst) {
+function setBlockDay() {
     const today = new Date()
     const yesterday = new Date(today)
     yesterday.setDate(yesterday.getDate() + 1)
@@ -6,20 +6,21 @@ function setBlockDay(isFirst) {
         yesterday.setDate(yesterday.getDate() - 1);
         var date_str = yesterday.toDateString();
         day.innerHTML = date_str.split(' ')[2];
+        day.classList = ['today_date' + ' ' + date_str.split(' ')[1].toString()];
     });
 };
-setBlockDay(true);
+setBlockDay();
 $(document).ready(function () {
     $('.log_section').scroll(function () {
-        console.log('scroll!!!');
-        if ($('.log_section').scrollTop() > 200) {
-            $(".load_month").each(function () {
-                this.innerHTML = '7월';
-            });
-        } else {
-            $(".load_month").each(function () {
-                this.innerHTML = '8월';
-            });
+        let a = 0;
+        while ($('.daily_date_id').eq(a).length != 0) {
+            if (950 <= $('.daily_date_id').eq(a).position().top && $('.daily_date_id').eq(a).position().top <= 1200) {
+                $('.load_month').each(function () {
+                    this.innerHTML = $('.daily_date_id').eq(a).find('.today_date')[0].classList[1];
+                });
+                break;
+            };
+            a++;
         };
     });
 });
