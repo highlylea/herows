@@ -32,7 +32,7 @@ $('.load_past').click(function () {
     var i = 0;
     for (i=0;i<14;i++){
     var position = $('.log_section').scrollTop();
-    var a = $('.daily_date_id').clone()[0];
+    var a = $('.present_section>.daily_date_id').clone()[0];
     document.querySelector('.past_section').prepend(a);
     $('.log_section')[0].scrollTop = position;
     setBlockDay();
