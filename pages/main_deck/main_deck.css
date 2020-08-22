@@ -113,6 +113,7 @@ a:hover{
 
 .onboard{
     width: 100%;
+    margin-bottom: 10rem;
 }
 
 
@@ -441,7 +442,7 @@ a:hover{
 
 .future{
     width: 100%;
-    /*display: none;*/
+    display: none;
 }
 
 
@@ -475,7 +476,8 @@ a:hover{
     border: none;
     background-color: #5AC8FA;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .load_past:active{
@@ -525,3 +527,4 @@ a:hover{
             text-decoration: none;
             cursor: pointer;
         }
+
