@@ -71,11 +71,29 @@ $('.load_future').click(function () {
   }
   
 });
+// Top & down(bottom) button
 $('.top_button').click(()=>$('.log_section').animate({scrollTop: 0},"fast"));
-$('.down_button').click(()=>$('.log_section').animate({scrollTop: 999999},"fast"));
+$('.down_button').click(()=>$('.log_section').animate({
+  scrollTop: $('.log_section').prop("scrollHeight")}, 'fast'));
+// 
 
 
-
+// 뉴로그 모달창 드롭다운
+ /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+ var dropdown = document.getElementsByClassName("dropdown-btn");
+ var i;
+ 
+ for (i = 0; i < dropdown.length; i++) {
+   dropdown[i].addEventListener("click", function() {
+   this.classList.toggle("active");
+   var dropdownContent = this.nextElementSibling;
+   if (dropdownContent.style.display === "block") {
+   dropdownContent.style.display = "none";
+   } else {
+   dropdownContent.style.display = "block";
+   }
+   });
+ }
 /*스쿠버*/
 
 
@@ -230,7 +248,48 @@ span.onclick = function(event) {
 
 
 
-let color_label = {'white':'#FFFFFF', 'black':'000000', 'yellow':'FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'navy':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#C1C1E'};
 
 
 
+
+
+
+/*------------------------------------------------------------------------------------Modal End -------------------------------------------------------------------------------------------- 모달 관련된건 이 밑으로 쓰지마세요--------------------------------------------------------------------------------------------*/
+
+
+
+
+/* category dropdown menu test*/
+let color_label = {'white':'#FFFFFF', 'black':'#000000', 'yellow':'#FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'#AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'violet':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#1C1C1E'};
+
+
+/*category_box background color 설정*/
+$('.cat1').css('background-color', color_label['yellow']);
+$('.cat2').css('background-color', color_label['purple']);
+$('.cat3').css('background-color', color_label['skyblue']);
+$('.cat4').css('background-color', color_label['red']);
+$('.cat5').css('background-color', color_label['pinkred']);
+$('.cat6').css('background-color', color_label['orange']);
+$('.cat7').css('background-color', color_label['violet']);
+$('.cat8').css('background-color', color_label['green']);
+$('.cat9').css('background-color', color_label['blue']);
+$('.cat10').css('background-color', color_label['dark-gray']);
+
+
+
+
+function search(){
+  var value, name, item, i;
+
+  value = document.getElementById("value").value.toUpperCase();
+  item = document.getElementsByClassName("category_box");
+
+  for(i=0;i<item.length;i++){
+    name = item[i].getElementsByClassName("category_name");
+    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      item[i].style.display = "flex";
+    }else{
+      item[i].style.display = "none";
+    }
+  }
+}

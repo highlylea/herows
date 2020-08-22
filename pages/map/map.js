@@ -220,9 +220,9 @@ $(function () {
       if (day_distance == 0) {
         $('.hasDatepicker')[0].value = "D-day";
       } else if (day_distance > 0) {
-        $('.hasDatepicker')[0].value = 'D-' + (day_distance).toString();
+        $('.hasDatepicker')[0].value = '🥊 D-' + (day_distance).toString() + ' 🥊';
       } else {
-        $('.hasDatepicker')[0].value = 'D+' + (-1 * (day_distance)).toString();
+        $('.hasDatepicker')[0].value = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
       }
     }
   });
