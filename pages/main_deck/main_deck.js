@@ -42,13 +42,17 @@ $('.load_past').click(function () {
 
 
 $('.load_future').click(function () {
-    var target = document.querySelector('.future');
+    var isTop = false;
+    if (!$('.log_section').scrollTop()){isTop=true};
     if(this.innerHTML === 'more'){
-        target.style.display = 'block';
+        $('.future').css('display','block');
         this.innerHTML = 'close';
     }else{
-        target.style.display = 'none';
+        $('.future').css('display','none');
         this.innerHTML = 'more';
+    }
+    if(isTop){
+        $('.log_section')[0].scrollTop += $('.present_section').position().top-$('.future_section').position().top;
     }
     
 });
