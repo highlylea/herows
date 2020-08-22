@@ -38,6 +38,13 @@ $('.load_past').click(function () {
     setBlockDay();
     };
 });
+
+$('.load_future').click(function () {
+    document.querySelector('.future').style.display = "block";
+});
+
+
+
 // let d = document.querySelectorAll('.daily_date_id');
 
 // for (i=0; ++i; i<d.length) {
@@ -46,7 +53,7 @@ $('.load_past').click(function () {
 //     }
 
 
-/*Block modal*/
+/*Block modal
 
 let modal = document.getElementById('block_modal');
 let btn = document.getElementsByClassName('modal_btn');
@@ -72,3 +79,11 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+*/
+
+
+let color_label = {'white':'#FFFFFF', 'black':'000000', 'yellow':'FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'navy':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#C1C1E'};
+
+
+
