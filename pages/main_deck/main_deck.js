@@ -40,6 +40,29 @@ $('.load_past').click(function () {
 });
 
 
+$('.load_future').click(function () {
+  var isTop = false;
+  if (!$('.log_section').scrollTop()){isTop=true};
+  if(this.innerHTML === 'more'){
+      $('.future').css('display','block');
+      $('.future_alert').css('display','block');
+      this.innerHTML = 'close';
+  }else{
+      $('.future').css('display','none');
+      $('.future').css('display','none');
+      this.innerHTML = 'more';
+  }
+  if(isTop){
+      $('.log_section')[0].scrollTop += $('.present_section').position().top-$('.future_section').position().top;
+  }
+  
+});
+
+
+
+
+/*스쿠버*/
+
 
 // 뉴 로그 모달1
 // Get the modal
@@ -123,21 +146,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-$('.load_future').click(function () {
-    var isTop = false;
-    if (!$('.log_section').scrollTop()){isTop=true};
-    if(this.innerHTML === 'more'){
-        $('.future').css('display','block');
-        this.innerHTML = 'close';
-    }else{
-        $('.future').css('display','none');
-        this.innerHTML = 'more';
-    }
-    if(isTop){
-        $('.log_section')[0].scrollTop += $('.present_section').position().top-$('.future_section').position().top;
-    }
-    
-});
+
 
 
 // 뉴 로그 모달4
@@ -202,6 +211,10 @@ span.onclick = function(event) {
     modal.style.display = "none";
   }
   
+
+
+
+
 let color_label = {'white':'#FFFFFF', 'black':'000000', 'yellow':'FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'navy':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#C1C1E'};
 
 

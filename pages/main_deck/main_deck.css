@@ -449,6 +449,16 @@ a:hover{
     display: none;
 }
 
+.future_alert{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+
+    display: none;
+}
+
 
 
 /*past-section*/
@@ -552,3 +562,20 @@ button{
     /* The savelog1 Button */
 
 }
+
+
+
+
+
+
+
+/*category test*/
+
+.category_menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: content;
+    background-color: skyblue;
+}
+
