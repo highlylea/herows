@@ -405,15 +405,19 @@ a:hover{
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 1.5rem;
 
     position: relative;
     right: 9rem;
-    bottom: 6.5rem;
+    top: 1.6rem;
+}
+
+.load_future:hover{
+    color: skyblue;
 }
 
 .load_future:active{
-    color: skyblue;
+    color: grey;
 }
 
 .load_month{
@@ -424,7 +428,7 @@ a:hover{
     
     position: relative;
     left: 7rem;
-    bottom: 2rem;
+    top: 1.8rem;
 }
 
 
@@ -484,47 +488,70 @@ a:hover{
     border: 0.3px solid grey;
 }
 
+<<<<<<< HEAD
+
+/* Modal */
+/* The Modal (background) */
+
+.modal_btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #5AC8FA;
+    text-align: right;
+}
+
+button{
+    border: none;
+    background-color:rgb(235, 235, 235);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
 
 
-/*Modal Popup*/
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height:10%;
+    border-radius: 1rem;
 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-/*1. Block Modal*/
+    /* The savelog1 Button */
 
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-
-    
-        /* Modal Content/Box */
-        .modal_content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%; /* Could be more or less, depending on screen size */                          
-        }
-        /* The Close Button */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
+}
+=======
+>>>>>>> 24facd0f252acb89288443340a78f344587fbbf3

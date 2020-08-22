@@ -20,7 +20,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-
 // //Add a "checked" symbol when clicking on a list item
 // var list = document.querySelector('myUl');
 // list.addEventListener('click', function (ev) {
