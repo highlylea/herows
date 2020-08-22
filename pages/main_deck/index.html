@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="main_deck.css">
     <script src="../../modules/jquery/jquery-3.5.1.min.js"></script>
     <title>HEROWS</title>
@@ -114,27 +115,89 @@
     </div>
 
     
+
+    
+    
     <!--Adding New Block-->
+    
     <div class="new_section">
         <div class="new_log user1">
-            <p class="modal_btn">+ Add Log</p>
+            <!-- Add Log -->
+            <button id="myBtn"><p class="modal_btn">+ Add Log</p> </button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close1">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
+            </div>
+
+
         </div>
         <div class="new_log user2">
-            <p class="modal_btn">+ Add Log</p>
+     
+            <button id="myBtn2"><p class="modal_btn">+ Add Log</p> </button>
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id=close2>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+            </div>
         </div>
+     
         <div class="new_log user3">
-            <p class="modal_btn">+ Add Log</p>
+        <button id="myBtn3"><p class="modal_btn">+ Add Log</p> </button>
+        <!-- The Modal -->
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id=close3>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+            </div>
+
         </div>
         <div class="new_log user4">
-            <p class="modal_btn">+ Add Log</p>
+        <button id="myBtn4"><p class="modal_btn">+ Add Log</p> </button>
+                <!-- The Modal -->
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id=close4>&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+            </div>
+        
         </div>
         <div class="new_log user5">
-            <p class="modal_btn">+ Add Log</p>
+        <button id="myBtn5"><p class="modal_btn">+ Add Log</p> </button>
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" id=close5>&times;</span>
+                            <p>Some text in the Modal..</p>
+                        </div>
+                        </div>
+                    
         </div>
 
     </div>
 
-
+<!-- New block Modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        ...
+      </div>
+    </div>
+  </div>
 
 <!--log_section에는 overflow:scroll이 걸려 있음!-->
 <div class="log_section">
@@ -589,16 +652,9 @@
 </div>
 
 
-<div class="modal" id="block_modal">
-    <div class="modal_content">
-        <img src="../image/close.png" class="close">
-        <p>Some Text in Modal...</p>
-    </div>
-</div>
 
 
-
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="../../modules/vanilla-javascript-emoji-picker-master/fgEmojiPicker.js"></script>
 <script src="main_deck.js"></script>
 <script src="emoji_changer.js"></script>
