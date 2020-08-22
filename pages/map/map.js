@@ -1,53 +1,50 @@
-//to do list test
 
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
+// Create a "gem-icon" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI"); 
+var i; 
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
+// Click on a gem-icon button to hide the current list item
+var close = document.getElementsByClassName("gem-icon");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
-    var div = this.parentElement;
-    div.style.display = "none";
+  var div = this.parentElement;
+  // div.style.display = "none";
   }
 }
 
-/* Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function (ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-*/
+// //Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('myUl');
+// list.addEventListener('click', function (ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('checked');
+//   }
+// }, false);
 
-
-//user1-adding milestone list
+// user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
 function newElement1() {
-  var li = document.createElement("li");
+  var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue1);
   li.appendChild(t);
-  if (inputValue1 === '') {
-    alert("마일스톤을 입력하라구!");
+  if (inputValue1 === '') { //prevents empty list items 
+    alert("마일스톤을 입력하라구!"); 
   } else {
-    document.getElementById("miUl").appendChild(li);
+    document.getElementById("miUl").appendChild(li); //text to list
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("myInput").value = ""; 
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var span = document.createElement("SPAN"); 
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
 
@@ -74,8 +71,8 @@ function newElement2() {
   document.getElementById("myInput2").value = "";
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
 
@@ -86,7 +83,6 @@ function newElement2() {
     }
   }
 }
-
 
 //user3-adding milestone 
 // Create a new list item when clicking on the "Add" button
@@ -103,8 +99,8 @@ function newElement3() {
   document.getElementById("myInput3").value = "";
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
 
@@ -131,8 +127,8 @@ function newElement4() {
   document.getElementById("myInput4").value = "";
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
 
@@ -159,8 +155,8 @@ function newElement5() {
   document.getElementById("myInput5").value = "";
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
+  var txt = document.createTextNode("💎");
+  span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
 
@@ -173,23 +169,6 @@ function newElement5() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-// 가로슬라이더 테스트
-// var swiper = new Swiper('.swiper-container', {
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//     hide: true,
-//   },
-// });
 
 //D-day 
 $(function () {
@@ -213,3 +192,4 @@ $(function () {
     }
   });
 });
+

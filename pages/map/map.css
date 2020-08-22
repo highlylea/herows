@@ -115,20 +115,27 @@ body {
   color: white;
 }
 
-/*d-day*/
+/*destination upcoming*/
 .desti-empty-img {
   position: relative;
 }
 
+/*turns island img to gray*/ 
 .desti-empty-img-gray {
   position: relative;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(10%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 
-/* visited destination */
+.adding-desti-empty-img-gray {
+  position: relative;
+  -webkit-filter: grayscale(3%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%);
+}
 
+/* visited destination 이미 달성한 데스티네이션*/
 #visited-desti {
   background: rgb(255, 204, 0);
   background: linear-gradient(174deg, rgba(255, 204, 0, 1) 9%, rgba(129, 212, 250, 1) 70%);
@@ -165,8 +172,8 @@ body {
   padding-bottom: 60px;
 }
 
-/*milestone section*/
 
+/*milestone section*/
 .milest-username-section {
   display: flex;
   flex-direction: row;
@@ -198,8 +205,6 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* flipping test */
 
 .flip-card {
   background-color: transparent;
@@ -250,13 +255,13 @@ body {
 }
 
 /*all namecard blocks*/
-
 .map-block {
   flex-basis: 300px;
   flex-shrink: 1;
   flex-grow: 1;
 }
 
+/*user's xp info*/
 .milest_user_xp {
   display: flex;
   flex-direction: row;
@@ -274,7 +279,7 @@ body {
 /*team goal area - text input*/
 
 .upcoming-desti>input,
-.desti-vision>input {
+.desti-vision>input{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -284,22 +289,31 @@ body {
   background: transparent;
   border: none;
 }
+/* style of team name input area */
+input.teamname{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  width: 10%;
+  color: white;
+  background: transparent;
+  border: none;
+}
 
-.desti-vision>input::placeholder {
+.desti-vision>input::placeholder,
+.vision-text>input::placeholder,
+.upcoming-desti>input::placeholder{
   color: white;
 }
 
-.upcoming-desti>input::placeholder {
-  color: white;
-}
-
+/*when input area is focused, nothing happens*/
 Input:focus {
   outline: none;
 }
 
-
 /*mileston list testing */
-
 /*this is section of mileston list*/
 
 .milest-section {
@@ -357,7 +371,6 @@ Input:focus {
 /* Style the list items */
 
 #miUl>li, #miUl2>li, #miUl3>li, #miUl4>li, #miUl5>li {
-
   /* width:300px; */
   height: 60px;
   margin: 10px;
@@ -408,18 +421,20 @@ Input:focus {
   width: 7px;
 }
 
-/* Style the close button */
-
-.close {
-  padding: 5px;
-  width: 10%;
+/* Style the gem icon button */
+.close, .gem-icon{
+  text-align:center;
+  padding: 3px;
+  width: 20%;
   position: absolute;
-  right: 0.5px;
-  top: 0.5px;
+  right: 1px;
+  top: 1px;
+  font-size:30px;
+  filter: grayscale(90%);
   /*padding: 12px 16px 12px 16px; */
 }
 
-.close:hover {
+.close:hover, .gem-icon:hover {
   background-color: transparent;
   color: white;
 }
@@ -484,7 +499,7 @@ Input:focus {
 }
 
 /* color changes when hovering on adding button */
-#Btn1:hover, #Btn2:hover, #Btn3:hover,#Btn4:hover, {
+.addBtn:hover, {
   background-color: #bbb;
 }
 
@@ -502,14 +517,15 @@ Input:focus {
 .desti > label {
   display: block;
 }
+
+/* style of d-day counter  */
+
 #dday {
   border: 1px solid white;
   border-radius: 30px;
   background-color:white;
   padding: 3px 5px;
   /* box-shadow: inset 0 3px 6px rgba(0,0,0,0.1); */
-  width: 190px;
+  width: 190px; 
   font: 'Montserrat', sans-serif; 
-
 }
-
