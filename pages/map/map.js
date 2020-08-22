@@ -13,24 +13,16 @@ for (i = 0; i < myNodelist.length; i++) {
 // Click on a gem-icon button to hide the current list item
 var close = document.getElementsByClassName("gem-icon");
 var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-  var div = this.parentElement;
-  // div.style.display = "none";
-  }
-}
-
-// //Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('myUl');
-// list.addEventListener('click', function (ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
+// for (i = 0; i < close.length; i++) {
+//   // close[i].onclick = function () {
+//   // var div = this.parentElement;
+//   // div.style.display = "none";
+//   } 
+// }
 
 // user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
-function newElement1() {
+function newElement1(){
   var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue1);
@@ -40,21 +32,39 @@ function newElement1() {
   } else {
     document.getElementById("miUl").appendChild(li); //text to list
   }
+
+  //cal icon 
+  var span2 = document.createElement("span"); 
+  var txt2 = document.createTextNode(" 🗓 ");
+  span2.className = "cal-icon";
+  span2.appendChild(txt2);
+  li.appendChild(span2); 
+ 
   document.getElementById("myInput").value = ""; 
 
-  var span = document.createElement("SPAN"); 
+  //gem icon 
+  var span1 = document.createElement("SPAN"); 
   var txt = document.createTextNode("💎");
-  span.className = "gem-icon";
-  span.appendChild(txt);
-  li.appendChild(span);
+  span1.className = "gem-icon";
+  span1.appendChild(txt);
+  li.appendChild(span1); 
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
+      // alert("마일스톤을 달성하셨나요?");
+  var answer = confirm ("마일스톤을 정말 달성하셨나요🤭?")
+  if (answer)
+    alert ("축하해! 내가 아끼는 보석 하나 주지!")
+  else
+    alert ("조금 더 노를 저으라구!")
+
+      // var div = this.parentElement;
+      // div.style.display = "none";
     }
   }
 }
+
+
 
 //user2-adding milestone 
 // Create a new list item when clicking on the "Add" button
@@ -68,6 +78,7 @@ function newElement2() {
   } else {
     document.getElementById("miUl2").appendChild(li);
   }
+  
   document.getElementById("myInput2").value = "";
 
   var span = document.createElement("SPAN");
@@ -167,8 +178,6 @@ function newElement5() {
     }
   }
 }
-
-
 
 //D-day 
 $(function () {

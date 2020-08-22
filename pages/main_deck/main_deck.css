@@ -391,8 +391,42 @@ a:hover{
     margin: 0rem;
     height: 0px;
 }
+.top_button{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
 
+    border: none;
+    outline: none;
+    background: transparent;
 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    position: relative;
+    right: 9rem;
+    top: 23rem;
+}
+.down_button{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    position: relative;
+    right: 9rem;
+    top: 28rem;
+}
 .load_future{
     font-family: 'Montserrat', sans-serif;
     width: 2rem;
@@ -561,7 +595,7 @@ button{
 
     /* The savelog1 Button */
 
-}
+
 
 
 
