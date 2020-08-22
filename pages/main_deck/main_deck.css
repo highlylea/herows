@@ -574,8 +574,70 @@ button{
 .category_menu{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: content;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    margin: 10px;
     background-color: skyblue;
+    border-radius: 15px;
+}
+
+.search_value{
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    border-bottom: 0.5px solid grey;
+    padding: 0px 10px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+
+.category_box{
+    width: 220px;
+    height: 30px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.category_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.category_name{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0px;
+}
+
+
+.category_check, .category_edit{
+    width: 20px;
+    height: 20px;
+
+}
+
+.category_check{
+    padding-left: 10px;
+    margin-right: 15px;
+    visibility: hidden;
+
+}
+
+.category_edit{
+    padding-right: 10px;
+    justify-self: flex-end;
 }
 
