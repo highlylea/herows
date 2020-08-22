@@ -15,23 +15,22 @@ var close = document.getElementsByClassName("gem-icon");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
-    var div = this.parentElement;
-    div.style.display = "none";
+  var div = this.parentElement;
+  // div.style.display = "none";
   }
 }
 
-/* Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function (ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-*/
+
+// //Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('myUl');
+// list.addEventListener('click', function (ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('checked');
+//   }
+// }, false);
 
 // user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
-
 function newElement1() {
   var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;

@@ -9,7 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="map.css">
-  <script src='map.js'></script>
+  <script src="map.js"></script> 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
@@ -38,28 +38,28 @@
           <input type="textarea" placeholder="AOAS" class="teamname">의 vision🔥</h2>
         <input type="textarea" placeholder="“남이 깨면 후라이, 스스로 깨면 병아리!”">
       </div>
+      
 
-      <div class="desti 1" id="desti1">
-        <img src="../image/desti_empty.png" width=170px class="desti-empty-img">
-
-        <!--디데이 카운드 다운 연습 -->
-
-
-
-        <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
-
+      <div class="desti 1" id="desti1"> 
+        <img src="../image/desti.png" width=170px class="desti-empty-img-gray">
+         
         <div class="upcoming-desti">
-          <input type="textarea" placeholder="Upcoming Destination"> </div>
+          <input type="textarea" placeholder="Upcoming Destination"> 
+        </div>
+        <!--디데이 카운드 다운 연습 -->
+        <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+       </div>
 
-      </div>
-
+       <!-- visited destination -->
       <div class="desti 2" id="visited-desti">
         <img class="visited-desti-img" src="../image/desti.png" width=170px><br>
         <div> 앤젤핵 뿌수기! </div>
       </div>
+
+      <!--마일스톤 추가하는 카드-->
       <div class="desti 3" id="add-desti">
         <div class="adding-img"></div>
-        <img src="../image/desti_empty.png" width=170px class="desti-empty-img-gray">
+        <img src="../image/desti.png" width=170px class="adding-desti-empty-img-gray">
         <div>
           <h5>Add a new destination!</h5>
         </div>
@@ -67,6 +67,7 @@
 
     </div>
 
+    <!-- Username above milestone list -->
     <div class="milest-username-section">
 
       <div class="milest_username">
@@ -166,8 +167,10 @@
           <span onclick="newElement1()" class="addBtn" id="Btn1"> + </span> <br>
           <hr align="left" style="border: solid 1p #bbb; width: 70%;">    
         </div>
+        
         <ul id="miUl">
         </ul>
+
       </div>
 
       <div class="milest-column user2">
