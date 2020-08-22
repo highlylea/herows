@@ -214,6 +214,17 @@ a:hover{
     color: black;
 }
 
+.last_access{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    text-align: right;
+
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+}
+
 
 /*new_section*/
 
@@ -272,6 +283,13 @@ a:hover{
     left: -1rem;
     margin: 0rem 10rem;
 }
+
+.daily_date_id{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 
 .daily_date{
     display: flex;
@@ -393,6 +411,10 @@ a:hover{
     bottom: 6.5rem;
 }
 
+.load_future:active{
+    color: skyblue;
+}
+
 .load_month{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
@@ -408,7 +430,7 @@ a:hover{
 
 /*future-section*/
 
-.future_section{
+.future_section{    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,7 +440,8 @@ a:hover{
 
 
 .future{
-    display: none;
+    width: 100%;
+    /*display: none;*/
 }
 
 
@@ -431,7 +454,11 @@ a:hover{
     margin-top: 3rem;
     justify-content: flex-start;
     align-items: center;
+}
 
+.past{
+    width: 100%;
+    /*display: none;*/
 }
 
 
