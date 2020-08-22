@@ -125,86 +125,166 @@
     
 
     
-    
+
     <!--Adding New Block-->
     
     <div class="new_section">
-
-        <div class="new_log user1">
-     
-            <button id="myBtn1"><p class="modal_btn">+ Add Log</p> </button>
-        <!-- The Modal -->
-        <div id="myModal1" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id=close2>&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-            </div>
-        </div>
-     
-        
-
-        <div class="new_log user2">
-     
-            <button id="myBtn2"><p class="modal_btn">+ Add Log</p> </button>
-        <!-- The Modal -->
-        <div id="myModal2" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id=close2>&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-            </div>
-        </div>
-     
-        <div class="new_log user3">
-        <button id="myBtn3"><p class="modal_btn">+ Add Log</p> </button>
-        <!-- The Modal -->
-        <div id="myModal3" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id=close3>&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-            </div>
-
-        </div>
-        <div class="new_log user4">
-        <button id="myBtn4"><p class="modal_btn">+ Add Log</p> </button>
-                <!-- The Modal -->
-        <div id="myModal4" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id=close4>&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-            </div>
-        
-        </div>
-        <div class="new_log user5">
-        <button id="myBtn5"><p class="modal_btn">+ Add Log</p> </button>
-                    <!-- The Modal -->
-                    <div id="myModal5" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id=close5>&times;</span>
-                            <p>Some text in the Modal..</p>
-                        </div>
-                        </div>
-                    
-        </div>
-
-    </div>
-
-<!-- New block Modal -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+        <div class="new_log user1">  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
       <div class="modal-content">
-        ...
-      </div>
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+            <div class=newlog_input>
+                <label for="newlog"> <p>오늘 한 노젓기를 추가해주세요.</p></label>
+                <input type="text" id="newlog_user1" name="newlog_user1">
+            </div>
+          <!--드롭다운-->
+            <div class="sidenav">
+              <a href="#about" class="log_category" id="nav_category">카테고리</a>
+              <a href="#services" class="log_category" id="nav_milestone">마일스톤</a>
+              <a href="#clients" class="log_category" id="nav_date">날짜지정</a>
+              <a href="#contact" class="log_category" id="nav_effort">나의노력</a>
+              <a href="#push" class="log_category" id="nav_push">푸시하기</a>
+              <a href="#delete" class="log_category" id="nav_delete">삭제하기</a>
+              <!-- <button class="dropdown-btn">Dropdown 
+                <i class="fa fa-caret-down"></i> -->
+              <!-- </button>
+              <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">cancle</button>
+            <input type="submit" value="Submit" class="btn btn-default" data-dismiss="modal">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Save</button> -->
+        </div>
+      </div>    
     </div>
   </div>
+    </div>
+
+        <div class="new_log user2">
+     <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+        </div>
+
+     
+        <div class="new_log user3">
+      <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+        </div>
+
+        <div class="new_log user4">
+    <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+        </div>
+
+        <div class="new_log user5">
+       <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+        </div>
+
+
+</div>
+
 
 <!--log_section에는 overflow:scroll이 걸려 있음!-->
 <div class="log_section">
@@ -941,14 +1021,11 @@
 
 
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="../../modules/vanilla-javascript-emoji-picker-master/fgEmojiPicker.js"></script>
 <script src="main_deck.js"></script>
 <script src="emoji_changer.js"></script>

@@ -492,17 +492,20 @@ a:hover{
 /* Modal */
 /* The Modal (background) */
 
-.modal_btn{
+.btn.btn-info.btn-lg{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: #5AC8FA;
     text-align: right;
+    margin-top: 1em;
 }
 
 button{
     border: none;
     background-color:rgb(235, 235, 235);
+    
+    
 }
 
 .modal {
@@ -520,12 +523,99 @@ button{
 
   }
 
+  .modal-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    
+  }
 
+  .modal-header{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    text-align: center;
+  }
+  .modal-body{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    text-align: center;
+  }
   
+.button.close {
+position: right;
+}
+  .btn.btn-default{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    /* dark-theme-gray / 1 */
+    
+    color: #1C1C1E;
+    border: none;
+    background: #5AC8FA;    
+    border-radius: 10px; 
+
+
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+  }
+
+  .btn.btn-default2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    /* dark-theme-gray / 1 */
+    
+    color: #1C1C1E;
+    border: none;
+    background: orangered;    
+    border-radius: 10px; 
+
+
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+  }
+
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin: auto;
+    margin-top:  5%;
+    margin-left: 20%;
     padding: 20px;
     border: 1px solid #888;
     width: 30%;
@@ -534,21 +624,82 @@ button{
 
   }
   
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* new log modal dropdown */
+    /* Fixed sidenav, full height */
+            .sidenav {
+              height: 21%;
+              width: 200px;
+              position: fixed;
+              margin-top:10%;
+              margin-left:53%;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color:#5AC8FA;
+              overflow-x: hidden;
+              padding-top: 20px;
+              border-radius: 1rem;
+              
+           
+            }
+            
+            /* Style the sidenav links and the dropdown button */
+            .sidenav a, .dropdown-btn {
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 20px;
+              color: white;
+              display: block;
+              border: none;
+              background: none;
+              width: 100%;
+              text-align: left;
+              cursor: pointer;
+              outline: none;
+            }
+            
 
-    /* The savelog1 Button */
+            /* On mouse-over */
+            .sidenav a:hover, .dropdown-btn:hover {
+                color: rgb(241, 197, 0);
+            }
 
-}
+            /* Main content */
+            .main {
+              margin-left: 200px; /* Same as the width of the sidenav */
+              font-size: 20px; /* Increased text to enable scrolling */
+              padding: 0px 10px;
+            }
+            
+            /* Add an active class to the active dropdown button */
+            .active {
+              background-color: green;
+              color: white;
+            }
+            
+            Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
+            .dropdown-container {
+              display: none;
+              background-color: #262626;
+              padding-left: 8px;
+            }
+            
+            /* Optional: Style the caret down icon */
+            .fa-caret-down {
+              float: right;
+              padding-right: 8px;
+            }
+            
+            /* Some media queries for responsiveness */
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+
+            #newlog_user1{
+                
+            }
+
+           .newlog_input{
+               
+           }
