@@ -42,57 +42,18 @@ $('.load_past').click(function () {
 
 
 $('.load_future').click(function () {
-    let target = document.querySelector('.future');
-    let trigger = document.querySelector('.load_future');
-    if(trigger.innerHTML === '+'){
-        target.style.display = "block";
-        trigger.innerHTML = '-';
+    var target = document.querySelector('.future');
+    if(this.innerHTML === 'more'){
+        target.style.display = 'block';
+        this.innerHTML = 'close';
     }else{
-        target.style.display = "none";
-        trigger.innerHTML = '+';
+        target.style.display = 'none';
+        this.innerHTML = 'more';
     }
     
-
 });
 
 
-
-// let d = document.querySelectorAll('.daily_date_id');
-
-// for (i=0; ++i; i<d.length) {
-//     let date = document.querySelectorAll('.daily_date_id')[i].id[3]+document.querySelectorAll('.daily_date_id')[i].id[4];
-//     document.querySelectorAll('.today_date')[i].innerText = date;
-//     }
-
-
-/*Block modal
-
-let modal = document.getElementById('block_modal');
-let btn = document.getElementsByClassName('modal_btn');
-let close_button = document.getElementsByClassName("close")[0];                                          
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-*/
 
 
 let color_label = {'white':'#FFFFFF', 'black':'000000', 'yellow':'FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'navy':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#C1C1E'};
