@@ -1,10 +1,10 @@
 month_names = {'Jan':1, 'Feb':2, 'Mar':3, 'Apr':4, 'May':5, 'Jun':6, 
 'Jul':7, 'Aug':8, 'Sep':9, 'Oct':10, 'Nov':11, 'Dec':12};
 
-function setBlockDay() {
+function setBlockDay(dd=1) {
     const today = new Date()
     const yesterday = new Date(today)
-    yesterday.setDate(yesterday.getDate() + 1)
+    yesterday.setDate(yesterday.getDate() + dd)
     document.querySelectorAll('.today_date').forEach(function (day) {
         yesterday.setDate(yesterday.getDate() - 1);
         var date_str = yesterday.toDateString();
@@ -35,7 +35,9 @@ $('.load_past').click(function () {
     var a = $('.present_section>.daily_date_id').clone()[0];
     document.querySelector('.past_section').prepend(a);
     $('.log_section')[0].scrollTop = position;
-    setBlockDay();
+    if ($('.load_future')[0].innerHTML === 'more'){
+      setBlockDay();
+    }else{setBlockDay(15)};
     };
 });
 
@@ -44,10 +46,22 @@ $('.load_future').click(function () {
   var isTop = false;
   if (!$('.log_section').scrollTop()){isTop=true};
   if(this.innerHTML === 'more'){
+    var i = 0;
+    for (i=0;i<14;i++){
+    var position = $('.log_section').scrollTop();
+    var a = $('.present_section>.daily_date_id').clone()[0];
+    document.querySelector('.future_section').prepend(a);
+    $('.log_section')[0].scrollTop = position;
+    setBlockDay(15);
+    };
       $('.future').css('display','block');
       $('.future_alert').css('display','block');
       this.innerHTML = 'close';
   }else{
+    $(".future_section")[0].innerHTML = '';
+    $('.log_section')[0].scrollTop = position;
+    setBlockDay();
+    
       $('.future').css('display','none');
       $('.future_alert').css('display','none');
       this.innerHTML = 'more';
