@@ -26,63 +26,67 @@ var i;
 // Create a new list item when clicking on the "Add" button
 
 
+
 function newElement1(){
 
-var li = document.createElement("li"); //Create li element
-var inputValue1 = document.getElementById("myInput").value;
-var t = document.createTextNode(inputValue1);
-li.appendChild(t);
+  var li = document.createElement("li"); //Create li element
+  var inputValue1 = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue1);
+  li.appendChild(t);
   if (inputValue1 === '') { //prevents empty list items 
     alert("마일스톤을 입력하라구!"); 
   } else {
     document.getElementById("miUl").appendChild(li); //text to list
   }
 
-//cal icon 
-var span2 = document.createElement("span"); 
-var txt2 = document.createTextNode(" 🗓 ");
-span2.className = "cal-icon";
-span2.appendChild(txt2);
-li.appendChild(span2); 
+  //cal icon 
+  var span2 = document.createElement("span"); 
+  var txt2 = document.createTextNode(" 🗓 ");
+  span2.className = "cal-icon";
+  span2.appendChild(txt2);
+  li.appendChild(span2); 
   
-document.getElementById("myInput").value = ""; 
+  document.getElementById("myInput").value = ""; 
 
-//gem icon 
-var span1 = document.createElement("SPAN"); 
-var txt = document.createTextNode("💎");
-span1.className = "gem-icon";
-// span1.id="id-gem";
-span1.appendChild(txt);
-li.appendChild(span1); 
+  //gem icon 
+  var span1 = document.createElement("SPAN"); 
+  var txt = document.createTextNode("💎");
+  span1.className = "gem-icon";
+  span1.id="id-gem";
+  span1.appendChild(txt);
+  li.appendChild(span1); 
 
-var element = document.querySelectorAll('span.gem-icon');
-// convert NodeList into an array
-//create id for each gem-icon
-Array.from(element)
-  // iterate over the element
-  .forEach(function(ele, g) { // generate and set id
-    ele.setAttribute("id", 'gem' + (g + 1));
-  })
+  // //create id for each gem-icon
+  // var element = document.querySelectorAll('span.gem-icon'); // convert NodeList into an array
+  // Array.from(element) // iterate over the element 
+  // .forEach(function(ele, g) { // generate and set id
+  //   ele.setAttribute("id", 'gem' + (g + 1));
+  // })
 
-for (i = 0; i < close.length; i++) {
-      close[i].onclick = function () {
-      var answer = confirm("마일스톤을 벌써 달성했어?🤭")
+  for (i = 0; i < close.length; i++) {
+      close[i].onclick = function (){
+        
+        var answer = confirm("마일스톤을 벌써 달성했어?🤭")
 
-      if (answer){
-        alert ("축하해! 내가 아끼는 보석 하나 주지!")
-        var graydegree = document.getElementById(??);
-        graydegree.style.filter="grayscale(0%)";
+        if (answer){
+          alert ("축하해! 내가 아끼는 보석 하나 주지!")
+          var graydegree = document.getElementById('id-gem');
+          graydegree.style.filter="grayscale(0%)";
+        }
+        
+      
+        else {
+          alert ("조금 더 노를 저으라구!")
+          // var div = this.parentElement;
+          // div.style.display = "none";
+        }
+
+
+
       }
-    
-      else{
-        alert ("조금 더 노를 저으라구!")
-        // var div = this.parentElement;
-        // div.style.display = "none";
-      }
-
+      
 
     }
-  }
 
 }
 

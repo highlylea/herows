@@ -423,7 +423,7 @@ Input:focus {
 
 /* Style the gem icon button */
 
-.close, span.gem-icon, #gem1{
+.close, span.gem-icon, #id-gem{
   text-align:center;
   padding: 3px;
   width: 20%;
