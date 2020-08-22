@@ -49,7 +49,7 @@ $('.load_future').click(function () {
       this.innerHTML = 'close';
   }else{
       $('.future').css('display','none');
-      $('.future').css('display','none');
+      $('.future_alert').css('display','none');
       this.innerHTML = 'more';
   }
   if(isTop){
