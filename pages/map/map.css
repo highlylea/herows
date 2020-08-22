@@ -296,7 +296,7 @@ input.teamname{
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  width: 10%;
+  width: 13%;
   color: white;
   background: transparent;
   border: none;
@@ -423,7 +423,7 @@ Input:focus {
 
 /* Style the gem icon button */
 
-.close, span.gem-icon{
+.close, span.gem-icon, #gem1{
   text-align:center;
   padding: 3px;
   width: 20%;
@@ -435,7 +435,7 @@ Input:focus {
   /*padding: 12px 16px 12px 16px; */
 }
 
-span.gem-icon-colored{
+/* span.gem-icon-colored{
   text-align:center;
   padding: 3px;
   width: 20%;
@@ -443,7 +443,7 @@ span.gem-icon-colored{
   right: 1px;
   top: 5px;
   font-size:30px;
-}
+} */
 
 .close:hover, .gem-icon:hover {
   background-color: transparent;
