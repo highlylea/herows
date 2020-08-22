@@ -39,8 +39,20 @@ $('.load_past').click(function () {
     };
 });
 
+
+
 $('.load_future').click(function () {
-    document.querySelector('.future').style.display = "block";
+    let target = document.querySelector('.future');
+    let trigger = document.querySelector('.load_future');
+    if(trigger.innerHTML === '+'){
+        target.style.display = "block";
+        trigger.innerHTML = '-';
+    }else{
+        target.style.display = "none";
+        trigger.innerHTML = '+';
+    }
+    
+
 });
 
 
