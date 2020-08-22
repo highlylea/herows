@@ -41,17 +41,15 @@ $('.load_past').click(function () {
 
 
 
-<<<<<<< HEAD
 // 뉴 로그 모달1
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal1");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBtn1");
 
 // Get the <span> element that closes the modal
-var span = document.getElementById("close1");
-// var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -69,6 +67,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 // 뉴 로그 모달2
 
 /*Block modal*/
@@ -124,7 +123,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-=======
 $('.load_future').click(function () {
     var isTop = false;
     if (!$('.log_section').scrollTop()){isTop=true};
@@ -141,7 +139,6 @@ $('.load_future').click(function () {
     
 });
 
->>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
 
 // 뉴 로그 모달4
 // Get the modal
@@ -151,7 +148,6 @@ var modal = document.getElementById("myModal4");
 var btn = document.getElementById("myBtn4");
 
 
-<<<<<<< HEAD
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -206,9 +202,7 @@ span.onclick = function(event) {
     modal.style.display = "none";
   }
   
-=======
 let color_label = {'white':'#FFFFFF', 'black':'000000', 'yellow':'FFCC00', 'skyblue':'#5AC8FA', 'red':'#FF3B30', 'purple':'AF52DE','pinkred':'#FF2D55', 'orange':'#FF9500', 'navy':'#5856D6', 'green':'#34C759', 'blue':'#007AFF', 'dark-gray':'#C1C1E'};
 
 
 
->>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
