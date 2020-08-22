@@ -2,7 +2,7 @@
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #white;
+	background: white;
 	opacity: .3;
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
@@ -97,4 +97,4 @@ input:focus::placeholder{
 
 
     /* 카운트다운 */
-$(".countdown").countdown();
+/* $(".countdown").countdown(); */

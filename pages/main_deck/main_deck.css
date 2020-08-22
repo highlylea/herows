@@ -113,6 +113,7 @@ a:hover{
 
 .onboard{
     width: 100%;
+    margin-bottom: 10rem;
 }
 
 
@@ -214,6 +215,17 @@ a:hover{
     color: black;
 }
 
+.last_access{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    text-align: right;
+
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+}
+
 
 /*new_section*/
 
@@ -272,6 +284,13 @@ a:hover{
     left: -1rem;
     margin: 0rem 10rem;
 }
+
+.daily_date_id{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 
 .daily_date{
     display: flex;
@@ -386,11 +405,19 @@ a:hover{
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 1.5rem;
 
     position: relative;
     right: 9rem;
-    bottom: 6.5rem;
+    top: 1.6rem;
+}
+
+.load_future:hover{
+    color: skyblue;
+}
+
+.load_future:active{
+    color: grey;
 }
 
 .load_month{
@@ -401,14 +428,14 @@ a:hover{
     
     position: relative;
     left: 7rem;
-    bottom: 2rem;
+    top: 1.8rem;
 }
 
 
 
 /*future-section*/
 
-.future_section{
+.future_section{    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,6 +445,7 @@ a:hover{
 
 
 .future{
+    width: 100%;
     display: none;
 }
 
@@ -431,7 +459,11 @@ a:hover{
     margin-top: 3rem;
     justify-content: flex-start;
     align-items: center;
+}
 
+.past{
+    width: 100%;
+    /*display: none;*/
 }
 
 
@@ -448,13 +480,15 @@ a:hover{
     border: none;
     background-color: #5AC8FA;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .load_past:active{
     border: 0.3px solid grey;
 }
 
+<<<<<<< HEAD
 
 /* Modal */
 /* The Modal (background) */
@@ -519,3 +553,5 @@ button{
     /* The savelog1 Button */
 
 }
+=======
+>>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
