@@ -669,11 +669,11 @@ position: right;
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin-top:  5%;
-    margin-left: 20%;
+    margin-top:  12%;
+    margin-left: 25%;
     padding: 20px;
     border: 1px solid #888;
-    width: 30%;
+    width: 25%;
     height:10%;
     border-radius: 1rem;
 
@@ -685,7 +685,7 @@ position: right;
     height: 21%;
     width: 200px;
     position: fixed;
-    margin-top:10%;
+    margin-top:17%;
     margin-left:53%;
     z-index: 1;
     top: 0;
@@ -712,6 +712,18 @@ position: right;
     cursor: pointer;
     outline: none;
 }
+
+
+
+.log_emoji2{
+    font-size: 4rem;
+    margin: 0rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0rem;
+}
+
 
 
 /* On mouse-over */
@@ -753,17 +765,13 @@ position: right;
 }
 
 #newlog_user1{
-    
+    width: 80%;
+    text-align: left;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid rgb(179, 174, 174);
+    margin: 0rem 0rem 0rem 1rem;
 }
-
-.newlog_input{
-    
-}
-
-
-
-
-
 
 /*category test */
 
