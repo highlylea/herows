@@ -71,9 +71,11 @@ $('.load_future').click(function () {
   }
   
 });
+// Top & down(bottom) button
 $('.top_button').click(()=>$('.log_section').animate({scrollTop: 0},"fast"));
-$('.down_button').click(()=>$('.log_section').animate({scrollTop: 999999},"fast"));
-
+$('.down_button').click(()=>$('.log_section').animate({
+  scrollTop: $('.log_section').prop("scrollHeight")}, 'fast'));
+// 
 
 
 /*스쿠버*/
