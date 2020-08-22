@@ -29,9 +29,9 @@ list.addEventListener('click', function (ev) {
 }, false);
 */
 
-
 // user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
+
 function newElement1() {
   var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;
@@ -172,19 +172,26 @@ function newElement5() {
 
 
 
-
-
-
-
-
-
-
-
-
-// 가로슬라이더 테스트
-var swiper = new Swiper('.swiper-container', {
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    hide: true,
-  },
+//D-day 
+$(function () {
+  $("#datepicker").datepicker({
+    dateFormat: 'yy-mm-dd',
+    onSelect: function (date) {
+      var dday = date.split('-');
+      var deadline = new Date(`${dday[0]} ${dday[1]}, ${dday[2]} 00:00:00`).getTime();
+      var today = new Date();
+      today = today.getTime();
+      var distance = deadline - today;
+      var day_distance = Math.floor(distance / (1000 * 60 * 60 * 24));
+      day_distance += 1;
+      if (day_distance == 0) {
+        $('.hasDatepicker')[0].value = "D-day";
+      } else if (day_distance > 0) {
+        $('.hasDatepicker')[0].value = 'D-' + (day_distance).toString();
+      } else {
+        $('.hasDatepicker')[0].value = 'D+' + (-1 * (day_distance)).toString();
+      }
+    }
+  });
 });
+

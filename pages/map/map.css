@@ -497,7 +497,6 @@ Input:focus {
   background-color: #bbb;
 }
 
-
 [type="date"] {
   background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
 } 
@@ -511,6 +510,10 @@ Input:focus {
 .desti > label {
   display: block;
 }
+
+
+/* style of d-day counter  */
+
 #dday {
   border: 1px solid white;
   border-radius: 30px;
@@ -519,5 +522,4 @@ Input:focus {
   /* box-shadow: inset 0 3px 6px rgba(0,0,0,0.1); */
   width: 190px;
   font: 'Montserrat', sans-serif; 
-
 }

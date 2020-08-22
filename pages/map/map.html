@@ -9,7 +9,11 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="map.css">
-  <script src="map.js"></script>
+  <script src='map.js'></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
+  <!-- <script src="../datepicker_practice/datepicker.js"></script> -->
   <title>HEROWS</title>
 </head>
 
@@ -38,11 +42,15 @@
       <div class="desti 1" id="desti1">
         <img src="../image/desti_empty.png" width=170px class="desti-empty-img">
 
-          <!--디데이 카운드 다운 연습 -->
+        <!--디데이 카운드 다운 연습 -->
 
+
+
+        <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
 
         <div class="upcoming-desti">
           <input type="textarea" placeholder="Upcoming Destination"> </div>
+
       </div>
 
       <div class="desti 2" id="visited-desti">
@@ -156,8 +164,7 @@
         <div id="myDIV" class="header">
           <input type="text" id="myInput" placeholder="새 마일스톤 추가하기">
           <span onclick="newElement1()" class="addBtn" id="Btn1"> + </span> <br>
-          <hr align="left" style="border: solid 1p #bbb; width: 70%;">
-    
+          <hr align="left" style="border: solid 1p #bbb; width: 70%;">    
         </div>
         <ul id="miUl">
         </ul>
@@ -222,7 +229,6 @@
     </div>
 
   </div>
-
 
 </body>
 
