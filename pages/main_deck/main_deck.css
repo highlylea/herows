@@ -391,8 +391,42 @@ a:hover{
     margin: 0rem;
     height: 0px;
 }
+.top_button{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
 
+    border: none;
+    outline: none;
+    background: transparent;
 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    position: relative;
+    right: 9rem;
+    top: 23rem;
+}
+.down_button{
+    font-family: 'Montserrat', sans-serif;
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    position: relative;
+    right: 9rem;
+    top: 28rem;
+}
 .load_future{
     font-family: 'Montserrat', sans-serif;
     width: 2rem;
@@ -422,13 +456,13 @@ a:hover{
 
 .load_month{
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.5rem;
     align-self: flex-start;
     
     position: relative;
-    left: 7rem;
-    top: 1.8rem;
+    left: 6rem;
+    top: 2.5em;
 }
 
 
@@ -446,6 +480,16 @@ a:hover{
 
 .future{
     width: 100%;
+    display: none;
+}
+
+.future_alert{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+
     display: none;
 }
 
@@ -488,7 +532,6 @@ a:hover{
     border: 0.3px solid grey;
 }
 
-<<<<<<< HEAD
 
 /* Modal */
 /* The Modal (background) */
@@ -552,6 +595,21 @@ button{
 
     /* The savelog1 Button */
 
+
+
+
+
+
+
+
+
+/*category test*/
+
+.category_menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: content;
+    background-color: skyblue;
 }
-=======
->>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
+

@@ -120,6 +120,8 @@
     <div class="micro_menu">
         <p class="load_month">8월</p>
         <button class="load_future">more</button>
+        <button class="top_button">top</button>
+        <button class="down_button">down</button>
     </div>
 
     
@@ -129,23 +131,22 @@
     <!--Adding New Block-->
     
     <div class="new_section">
+
         <div class="new_log user1">
-            <!-- Add Log -->
-            <button id="myBtn"><p class="modal_btn">+ Add Log</p> </button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
+     
+            <button id="myBtn1"><p class="modal_btn">+ Add Log</p> </button>
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-                <span class="close" id="close1">&times;</span>
+                <span class="close" id=close2>&times;</span>
                 <p>Some text in the Modal..</p>
             </div>
-
             </div>
-
-
         </div>
+     
+        
+
         <div class="new_log user2">
      
             <button id="myBtn2"><p class="modal_btn">+ Add Log</p> </button>
@@ -210,9 +211,15 @@
 <!--log_section에는 overflow:scroll이 걸려 있음!-->
 <div class="log_section">
             <!--Future Log-->
-    <div class="rows_container future_section">
+    <div class="future rows_container future_section">
          <!--future row 들어갈 곳-->
-        <div class="future daily_date_id" id="08-31">
+    </div>
+
+    <!--Daily Log-->    
+
+    <div class="rows_container present_section">
+        <h3 class="future_alert">로딩 완료! 스크롤을 올려 미래의 로그를 계획해보세요! 🤩</h3>
+        <div class="daily_date_id" id="08-31">
             <div class="daily_date">
                 <p class="today_date">31</p>
                 <div class="blank_space"></div>
@@ -250,13 +257,7 @@
                             <button class="emoji log_emoji">🤗</button>
                         </div>
                     </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
+
                 </div>
     
                 <div class="daily_log user4">
@@ -282,9 +283,10 @@
                 </div>
             </div>
         </div>
-        <div class="future daily_date_id" id="08-30">
+
+        <div class="daily_date_id" id="08-31">
             <div class="daily_date">
-                <p class="today_date">30</p>
+                <p class="today_date">31</p>
                 <div class="blank_space"></div>
             </div>
     
@@ -320,13 +322,7 @@
                             <button class="emoji log_emoji">🤗</button>
                         </div>
                     </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
+
                 </div>
     
                 <div class="daily_log user4">
@@ -352,14 +348,10 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--Daily Log-->    
-
-    <div class="rows_container present_section">
-        <div class="daily_date_id" id="08-80">
+        <div class="daily_date_id" id="08-31">
             <div class="daily_date">
-                <p class="today_date">12</p>
+                <p class="today_date">31</p>
                 <div class="blank_space"></div>
             </div>
     
@@ -395,13 +387,7 @@
                             <button class="emoji log_emoji">🤗</button>
                         </div>
                     </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
+
                 </div>
     
                 <div class="daily_log user4">
@@ -428,9 +414,9 @@
             </div>
         </div>
 
-        <div class="daily_date_id" id="08-12">
+        <div class="daily_date_id" id="08-31">
             <div class="daily_date">
-                <p class="today_date">12</p>
+                <p class="today_date">31</p>
                 <div class="blank_space"></div>
             </div>
     
@@ -466,84 +452,7 @@
                             <button class="emoji log_emoji">🤗</button>
                         </div>
                     </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user4">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user5">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="daily_date_id" id="08-13">
-            <div class="daily_date">
-                <p class="today_date">12</p>
-                <div class="blank_space"></div>
-            </div>
-    
-            <div class="daily_row">
-                <div class="daily_log user1">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user2">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user3">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
                 </div>
     
                 <div class="daily_log user4">
@@ -568,387 +477,24 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="daily_date_id" id="08-14">
-            <div class="daily_date">
-                <p class="today_date">12</p>
-                <div class="blank_space"></div>
-            </div>
-    
-            <div class="daily_row">
-                <div class="daily_log user1">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user2">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user3">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user4">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user5">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="daily_date_id" id="08-15">
-            <div class="daily_date">
-                <p class="today_date">12</p>
-                <div class="blank_space"></div>
-            </div>
-    
-            <div class="daily_row">
-                <div class="daily_log user1">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user2">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user3">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user4">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user5">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="daily_date_id" id="08-16">
-            <div class="daily_date">
-                <p class="today_date">12</p>
-                <div class="blank_space"></div>
-            </div>
-    
-            <div class="daily_row">
-                <div class="daily_log user1">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user2">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user3">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user4">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user5">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="daily_date_id" id="08-17">
-            <div class="daily_date">
-                <p class="today_date">12</p>
-                <div class="blank_space"></div>
-            </div>
-    
-            <div class="daily_row">
-                <div class="daily_log user1">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user2">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user3">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user4">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="daily_log user5">
-                    <div class="block hidden"></div>
-                    <div class="block log">
-                        <span class="category_color"></span>
-                        <div class="log_info">
-                            <p>생활코딩 JS 1강 수강</p>
-                            <button class="emoji log_emoji">🤗</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
+        </div> 
 
     </div>
 
 
     <div class="rows_container past_section">
-        <div class="past">
-            <div class="past daily_date_id" id="08-12">
-                <div class="daily_date">
-                    <p class="today_date">12</p>
-                    <div class="blank_space"></div>
-                </div>
-        
-                <div class="daily_row">
-                    <div class="daily_log user1">
-                        <div class="block hidden"></div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="daily_log user2">
-                        <div class="block hidden"></div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="daily_log user3">
-                        <div class="block hidden"></div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="daily_log user4">
-                        <div class="block hidden"></div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="daily_log user5">
-                        <div class="block hidden"></div>
-                        <div class="block log">
-                            <span class="category_color"></span>
-                            <div class="log_info">
-                                <p>생활코딩 JS 1강 수강</p>
-                                <button class="emoji log_emoji">🤗</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <button class="load_past">+ 과거 2주 더보기</button>
     </div>
 
+
+    <div class="category_menu">
+        <input class="search_value"> 
+    </div>
+
+
+
 </div> <!--log section end-->
-
 </div> <!--onboard end-->
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 24facd0f252acb89288443340a78f344587fbbf3
-
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="../../modules/vanilla-javascript-emoji-picker-master/fgEmojiPicker.js"></script>
 <script src="main_deck.js"></script>
