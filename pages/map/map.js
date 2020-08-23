@@ -26,7 +26,6 @@ var i;
 // Create a new list item when clicking on the "Add" button
 
 
-
 function newElement1(){
 
   var li = document.createElement("li"); //Create li element
@@ -94,32 +93,7 @@ function newElement1(){
           })
     });
 
-
-
-  // //coloring gem
-  // for (i = 0; i < close.length; i++) {
-  //     close[i].onclick = function (){
-        
-  //       var answer = confirm("마일스톤을 벌써 달성했어?🤭")
-
-  //       if (answer){
-  //         alert ("축하해! 내가 아끼는 보석 하나 주지!")
-  //         var graydegree = document.getElementById('id-gem');
-  //         graydegree.style.filter="grayscale(0%)";
-  //         }
-  //         else {
-  //           alert ("조금 더 노를 저으라구!")
-  //           // var div = this.parentElement;
-  //           // div.style.display = "none";
-  //         }
-  
-  //       }
-        
-        
-}
-
-
-
+  }
 
 //user2-adding milestone 
 // Create a new list item when clicking on the "Add" button
