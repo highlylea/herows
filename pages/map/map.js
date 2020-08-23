@@ -63,32 +63,61 @@ function newElement1(){
   //   ele.setAttribute("id", 'gem' + (g + 1));
   // })
 
-  for (i = 0; i < close.length; i++) {
-      close[i].onclick = function (){
-        
-        var answer = confirm("마일스톤을 벌써 달성했어?🤭")
+  // $(function(){
+  //   $('span.gem-icon').click(function(){
+  //     $(this).css.filter("grayscale(0%)");
+  //   });
+  // });
 
-        if (answer){
-          alert ("축하해! 내가 아끼는 보석 하나 주지!")
-          var graydegree = document.getElementById('id-gem');
-          graydegree.style.filter="grayscale(0%)";
-        }
-        
+  //gem coloring 
+  //보석을 클릭하고 alert를 확인하면 보석의 색이 바뀐다
+  $(function(){
+    $('span.gem-icon').click(function(){
+         
+         for (i = 0; i < close.length; i++) {
+          close[i].onclick = function (){
+            var answer = confirm("마일스톤을 벌써 달성했어?🤭")
+            if (answer){
+              alert ("축하해! 내가 아끼는 보석 하나 주지!")
+              $(this).css("filter","grayscale(0%)");
+              }
+              else {
+                alert ("조금 더 노를 저으라구!")
+              }
+
+          }
+          
       
-        else {
-          alert ("조금 더 노를 저으라구!")
-          // var div = this.parentElement;
-          // div.style.display = "none";
-        }
+            }
+            
+            
+          })
+    });
 
 
 
-      }
-      
+  // //coloring gem
+  // for (i = 0; i < close.length; i++) {
+  //     close[i].onclick = function (){
+        
+  //       var answer = confirm("마일스톤을 벌써 달성했어?🤭")
 
-    }
-
+  //       if (answer){
+  //         alert ("축하해! 내가 아끼는 보석 하나 주지!")
+  //         var graydegree = document.getElementById('id-gem');
+  //         graydegree.style.filter="grayscale(0%)";
+  //         }
+  //         else {
+  //           alert ("조금 더 노를 저으라구!")
+  //           // var div = this.parentElement;
+  //           // div.style.display = "none";
+  //         }
+  
+  //       }
+        
+        
 }
+
 
 
 
