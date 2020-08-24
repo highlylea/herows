@@ -156,11 +156,11 @@
                 <!--드롭다운-->
                     <div class="sidenav" >
                         <div class="w3-container">
-                            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">🌈 카테고리</button>
-                            <!--Modal id02-->
-                            <div id="id02" class="w3-modal">
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">🌈 카테고리</button>
+                            <!--Modal id01-->
+                            <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content">
-                                <span onclick="document.getElementById('id02').style.display='none'" 
+                                <span onclick="document.getElementById('id01').style.display='none'" 
                                 class="w3-button w3-display-topright">&times;</span>
                                 <div class="w3-container"> <!--중앙블럭-->
                                     <div class="category_menu">
@@ -218,7 +218,7 @@
 
                     <a href="#services" class="log_category" id="nav_milestone">⛳️ 마일스톤</a>
                     <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
-                    <a href="#clients" class="log_category" id="nav_date">🔗 첨부하기</a>
+                    <!-- <a href="#clients" class="log_category" id="nav_date">🔗 첨부하기</a> -->
                     <!-- <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a> -->
                     <a href="#delete" class="log_category" id="nav_delete">❌ 삭제하기</a>
                      
@@ -226,12 +226,12 @@
                     <!--이중모달_나의 노력section-->
                     
                     <div class="w3-container">
-                    <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">⏰ 나의노력</button>
+                    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">⏰ 나의노력</button>
                       
-                        <div id="id04" class="w3-modal">
+                        <div id="id03" class="w3-modal">
                           <div class="w3-modal-content">
                             <header class="w3-container w3-teal"> 
-                              <span onclick="document.getElementById('id04').style.display='none'" 
+                              <span onclick="document.getElementById('id03').style.display='none'" 
                               class="w3-button w3-display-topright">&times;</span>
                             </header>
                             <br>
@@ -275,17 +275,17 @@
                           </div>
                         </div>
                       </div>
-                     <!--이중모달_나의 모력 section-->
+                     <!--이중모달_나의 노력 section-->
 
      <!--이중모달_푸시하기 section-->
                     
      <div class="w3-container">
-        <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">📣 푸시하기</button>
+        <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">📣 푸시하기</button>
           
-            <div id="id05" class="w3-modal">
+            <div id="id04" class="w3-modal">
               <div class="w3-modal-content">
                 <header class="w3-container w3-teal"> 
-                  <span onclick="document.getElementById('id05').style.display='none'" 
+                  <span onclick="document.getElementById('id04').style.display='none'" 
                   class="w3-button w3-display-topright">&times;</span>
                 </header>
                 <br>
@@ -303,6 +303,36 @@
           </div>
          <!--이중모달_푸시하기 section 끝-->
 
+<!--이중모달_첨부하기 section-->
+                                        
+                        <div class="w3-container">
+                            <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">🔗 첨부하기</button>
+                            
+                                <div id="id05" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <header class="w3-container w3-teal"> 
+                                    <span onclick="document.getElementById('id05').style.display='none'" 
+                                    class="w3-button w3-display-topright">&times;</span>
+                                    </header>
+                                    <br>
+                                    <div class="w3-container">         
+                                        <span class="url_title">URL </span><input type="text" name="link_add" class="link_add" placeholder="URL을 입력해주세요"><br><br>
+                                        <span class="url_title">파일 </span>
+                                        <div class="filebox">
+                                            <input class="upload-name" value="파일선택" disabled="disabled"> 
+                                            <label for="ex_filename">첨부하기</label>
+                                            <input type="file" id="ex_filename" class="upload-hidden"> 
+                                        </div>
+                                        <input type=text name="link_info" placeholder="자료에 대한 설명을 적어주세요.">
+                                        <button type=onclick class="main_button" >OK!</button>
+                                    </div>
+                                    <br>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- 이중모달_첨부하기 section 끝--> 
+
+         
 
                     </div>
                     </div>
