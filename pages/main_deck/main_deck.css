@@ -572,10 +572,16 @@ a:hover{
 
     width: 240px;
     padding: 15px 10px;
-    margin: 20px;
+    margin: 13px;
+    margin-bottom: 0px; 
     background-color: white;
     border-radius: 15px;
     /*display: none;*/
+}
+
+.w3-teal, .w3-hover-teal:hover {
+    color: gray; !important;
+    background-color: transparent !important;
 }
 
 .search_value{
@@ -621,4 +627,45 @@ a:hover{
     padding-left: 10px;
     visibility: hidden;
 
+}
+
+
+/* 버튼들 */
+
+.sub_button{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 30px;
+    width: content;
+    padding: 3px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sub_button:active{
+    border: 0.3px solid rgb(185, 185, 185);
+}
+
+
+
+.main_button{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    color: black;
+    background-color: #5AC8FA;
+    border-radius: 15px;
+    width: content;
+    padding: 3px 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.main_button:active{
+    border: 0.3px solid rgb(185, 185, 185);
 }

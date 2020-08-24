@@ -223,7 +223,7 @@ position: right;
     font-size: 2rem;
 
     color: black; 
-    background-color:transparent !important}
+    background-color: transparent !important}
 
 .w3-container{
     text-align: center;
@@ -239,6 +239,10 @@ position: right;
 .w3-display-topright{
   text-align: right;
   padding-right: 10px;
+}
+
+footer{
+  background: transparent;
 }
 
 .rating {
@@ -352,6 +356,3 @@ position: right;
 }
 
 /* 모달의 모달 */
-
-
-
