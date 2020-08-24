@@ -153,7 +153,7 @@
                         <br>
                     </div>
                 <!--드롭다운-->
-                    <div class="sidenav">
+                    <div class="sidenav" >
                     <a href="#about" class="log_category" id="nav_category">🗂카테고리</a>
                     <a href="#services" class="log_category" id="nav_milestone">⛳️마일스톤</a>
                     <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
@@ -163,7 +163,7 @@
                      <!--이중모달-->
                     
                      <div class="w3-container">
-                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">이중모달 테스트</button>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">⏰나의노력</button>
                       
                         <div id="id01" class="w3-modal">
                           <div class="w3-modal-content">
@@ -175,13 +175,46 @@
                             <div class="w3-container">
                                 <br>
                                 <form action="/action_page.php">
-                                    <label for="appt">Select a time:</label>
+                                    <label for="appt">얼마나 오랫동안 노를 저었나요? <br> </label>
                                     <input type="time" id="appt" name="appt">
                                     <input type="submit">
                                 </form>
                                   
+                              <p>얼마나 도전적인 과제였나요?</p>
+                              <form class="rating">
+                                <label>
+                                  <input type="radio" name="stars" value="1" />
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="2" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="3" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>   
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="4" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="5" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                              </form>
                               <p>Some text..</p>
-                              <p>Some text..</p>
+
                             </div>
                             <footer class="w3-container w3-teal">
                               <p>Modal Footer</p>

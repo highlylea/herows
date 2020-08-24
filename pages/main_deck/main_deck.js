@@ -95,15 +95,12 @@ $('.down_button').click(()=>$('.log_section').animate({
    });
  }
 /*스쿠버*/
+// 이중모달
+// 나의노력
 
-
-
-
-// DEBUG
-// When the user clicks on <span> (x), close the modal
-span.onclick = function(event) {
-    modal.style.display = "none";
-  }
+$(':radio').change(function() {
+  console.log('New star rating: ' + this.value);
+});
   
 
 
