@@ -76,27 +76,35 @@ body {
   background-color: white;
 }
 
-
 /* map menu */
 
 .desti-section {
   display: flex;
   flex-direction: row;
-  margin: 50px 100px;
+  /* /* margin: 0px 100px; */
+  margin:100px 0px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-/* whole box of cards */
+/* whole box of destination cards 데스티네이션 카드의 container */
 .destiLi {
   display: flex;
   flex-direction: row;
+  margin:10px 100px;
   font-family: 'Noto Sans KR', sans-serif;
+  list-style:none;
+  padding-inline-start:0em;
 }
 
 /* team vision in destination section*/
 
+#desti-vision-card{
+  background: rgb(255, 204, 0);
+  background: linear-gradient(174deg, rgba(255, 204, 0, 1) 9%, rgba(129, 212, 250, 1) 70%);
+}
+
 .desti-vision {
-  background-color: #5AC8FA;
+  background:transparent;
   color: white;
   text-align: center;
   border-radius: 30px;
@@ -108,24 +116,25 @@ body {
   padding-bottom: 60px;
 }
 
-
-
 /* destination block in general */
 .desti, .newDestiLi {
   background-color: #5AC8FA;
   border-radius: 30px;
   border: 0.5px white;
-  width: 300px;
+  width: 400px;
   margin: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* 데스티네이션 카드 hover시 더 많은 양의 shade를 부여함 */
+.newDestiLi:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
 }
-
 
 .addDestiBtn{
   padding: 3px;
@@ -145,10 +154,7 @@ body {
 .addDestiBtn:hover{
   background-color: #bbb;
 }
-/* 
-.destiLi{
-  list-style:none;
-} */
+
 
 /*destination upcoming*/
 .desti-empty-img {
