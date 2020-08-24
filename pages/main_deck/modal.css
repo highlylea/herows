@@ -329,6 +329,14 @@ footer{
 
 
 }
+
+/* 이중모달_푸시하기 */
+
+input>.push_button{
+  background-color:blue;
+}
+
+
 /* Main content */
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */

@@ -219,7 +219,7 @@
                     <a href="#services" class="log_category" id="nav_milestone">⛳️ 마일스톤</a>
                     <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
                    
-                    <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a>
+                    <!-- <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a> -->
                     <a href="#delete" class="log_category" id="nav_delete">❌ 삭제하기</a>
                      
                     
@@ -274,31 +274,38 @@
                           </div>
                         </div>
                       </div>
-
-
-                     <!-- <a data-toggle="modal" href="#doublemodal" class="btn2 btn-primary">이중모달 테스트</a>
-
-                     <div class="modal" id="doublemodal">
-                         <div class="modal-dialog modal-lg">
-                           <div class="modal-content2">
-                             <div class="modal-header">
-                               <h4 class="modal-title">이중 모달 테스트</h4>    
-                             </div>
-                             <div class="container"></div>
-                             <div class="modal-body">
-                               Content for the dialog / modal goes here.
-                             </div>
-                             <div class="modal-footer">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default2" data-dismiss="modal">cancle</button>
-                                    <input type="submit" value="Submit" class="btn btn-default2" data-dismiss="modal">
-                                 <button type="button" class="btn btn-default" data-dismiss="modal">Save</button> -->
-                                <!-- </div>
-                             </div>
-                           </div>
-                         </div>
-                        </div>  -->
                      <!--이중모달_나의 모력 section-->
+
+     <!--이중모달_푸시하기 section-->
+                    
+     <div class="w3-container">
+        <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">📣 푸시하기</button>
+          
+            <div id="id05" class="w3-modal">
+              <div class="w3-modal-content">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id05').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                </header>
+                <br>
+                <div class="w3-container">
+                   <form action="/action_page.php">
+                    <label for="fname"><h6>팀원들에게 뭐라고 외칠까요?</h6></label>
+                    <form name="input" method="post" action="">
+                        <input type="text" name="push_message"><br><br>
+                        <!-- <input type="submit" value="Push!" class="push_button"> -->
+                    <button type=onclick class="main_button">Push!</h5>
+                    </form>
+                  </form> 
+                
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+         <!--이중모달_푸시하기 section-->
+
+
                     </div>
                     </div>
                 <div class="modal-footer">
