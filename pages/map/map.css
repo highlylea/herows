@@ -82,15 +82,16 @@ body {
   display: flex;
   flex-direction: row;
   /* /* margin: 0px 100px; */
-  margin:100px 0px;
+  margin:50px 0px;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
 
 /* whole box of destination cards 데스티네이션 카드의 container */
 .destiLi {
   display: flex;
   flex-direction: row;
-  margin:10px 100px;
+  margin:10px 70px;
   font-family: 'Noto Sans KR', sans-serif;
   list-style:none;
   padding-inline-start:0em;
@@ -121,7 +122,7 @@ body {
   background-color: #5AC8FA;
   border-radius: 30px;
   border: 0.5px white;
-  width: 400px;
+  width: 300px;
   margin: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -132,12 +133,31 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 /* 데스티네이션 카드 hover시 더 많은 양의 shade를 부여함 */
-.newDestiLi:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+
+/* animation for new destination card */
+.newDestiLi{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
 }
 
-.addDestiBtn{
-  padding: 3px;
+/* 데스티네이션 카드에 hover하면 scale이 커짐  */
+.newDestiLi:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);  
+}
+
+/* detination추가하는 버튼의 style */
+
+.newDestiBtn{
+  padding: 2px;
   width: 3%;
   /* background: #d9d9d9; */
   background: white;
@@ -145,13 +165,13 @@ body {
   float: right;
   text-align: center;
   font-size: 15px;
-  font-weight: 9em;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 2em;
 }
 
-.addDestiBtn:hover{
+.newDestiBtn:hover{
   background-color: #bbb;
 }
 
