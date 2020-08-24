@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="main_deck.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <script src="../../modules/jquery/jquery-3.5.1.min.js"></script>
 
     <title>HEROWS</title>
@@ -122,8 +123,8 @@
     <div class="micro_menu">
         <p class="load_month">8월</p>
         <button class="load_future">more</button>
-        <button class="top_button">top</button>
-        <button class="down_button">down</button>
+        <button class="top_button">△</button>
+        <button class="down_button">▽</button>
     </div>
 
     
@@ -135,7 +136,7 @@
     <div class="new_section">
         <div class="new_log user1">  
 
-            <!--Modal을 이렇게 html에 5번 중복하는것보다 JS로 처리가능할것같음--> 
+
         <!-- Trigger the modal with a button -->
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
         <!-- Modal -->
@@ -153,7 +154,7 @@
                         <br>
                     </div>
                 <!--드롭다운-->
-                    <div class="sidenav">
+                    <div class="sidenav" >
                     <a href="#about" class="log_category" id="nav_category">🗂카테고리</a>
                     <a href="#services" class="log_category" id="nav_milestone">⛳️마일스톤</a>
                     <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
@@ -163,7 +164,7 @@
                      <!--이중모달-->
                     
                      <div class="w3-container">
-                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">이중모달 테스트</button>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">⏰나의노력</button>
                       
                         <div id="id01" class="w3-modal">
                           <div class="w3-modal-content">
@@ -173,15 +174,53 @@
                               <h2>Modal Header</h2>
                             </header>
                             <div class="w3-container">
-                                <br>
-                                <form action="/action_page.php">
-                                    <label for="appt">Select a time:</label>
+                                
+                                <p>얼마나 오랫동안 노를 저었나요? <br></p>
+                                <form action="/form/submit" method="post">
+                                    <input type="number" min="1" max="24" step="1" name="number-of-colors">
+                                  </form>   
+
+                                <!-- <form action="/action_page.php">
+                                    <label for="appt">얼마나 오랫동안 노를 저었나요? <br> </label>
                                     <input type="time" id="appt" name="appt">
                                     <input type="submit">
                                 </form>
-                                  
+                                   -->
+                              <p>얼마나 도전적인 과제였나요?</p>
+                              <form class="rating">
+                                <label>
+                                  <input type="radio" name="stars" value="1" />
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="2" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="3" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>   
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="4" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="stars" value="5" />
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                  <span class="icon">★</span>
+                                </label>
+                              </form>
                               <p>Some text..</p>
-                              <p>Some text..</p>
+
                             </div>
                             <footer class="w3-container w3-teal">
                               <p>Modal Footer</p>
@@ -537,75 +576,45 @@
 <div class="category_menu">
     <input class="search_value" type="text" placeholder=" 여기에 검색할 텍스트를 입력해!" onkeyup="search()" id="value">
     <div class="category_box cat1">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">기획</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">기획</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat2">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">디자인</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">디자인</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat3">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">개발</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">개발</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat4">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 4</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">데이터</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat5">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 5</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">UX</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat6">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 6</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">비즈니스</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat7">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 7</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">마케팅</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat8">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 8</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">Label 8</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat9">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 9</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
+        <h5 class="category_name">Label 9</h5>
+        <img class="category_check" src="../image/check.png">
     </div>
     <div class="category_box cat10">
-        <div class="category_group">
-            <img class="category_check" src="../image/check.png">
-            <h5 class="category_name">Label 10</h5>
-        </div>
-        <img class="category_edit" src="../image/edit.png">
-    </div>
+        <h5 class="category_name">Label 10</h5>
+        <img class="category_check" src="../image/check.png">
+
 </div>
 
 

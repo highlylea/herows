@@ -1,0 +1,346 @@
+
+/* The Modal (background) */
+
+
+.log_emoji2{
+    font-size: 4rem;
+    margin: 0rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0rem;
+}
+
+
+.btn.btn-info.btn-lg{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #5AC8FA;
+    text-align: right;
+    margin-top: 1em;
+}
+
+button{
+    border: none;
+    background-color:rgb(235, 235, 235);
+    
+    
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  }
+
+  .modal-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    
+  }
+
+  .modal-header{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    text-align: center;
+  }
+  .modal-body{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;    
+    color: #1C1C1E;
+    text-align: center;
+  }
+  
+.button.close {
+position: right;
+}
+  .btn.btn-default{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    /* dark-theme-gray / 1 */
+    
+    color: #1C1C1E;
+    border: none;
+    background: #5AC8FA;    
+    border-radius: 10px; 
+
+
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+  }
+
+
+.modal-content2{
+    background-color: #fefefe;
+    margin-top:  12%;
+    margin-left: 1200px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height:10%;
+    border-radius: 1rem;  
+}
+
+  .btn.btn-default2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    /* dark-theme-gray / 1 */
+    
+    color: #1C1C1E;
+    border: none;
+    background: orangered;    
+    border-radius: 10px; 
+
+
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin-top:  12%;
+    margin-left: 25%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height:10%;
+    border-radius: 1rem;
+
+  }
+  
+/* new log modal dropdown */
+    /* Fixed sidenav, full height */
+.sidenav {
+    height: 400px;
+    width: 200px;
+    position: fixed;
+    margin-top:17%;
+    margin-left:53%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#5AC8FA;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 1rem;
+    overflow:hidden;
+    text-align: left;
+
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}    
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: rgb(241, 197, 0);
+}
+
+
+
+/* 이중모달 */
+/* 나의 노력 */
+.w3-button{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    padding-top: 0.2em;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+.w3-button:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: rgb(241, 197, 0)!important;background-color:#5AC8FA!important}
+
+.w3-container{
+    text-align: center;
+    width: 20em;
+}
+
+.w3-modal-content{
+    width: 20em;
+}
+
+.rating {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        font-size: 50px;
+      }
+      
+      .rating label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        cursor: pointer;
+      }
+      
+      .rating label:last-child {
+        position: static;
+      }
+      
+      .rating label:nth-child(1) {
+        z-index: 5;
+      }
+      
+      .rating label:nth-child(2) {
+        z-index: 4;
+      }
+      
+      .rating label:nth-child(3) {
+        z-index: 3;
+      }
+      
+      .rating label:nth-child(4) {
+        z-index: 2;
+      }
+      
+      .rating label:nth-child(5) {
+        z-index: 1;
+      }
+      
+      .rating label input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      
+      .rating label .icon {
+        float: left;
+        color: transparent;
+      }
+      
+      .rating label:last-child .icon {
+        color: #000;
+      }
+      
+      .rating:not(:hover) label input:checked ~ .icon,
+      .rating:hover label:hover input ~ .icon {
+        color: #09f;
+      }
+      
+      .rating label input:focus:not(:checked) ~ .icon:last-child {
+        color: #000;
+        text-shadow: 0 0 5px #09f;
+      }
+
+
+}
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+/* .active {
+    background-color: green;
+    color: white;
+} */
+
+/*Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content*/
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#newlog_user1{
+    width: 80%;
+    text-align: left;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid rgb(179, 174, 174);
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+/* 모달의 모달 */
+
+
+
