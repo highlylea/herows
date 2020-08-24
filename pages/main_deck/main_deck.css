@@ -582,6 +582,7 @@ a:hover{
 .w3-teal, .w3-hover-teal:hover {
     color: gray; !important;
     background-color: transparent !important;
+    text-align: center;
 }
 
 .search_value{
@@ -660,7 +661,7 @@ a:hover{
     color: black;
     background-color: #5AC8FA;
     border-radius: 15px;
-    width: content;
+    width: 95px;
     padding: 3px 30px;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -669,3 +670,4 @@ a:hover{
 .main_button:active{
     border: 0.3px solid rgb(185, 185, 185);
 }
+
