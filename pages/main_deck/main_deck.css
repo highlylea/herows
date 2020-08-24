@@ -638,6 +638,18 @@ position: right;
     margin: 10px 0px;
   }
 
+
+.modal-content2{
+    background-color: #fefefe;
+    margin-top:  12%;
+    margin-left: 1200px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height:10%;
+    border-radius: 1rem;  
+}
+
   .btn.btn-default2{
     font-family: Montserrat;
     font-style: normal;
@@ -714,7 +726,6 @@ position: right;
 }
 
 
-
 .log_emoji2{
     font-size: 4rem;
     margin: 0rem;
@@ -730,6 +741,23 @@ position: right;
 .sidenav a:hover, .dropdown-btn:hover {
     color: rgb(241, 197, 0);
 }
+
+
+
+/* 이중모달 */
+.w3-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+.w3-button:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: rgb(241, 197, 0)!important;background-color:#5AC8FA!important}
+
+
+
+
 
 
 /* Main content */
@@ -775,6 +803,7 @@ position: right;
 }
 
 /* 모달의 모달 */
+
 
 
 
