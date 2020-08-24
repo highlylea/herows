@@ -99,15 +99,6 @@ $('.down_button').click(()=>$('.log_section').animate({
 
 
 
-// DEBUG
-// When the user clicks on <span> (x), close the modal
-span.onclick = function(event) {
-    modal.style.display = "none";
-  }
-  
-
-
-
 
 /*------------------------------------------------------------------------------------Modal End -------------------------------------------------------------------------------------------- 모달 관련된건 이 밑으로 쓰지마세요--------------------------------------------------------------------------------------------*/
 
@@ -132,7 +123,7 @@ $('.cat10').css('background-color', color_label['dark-gray']);
 
 
 
-
+/*입력한 문자가 포함된 문자열 찾기*/
 function search(){
   var value, name, item, i;
 
@@ -148,3 +139,13 @@ function search(){
     }
   }
 }
+
+
+/*클릭한 부분만 체크, 나머지 체크들은 해제하기*/
+$('.category_box').click(function checkLabel(){
+  $('.category_check').css('visibility', 'hidden');
+  $(this).find('img').css('visibility', 'visible');
+  let currentLabel = this.className; 
+  //이 블록이 현재 속한 Label class명
+  console.log(currentLabel);
+});
