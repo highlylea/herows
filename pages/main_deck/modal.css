@@ -159,7 +159,7 @@ position: right;
 /* new log modal dropdown */
     /* Fixed sidenav, full height */
 .sidenav {
-    height: 265px;
+    height: 300px;
     width: 148px;
     position: fixed;
     margin-top:17%;
@@ -331,10 +331,6 @@ footer{
 }
 
 /* 이중모달_푸시하기 */
-
-input>.push_button{
-  background-color:blue;
-}
 
 
 /* Main content */
