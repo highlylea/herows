@@ -65,8 +65,6 @@ function newElement1() {
   document.getElementById("myInput").value = "";
 
 
-  
-
   //gem icon 
   var span1 = document.createElement("SPAN");
   var txt = document.createTextNode("💎");
