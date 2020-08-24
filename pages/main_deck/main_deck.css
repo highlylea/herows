@@ -49,6 +49,7 @@ a:hover{
 .jumbotron{
     margin: 0rem 10rem;
     margin-bottom: 0rem;
+
 }
 
 .navigator>h1{
@@ -59,12 +60,14 @@ a:hover{
 .slogan{
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
+    font-weight: 700;
     margin: 2rem;
 }
 
 .bubble, .bubble>h3, .bubble>input{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 0rem;
     text-align: center;
@@ -545,184 +548,7 @@ a:hover{
 /*모달과 관련된 건 이 위쪽으로 절대 삽입 금지!*/
 
 
-/* The Modal (background) */
 
-.btn.btn-info.btn-lg{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #5AC8FA;
-    text-align: right;
-    margin-top: 1em;
-}
-
-button{
-    border: none;
-    background-color:rgb(235, 235, 235);
-    
-    
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
-  }
-
-  .modal-title{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;    
-    color: #1C1C1E;
-    
-  }
-
-  .modal-header{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;    
-    color: #1C1C1E;
-    text-align: center;
-  }
-  .modal-body{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 28px;    
-    color: #1C1C1E;
-    text-align: center;
-  }
-  
-.button.close {
-position: right;
-}
-  .btn.btn-default{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 111% */
-    
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.25px;
-    
-    /* dark-theme-gray / 1 */
-    
-    color: #1C1C1E;
-    border: none;
-    background: #5AC8FA;    
-    border-radius: 10px; 
-
-
-    /* Inside Auto Layout */
-    
-    flex: none;
-    order: 0;
-    align-self: center;
-    margin: 10px 0px;
-  }
-
-
-.modal-content2{
-    background-color: #fefefe;
-    margin-top:  12%;
-    margin-left: 1200px;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height:10%;
-    border-radius: 1rem;  
-}
-
-  .btn.btn-default2{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 111% */
-    
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.25px;
-    
-    /* dark-theme-gray / 1 */
-    
-    color: #1C1C1E;
-    border: none;
-    background: orangered;    
-    border-radius: 10px; 
-
-
-    /* Inside Auto Layout */
-    
-    flex: none;
-    order: 0;
-    align-self: center;
-    margin: 10px 0px;
-  }
-
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin-top:  12%;
-    margin-left: 25%;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height:10%;
-    border-radius: 1rem;
-
-  }
-  
-/* new log modal dropdown */
-    /* Fixed sidenav, full height */
-.sidenav {
-    height: 21%;
-    width: 200px;
-    position: fixed;
-    margin-top:17%;
-    margin-left:53%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#5AC8FA;
-    overflow-x: hidden;
-    padding-top: 20px;
-    border-radius: 1rem;
-    
-
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
 }
 
 
@@ -736,77 +562,6 @@ position: right;
 }
 
 
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-    color: rgb(241, 197, 0);
-}
-
-
-
-/* 이중모달 */
-.w3-button{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: white;
-}
-.w3-button:hover{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: rgb(241, 197, 0)!important;background-color:#5AC8FA!important}
-
-
-
-
-
-
-/* Main content */
-.main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-/* .active {
-    background-color: green;
-    color: white;
-} */
-
-/*Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content*/
-
-.dropdown-container {
-    display: none;
-    background-color: #262626;
-    padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-    float: right;
-    padding-right: 8px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-#newlog_user1{
-    width: 80%;
-    text-align: left;
-    font-size: 17px;
-    border: none;
-    border-bottom: 1px solid rgb(179, 174, 174);
-    margin: 0rem 0rem 0rem 1rem;
-}
-
-/* 모달의 모달 */
-
-
-
-
 /*category test */
 
 .category_menu{
@@ -817,9 +572,16 @@ position: right;
 
     width: 240px;
     padding: 15px 10px;
-    margin: 20px;
-    background-color: skyblue;
+    margin: 13px;
+    margin-bottom: 0px; 
+    background-color: white;
     border-radius: 15px;
+    /*display: none;*/
+}
+
+.w3-teal, .w3-hover-teal:hover {
+    color: gray; !important;
+    background-color: transparent !important;
 }
 
 .search_value{
@@ -829,16 +591,19 @@ position: right;
     width: 200px;
     height: 30px;
     border-bottom: 0.5px solid grey;
-    padding: 0px 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
 
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    text-align: left;
 }
 
 .category_box{
-    width: 220px;
+    width: 210px;
     height: 30px;
-    margin: 10px 0px;
+    margin: 3px 0px;
+    padding: 3px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -846,36 +611,61 @@ position: right;
     border-radius: 10px;
 }
 
-.category_group{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-}
 
 .category_name{
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     color: white;
     margin: 0px;
 }
 
 
-.category_check, .category_edit{
-    width: 20px;
-    height: 20px;
-
-}
-
 .category_check{
+    width: 25px;
+    height: 20px;
     padding-left: 10px;
-    margin-right: 15px;
-    /*visibility: hidden;*/
+    visibility: hidden;
 
 }
 
-.category_edit{
-    padding-right: 10px;
-    justify-self: flex-end;
+
+/* 버튼들 */
+
+.sub_button{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 30px;
+    width: content;
+    padding: 3px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sub_button:active{
+    border: 0.3px solid rgb(185, 185, 185);
+}
+
+
+
+.main_button{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    color: black;
+    background-color: #5AC8FA;
+    border-radius: 15px;
+    width: content;
+    padding: 3px 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.main_button:active{
+    border: 0.3px solid rgb(185, 185, 185);
 }
