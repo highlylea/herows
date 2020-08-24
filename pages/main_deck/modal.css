@@ -159,8 +159,8 @@ position: right;
 /* new log modal dropdown */
     /* Fixed sidenav, full height */
 .sidenav {
-    height: 400px;
-    width: 200px;
+    height: 265px;
+    width: 148px;
     position: fixed;
     margin-top:17%;
     margin-left:53%;
@@ -173,6 +173,8 @@ position: right;
     border-radius: 1rem;
     overflow:hidden;
     text-align: left;
+    margin-top: 328px;
+    margin-left: 960px;
 
 }
 
@@ -230,11 +232,14 @@ position: right;
 .w3-container{
     text-align: center;
     width: 20em;
+   
 }
 
 .w3-modal-content{
     width: 20em;
     border-radius: 15px;
+    margin-top: 150px;
+    margin-left: 780px;
 }
 
 .w3-display-topright{
@@ -245,6 +250,12 @@ position: right;
 footer{
   background: transparent;
 }
+
+.w3-modal{
+/* background-color: #1C1C1E; */
+}
+
+
 
 .rating {
         display: inline-block;
