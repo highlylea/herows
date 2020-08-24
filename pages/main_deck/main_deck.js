@@ -98,10 +98,13 @@ $('.down_button').click(()=>$('.log_section').animate({
 // 이중모달
 // 나의노력
 
+<<<<<<< HEAD
 $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
 });
   
+=======
+>>>>>>> 6de792ef3656cc8a3fe2b094e29ee1e1cb7562fb
 
 
 
@@ -129,7 +132,7 @@ $('.cat10').css('background-color', color_label['dark-gray']);
 
 
 
-
+/*입력한 문자가 포함된 문자열 찾기*/
 function search(){
   var value, name, item, i;
 
@@ -145,3 +148,13 @@ function search(){
     }
   }
 }
+
+
+/*클릭한 부분만 체크, 나머지 체크들은 해제하기*/
+$('.category_box').click(function checkLabel(){
+  $('.category_check').css('visibility', 'hidden');
+  $(this).find('img').css('visibility', 'visible');
+  let currentLabel = this.className; 
+  //이 블록이 현재 속한 Label class명
+  console.log(currentLabel);
+});
