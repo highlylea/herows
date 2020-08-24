@@ -1,59 +1,76 @@
 
-// Create a "gem-icon" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI"); 
-var i; 
-var graydegree = 100;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("💎");
-  span.className = "gem-icon";
-  span.id="id-gem"
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Click on a gem-icon button to hide the current list item
-var close = document.getElementsByClassName("gem-icon");
-var i;
-// for (i = 0; i < close.length; i++) {
-//   // close[i].onclick = function () {
-//   // var div = this.parentElement;
-//   // div.style.display = "none";
-//   } 
+// // Create a "gem-icon" button and append it to each list item
+// var myNodelist = document.getElementsById("LI"); 
+// var i; 
+// for (i = 0; i < myNodelist.length; i++) {
+//   var span = document.createElement("SPAN");
+//   var txt = document.createTextNode("💎");
+//   span.className = "gem-icon";
+//   span.id="id-gem"
+//   span.appendChild(txt);
+//   myNodelist[i].appendChild(span);
 // }
+
+var close = document.getElementsByClassName("gem-icon");
+
+function milestDone(){
+  $(function () {
+    $('span.gem-icon').click(function() {
+
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var answer = confirm("마일스톤을 벌써 달성했어?🤭")
+          if (answer) {
+            alert("축하해! 내가 아끼는 보석 하나 주지!")
+            $(this).css("filter", "grayscale(0%)");
+          }
+          else {
+            alert("조금 더 노를 저으라구!")
+          }
+
+        }
+
+
+      }
+
+
+    })
+  });
+
+}
 
 // user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
 
-
-function newElement1(){
+function newElement1() {
 
   var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue1);
   li.appendChild(t);
   if (inputValue1 === '') { //prevents empty list items 
-    alert("마일스톤을 입력하라구!"); 
+    alert("마일스톤을 입력하라구!");
   } else {
     document.getElementById("miUl").appendChild(li); //text to list
+
   }
 
   //cal icon 
-  var span2 = document.createElement("span"); 
+  var span2 = document.createElement("span");
   var txt2 = document.createTextNode(" 🗓 ");
   span2.className = "cal-icon";
   span2.appendChild(txt2);
-  li.appendChild(span2); 
-  
-  document.getElementById("myInput").value = ""; 
+  li.appendChild(span2);
+
+  document.getElementById("myInput").value = "";
 
   //gem icon 
-  var span1 = document.createElement("SPAN"); 
+  var span1 = document.createElement("SPAN");
   var txt = document.createTextNode("💎");
   span1.className = "gem-icon";
-  span1.id="id-gem";
+  span1.id = "id-gem";
   span1.appendChild(txt);
-  li.appendChild(span1); 
+  li.appendChild(span1);
 
   // //create id for each gem-icon
   // var element = document.querySelectorAll('span.gem-icon'); // convert NodeList into an array
@@ -62,38 +79,12 @@ function newElement1(){
   //   ele.setAttribute("id", 'gem' + (g + 1));
   // })
 
-  // $(function(){
-  //   $('span.gem-icon').click(function(){
-  //     $(this).css.filter("grayscale(0%)");
-  //   });
-  // });
-
   //gem coloring 
   //보석을 클릭하고 alert를 확인하면 보석의 색이 바뀐다
-  $(function(){
-    $('span.gem-icon').click(function(){
-         
-         for (i = 0; i < close.length; i++) {
-          close[i].onclick = function (){
-            var answer = confirm("마일스톤을 벌써 달성했어?🤭")
-            if (answer){
-              alert ("축하해! 내가 아끼는 보석 하나 주지!")
-              $(this).css("filter","grayscale(0%)");
-              }
-              else {
-                alert ("조금 더 노를 저으라구!")
-              }
 
-          }
-          
-      
-            }
-            
-            
-          })
-    });
+  milestDone();
 
-  }
+}
 
 //user2-adding milestone 
 // Create a new list item when clicking on the "Add" button
@@ -107,7 +98,7 @@ function newElement2() {
   } else {
     document.getElementById("miUl2").appendChild(li);
   }
-  
+
   document.getElementById("myInput2").value = "";
 
   var span = document.createElement("SPAN");
@@ -116,12 +107,8 @@ function newElement2() {
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
+  milestDone();
+
 }
 
 //user3-adding milestone 
@@ -144,12 +131,7 @@ function newElement3() {
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
+  milestDone();
 }
 
 //user4-adding milestone
@@ -172,12 +154,7 @@ function newElement4() {
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
+  milestDone();
 }
 
 //user5-adding milestone
@@ -200,12 +177,7 @@ function newElement5() {
   span.appendChild(txt);
   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
+  milestDone();
 }
 
 //D-day 
