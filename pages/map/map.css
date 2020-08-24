@@ -86,6 +86,13 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* whole box of cards */
+.destiLi {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* team vision in destination section*/
 
 .desti-vision {
@@ -94,18 +101,21 @@ body {
   text-align: center;
   border-radius: 30px;
   border: 0.5px white;
-  width: 180vw;
+  /* width: 180vw; 원래 크기*/
+  /* width:400px; */
   margin: 10px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+
+
 /* destination block in general */
-.desti {
+.desti, .newDestiLi {
   background-color: #5AC8FA;
   border-radius: 30px;
   border: 0.5px white;
-  width: 100%;
+  width: 300px;
   margin: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -113,7 +123,32 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
 }
+
+
+.addDestiBtn{
+  padding: 3px;
+  width: 3%;
+  /* background: #d9d9d9; */
+  background: white;
+  color: #FFCC00;
+  float: right;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 9em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2em;
+}
+
+.addDestiBtn:hover{
+  background-color: #bbb;
+}
+/* 
+.destiLi{
+  list-style:none;
+} */
 
 /*destination upcoming*/
 .desti-empty-img {
@@ -282,7 +317,7 @@ body {
 .desti-vision>input{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   text-align: center;
   width: 80%;
   color: white;
@@ -296,10 +331,16 @@ input.teamname{
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  width: 13%;
+  width: 22%;
   color: white;
   background: transparent;
   border: none;
+}
+
+.vision-text{
+  font-size:20px;  
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .desti-vision>input::placeholder,
@@ -307,6 +348,7 @@ input.teamname{
 .upcoming-desti>input::placeholder{
   color: white;
 }
+
 
 /*when input area is focused, nothing happens*/
 Input:focus {
@@ -450,7 +492,7 @@ Input:focus {
   color: white;
 }
 
-span.cal-icon{
+span.cal-icon, .datepickjstest{
   text-align:left;
   padding: 1%;
   width: 10%;
