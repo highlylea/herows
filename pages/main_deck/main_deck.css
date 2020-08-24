@@ -49,6 +49,7 @@ a:hover{
 .jumbotron{
     margin: 0rem 10rem;
     margin-bottom: 0rem;
+
 }
 
 .navigator>h1{
@@ -59,12 +60,14 @@ a:hover{
 .slogan{
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
+    font-weight: 700;
     margin: 2rem;
 }
 
 .bubble, .bubble>h3, .bubble>input{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 0rem;
     text-align: center;

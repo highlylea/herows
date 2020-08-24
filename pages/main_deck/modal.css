@@ -205,6 +205,7 @@ position: right;
     padding: 0;
     padding-top: 0.2em;
     text-decoration: none;
+
     font-size: 2rem;
     color: white;
     display: block;
@@ -214,20 +215,30 @@ position: right;
     text-align: left;
     cursor: pointer;
     outline: none;
+
     
 }
 .w3-button:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color: rgb(241, 197, 0)!important;background-color:#5AC8FA!important}
+
+    color: black; 
+    background-color:transparent !important}
 
 .w3-container{
     text-align: center;
     width: 20em;
+
 }
 
 .w3-modal-content{
     width: 20em;
+    border-radius: 15px;
+}
+
+.w3-display-topright{
+  text-align: right;
+  padding-right: 10px;
 }
 
 .rating {
