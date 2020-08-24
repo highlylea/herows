@@ -98,13 +98,10 @@ $('.down_button').click(()=>$('.log_section').animate({
 // 이중모달
 // 나의노력
 
-<<<<<<< HEAD
 $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
 });
   
-=======
->>>>>>> 6de792ef3656cc8a3fe2b094e29ee1e1cb7562fb
 
 
 
