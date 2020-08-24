@@ -12,7 +12,30 @@
 // }
 
 var close = document.getElementsByClassName("gem-icon");
-
+function milest_cal_pick_enable (){
+  $(".cal-icon").click (function(){
+  $(this).datepicker({
+    dateFormat: 'yy-mm-dd',
+    onSelect: function (date) {
+      var dday = date.split('-');
+      var deadline = new Date(`${dday[0]} ${dday[1]}, ${dday[2]} 00:00:00`).getTime();
+      var today = new Date();
+      today = today.getTime();
+      var distance = deadline - today;
+      var day_distance = Math.floor(distance / (1000 * 60 * 60 * 24));
+      day_distance += 1;
+      if (day_distance == 0) {
+        $(this)[0].innerText = "D-day";
+      } else if (day_distance > 0) {
+        $(this)[0].innerText = '🥊 D-' + (day_distance).toString() + ' 🥊';
+      } else {
+        $(this)[0].innerText = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
+      };
+      console.log($(this).text());
+    }
+  });
+});
+};
 function milestDone(){
   $(function () {
     $('span.gem-icon').click(function() {
@@ -56,12 +79,18 @@ function newElement1() {
   }
 
   //cal icon 
+  var cal_box = document.createElement("div");
+  li.appendChild(cal_box);
   var span2 = document.createElement("span");
   var txt2 = document.createTextNode(" 🗓 ");
+  cal_box.className = "cal-box";
   span2.className = "cal-icon";
+  
+  
   span2.appendChild(txt2);
-  li.appendChild(span2);
-
+  li.appendChild(span2)
+  
+  
   document.getElementById("myInput").value = "";
 
 
@@ -74,6 +103,7 @@ function newElement1() {
   span1.id = "id-gem";
   span1.appendChild(txt);
   li.appendChild(span1);
+  
 
   // //create id for each gem-icon
   // var element = document.querySelectorAll('span.gem-icon'); // convert NodeList into an array
@@ -86,6 +116,7 @@ function newElement1() {
   //보석을 클릭하고 alert를 확인하면 보석의 색이 바뀐다
 
   milestDone();
+  milest_cal_pick_enable();
 
 }
 
