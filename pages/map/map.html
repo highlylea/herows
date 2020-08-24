@@ -34,39 +34,71 @@
 
   <div class="map">
 
-    <div class="desti-section">
+    <!-- add destination button 새로운 목적지 설정하는 버튼 -->
+    <div class ="addDestiBtn">
+      <!-- <input type="text" id="destiname" placeholder="New Destination"> -->
+      <span onclick="newDesti()"> + </span>
+    </div> 
 
-      <div class="desti-vision">
+  
+    <div class="desti-section">
+<!-- 
+      팀 비전 보여주는 카드  -->
+      <!-- <div class="desti-vision">
         <h2 class="vision-text">🔥팀 
           <input type="textarea" placeholder="AOAS" class="teamname">의 vision🔥</h2>
         <input type="textarea" placeholder="“남이 깨면 후라이, 스스로 깨면 병아리!”">
-      </div>
-      
+      </div>  -->
 
-      <div class="desti 1" id="desti1"> 
+      <!--디데이 카운드 다운 -->
+
+      <!-- <div class="desti 1" id="desti1"> 
         <img src="../image/desti.png" width=170px class="desti-empty-img-gray">
-         <!--디데이 카운드 다운 -->
         <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
         <div class="upcoming-desti">
           <input type="textarea" placeholder="Upcoming Destination"> 
         </div>
         
-       </div>
+       </div>  -->
 
-       <!-- visited destination -->
-      <div class="desti 2" id="visited-desti">
+       <!--visited destination -->
+      <!-- <div class="desti 2" id="visited-desti">
+        
         <img class="visited-desti-img" src="../image/desti.png" width=170px><br>
         <div> HEROWS 완성하기 </div>
-      </div>
+      </div> -->
+      
+      <!-- 클릭시 마일스톤 추가되는 곳 -->
+      <ul class="destiLi" id="destiTestId">
 
-      <!--마일스톤 추가하는 카드-->
+        <!-- 팀 비전 보여주는 list -->
+        <li class="newDestiLi" id="desti-vision-card">
+          <div class="desti-vision">
+            <p class="vision-text">🔥
+              <input type="textarea" placeholder="AOAS" class="teamname">의 vision🔥</p>
+            <input type="textarea" placeholder="“남이 깨면 후라이, 스스로 깨면 병아리!”">
+          </div> 
+        </li>
+
+        <li class="newDestiLi">
+          <img src="../image/desti.png" width=170px class="desti-empty-img-gray">
+         <!--디데이 카운드 다운 -->
+        <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+        <div class="upcoming-desti">
+          <input type="textarea" placeholder="Upcoming Destination"> 
+        </div>
+        </li>
+      </ul>
+
+      <!-- 마일스톤 추가하는 카드
       <div class="desti 3" id="add-desti">
         <div class="adding-img"></div>
         <img src="../image/desti.png" width=170px class="adding-desti-empty-img-gray">
         <div>
           <h5>Add a new destination!</h5>
-        </div>
-      </div>
+        </div> -->
+    
+      
 
     </div>
 
@@ -90,7 +122,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="map-block flip-card">
           <div class="map-block flip-card-inner">

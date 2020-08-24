@@ -36,9 +36,10 @@ function milest_cal_pick_enable (){
   });
 });
 };
+
 function milestDone(){
   $(function () {
-    $('span.gem-icon').click(function() {
+    $('span.gem-icon').click(function () {
 
       for (i = 0; i < close.length; i++) {
         close[i].onclick = function () {
@@ -59,24 +60,42 @@ function milestDone(){
 
     })
   });
+}
+
+//newDesti : 새로운 데스티네이션을 생성하는 함수 
+function newDesti(){
+  var destiLi = document.createElement("li"); //li생성
+  // var destiCard = document.createElement("div")//div생성
+  // destiLi.className="addedDestiLi";
+  // destiLi.appendChild(desticard);
+  destiLi.className="newDestiLi";
+  document.getElementById("destiTestId").appendChild(destiLi);
+
+  // var newDestiCard=document.createElement("div")//div카드생성
+  // newDestiCard.className="addedDestiDiv";
+  // // document.getElementsByCLass("addedDestiLi").appendChild(newDestiCard);
+  // destiLi.appendChild(newDestiCard);
 
 }
 
+
+
 // user1-adding milestone list
 // Create a new list item when clicking on the "Add" button
-
 function newElement1() {
 
   var li = document.createElement("li"); //Create li element
   var inputValue1 = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue1);
+
   li.appendChild(t);
   if (inputValue1 === '') { //prevents empty list items 
     alert("마일스톤을 입력하라구!");
   } else {
     document.getElementById("miUl").appendChild(li); //text to list
-
   }
+
+  document.getElementById("myInput").value = "";
 
   //cal icon 
   var cal_box = document.createElement("div");
@@ -88,21 +107,16 @@ function newElement1() {
   
   
   span2.appendChild(txt2);
-  li.appendChild(span2)
+  li.appendChild(span2);
   
-  
-  document.getElementById("myInput").value = "";
-
-
-  //gem icon 
-  var span1 = document.createElement("SPAN");
+  // //create gem icon
+  var span = document.createElement("SPAN");
   var txt = document.createTextNode("💎");
-  span1.className = "gem-icon";
-  span1.id = "id-gem";
-  span1.appendChild(txt);
-  li.appendChild(span1);
-  
+  span.className = "gem-icon";
+  span.appendChild(txt);
+  li.appendChild(span);
 
+  milestDone();
   // //create id for each gem-icon
   // var element = document.querySelectorAll('span.gem-icon'); // convert NodeList into an array
   // Array.from(element) // iterate over the element 
@@ -130,16 +144,22 @@ function newElement2() {
   } else {
     document.getElementById("miUl2").appendChild(li);
   }
-
   document.getElementById("myInput2").value = "";
+  //cal icon 
+  var span2 = document.createElement("span");
+  var txt2 = document.createTextNode(" 🗓 ");
+  span2.className = "cal-icon";
+  span2.appendChild(txt2);
+  li.appendChild(span2);
 
+  // //create gem icon
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("💎");
   span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
-
-  milestDone();
+  
+  milestDone(); 
 
 }
 
@@ -213,6 +233,7 @@ function newElement5() {
 }
 
 //D-day 
+
 $(function () {
   $("#datepicker").datepicker({
     dateFormat: 'yy-mm-dd',
