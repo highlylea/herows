@@ -221,7 +221,7 @@
                     <a href="#contact" class="log_category" id="nav_effort">⏰나의노력</a>
                     <a href="#push" class="log_category" id="nav_push">📣푸시하기</a>
                     <a href="#delete" class="log_category" id="nav_delete">🗑삭제하기</a>
-                    <!--이중모달-->
+                     <!--이중모달-->
                     
                     <div class="w3-container">
                     <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">⏰나의노력</button>
@@ -234,52 +234,40 @@
                               <h2>Modal Header</h2>
                             </header>
                             <div class="w3-container">
+                               <p>얼마나 오랫동안 노를 저었나요? 
+                                <br></p>
                                 
-                                <p>얼마나 오랫동안 노를 저었나요? <br></p>
                                 <form action="/form/submit" method="post">
+                                    <img src="../image/clock.png">    
+                                
                                     <input type="number" min="1" max="24" step="1" name="number-of-colors">
-                                  </form>   
-
+                                </form>
+                              
                                 <!-- <form action="/action_page.php">
                                     <label for="appt">얼마나 오랫동안 노를 저었나요? <br> </label>
                                     <input type="time" id="appt" name="appt">
                                     <input type="submit">
                                 </form>
                                    -->
-                              <p>얼마나 도전적인 과제였나요?</p>
+                              <p class="effort_ment">얼마나 도전적인 과제였나요?</p>
                               <form class="rating">
                                 <label>
                                   <input type="radio" name="stars" value="1" />
-                                  <span class="icon">★</span>
+                                  <span class="star_icon">★</span>
                                 </label>
                                 <label>
                                   <input type="radio" name="stars" value="2" />
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
+                                  <span class="star_icon">★</span>
+                                  <span class="star_icon">★</span>
                                 </label>
                                 <label>
                                   <input type="radio" name="stars" value="3" />
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>   
-                                </label>
-                                <label>
-                                  <input type="radio" name="stars" value="4" />
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                </label>
-                                <label>
-                                  <input type="radio" name="stars" value="5" />
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
-                                  <span class="icon">★</span>
+                                  <span class="star_icon">★</span>
+                                  <span class="star_icon">★</span>
+                                  <span class="star_icon">★</span>   
                                 </label>
                               </form>
-                              <p>Some text..</p>
+                              <p></p>
 
                             </div>
                             <footer class="w3-container w3-teal">
@@ -674,7 +662,6 @@
     <div class="category_box cat10">
         <h5 class="category_name">Label 10</h5>
         <img class="category_check" src="../image/check.png">
-    </div>
 
 </div>
 

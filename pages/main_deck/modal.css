@@ -291,22 +291,26 @@ footer{
         left: 0;
         opacity: 0;
       }
-      
-      .rating label .icon {
+    
+      .star_icon{
+      font-size: 25px;
+      }
+
+      .rating label .star_icon {
         float: left;
         color: transparent;
       }
       
-      .rating label:last-child .icon {
+      .rating label:last-child .star_icon {
         color: #000;
       }
       
-      .rating:not(:hover) label input:checked ~ .icon,
-      .rating:hover label:hover input ~ .icon {
+      .rating:not(:hover) label input:checked ~ .star_icon,
+      .rating:hover label:hover input ~ .star_icon {
         color: #09f;
       }
       
-      .rating label input:focus:not(:checked) ~ .icon:last-child {
+      .rating label input:focus:not(:checked) ~ .star_icon:last-child {
         color: #000;
         text-shadow: 0 0 5px #09f;
       }
