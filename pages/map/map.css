@@ -431,7 +431,7 @@ Input:focus {
   right: 1px;
   top: 5px;
   font-size:30px;
-  filter: grayscale(90%);
+  filter: grayscale(90%); 
   /*padding: 12px 16px 12px 16px; */
 }
 
