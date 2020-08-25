@@ -85,12 +85,13 @@ body {
   margin:50px 0px;
   font-family: 'Noto Sans KR', sans-serif;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: scroll hidden;
   width: 100%;
- 
+  -ms-overflow-style: none;
 }
 
-
+::-webkit-scrollbar { 
+  display: none; }
 
 
 
