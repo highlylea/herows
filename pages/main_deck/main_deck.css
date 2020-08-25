@@ -9,6 +9,9 @@ html{
     background-color: rgb(235, 235, 235);
 }
 
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .navigator{
     display: flex;
@@ -628,6 +631,16 @@ a:hover{
 
 }
 
+/* 푸시모달 */
+
+.push_message{
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    border: solid #5AC8FA 3px;
+    text-align: center;
+}
+
 
 /* 버튼들 */
 
@@ -667,5 +680,19 @@ a:hover{
 
 .main_button:active{
     border: 0.3px solid rgb(185, 185, 185);
+}
+
+.push_button{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    color: black;
+    background-color: #5AC8FA;
+    border-radius: 15px;
+    width: 95px;
+   margin-left: 0;
+    margin-bottom: 0px;  
 }
 

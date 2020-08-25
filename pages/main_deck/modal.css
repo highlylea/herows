@@ -159,7 +159,7 @@ position: right;
 /* new log modal dropdown */
     /* Fixed sidenav, full height */
 .sidenav {
-    height: 265px;
+    height: 300px;
     width: 148px;
     position: fixed;
     margin-top:17%;
@@ -329,6 +329,10 @@ footer{
 
 
 }
+
+/* 이중모달_푸시하기 */
+
+
 /* Main content */
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -371,4 +375,76 @@ footer{
     margin: 0rem 0rem 0rem 1rem;
 }
 
-/* 모달의 모달 */
+/* 모달_첨부하기 */
+
+
+ .link_add{
+  display: inline-block;
+  height: 35px;
+  font-size:18px; 
+  padding: 0 10px;
+ vertical-align: middle;
+  background-color:white;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  width: 200px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  
+
+ }
+
+    .url_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    }   
+
+    .filebox input[type="file"] {
+      position: absolute;
+      width: 0;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      font-size: 1.7rem;
+      
+  }
+  
+  .filebox label {
+      display: inline-block;
+      padding: 5px 1px;
+      color: white;
+      vertical-align: middle;
+      background-color: #5856D6;
+      width: 40px;
+      cursor: pointer;
+      border-radius: 5px;
+      height: 35px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font:#AEAEB2;
+  
+  }
+  
+  /* named upload */
+  .filebox .upload-name {
+    display: inline-block;
+    height: 35px;
+    font-size:18px; 
+    padding: 0 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    background-color:white;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    width: 180px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font:#AEAEB2;
+    text-align: left;
+  }
+
+
+ 

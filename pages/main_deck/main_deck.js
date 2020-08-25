@@ -101,8 +101,42 @@ $('.down_button').click(()=>$('.log_section').animate({
 $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
 });
-  
 
+
+var latest_user;
+$('.btn-info').click(function(){
+  console.log(this);
+  latest_user = $(this).parent().attr('class');
+  console.log(latest_user);
+});
+$('.submit_effort').click(function(){
+  let org_time = $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText.substr(0,2);
+  let add_time = $('.log_effort').val();
+  // $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1])+1].innerText.substr(0,2) = (org_time+add_time).toString();
+  $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText=(parseInt(org_time)+parseInt(add_time)).toString()+$('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText.substr(2,5);
+})  
+
+// // 모달 첨부하기
+// $(document).ready(function(){ 
+//   var fileTarget = $('.filebox .upload-hidden'); 
+//   fileTarget.on('change', function(){ 
+//     // 값이 변경되면 
+//    if(window.FileReader){ 
+//       // 
+//       modern browser var filename = $(this)[0].files[0].name; 
+//   } else { // 
+//   old IE var filename = $(this).val().split('/').pop().split('\\').pop(); 
+//   // 파일명만 추출 
+// } 
+//   // 추출한 파일명 삽입 
+//     $(this).siblings('.upload-name').val(filename); 
+//   }); 
+// });
+
+$("#file").on('change',function(){
+  var fileName = $("#file").val();
+  $(".upload-name").val(fileName);
+});
 
 
 
@@ -145,7 +179,9 @@ function search(){
     }
   }
 }
-
+$(function(){
+  $('#datepicker').datepicker();
+})
 
 /*클릭한 부분만 체크, 나머지 체크들은 해제하기*/
 $('.category_box').click(function checkLabel(){

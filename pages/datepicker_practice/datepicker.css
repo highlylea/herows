@@ -26,11 +26,11 @@ color:white;
 
 }
 
-input::placeholder{
+#datepicker ::placeholder{
     color:white;
 }
 
-input:focus::placeholder{
+#datepicker :focus::placeholder{
     color: rgb(207, 160, 6);
 }
 

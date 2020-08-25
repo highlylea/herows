@@ -84,7 +84,15 @@ body {
   /* /* margin: 0px 100px; */
   margin:50px 0px;
   font-family: 'Noto Sans KR', sans-serif;
+  overflow-y: hidden;
+  overflow-x: scroll hidden;
+  width: 100%;
+  -ms-overflow-style: none;
 }
+
+::-webkit-scrollbar { 
+  display: none; }
+
 
 
 /* whole box of destination cards 데스티네이션 카드의 container */
@@ -132,6 +140,7 @@ body {
   padding-bottom: 50px;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
 }
 /* 데스티네이션 카드 hover시 더 많은 양의 shade를 부여함 */
 

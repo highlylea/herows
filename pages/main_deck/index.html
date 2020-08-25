@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="main_deck.css">
     <link rel="stylesheet" type="text/css" href="modal.css">
-    <script src="../../modules/jquery/jquery-3.5.1.min.js"></script>
+    <!-- for datepickr -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
+    <!-- for datepicker -->
 
     <title>HEROWS</title>
 
@@ -156,11 +161,11 @@
                 <!--드롭다운-->
                     <div class="sidenav" >
                         <div class="w3-container">
-                            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">🌈 카테고리</button>
-                            <!--Modal id02-->
-                            <div id="id02" class="w3-modal">
+                            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">🌈 카테고리</button>
+                            <!--Modal id01-->
+                            <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content">
-                                <span onclick="document.getElementById('id02').style.display='none'" 
+                                <span onclick="document.getElementById('id01').style.display='none'" 
                                 class="w3-button w3-display-topright">&times;</span>
                                 <div class="w3-container"> <!--중앙블럭-->
                                     <div class="category_menu">
@@ -217,21 +222,39 @@
     </div>
 
                     <a href="#services" class="log_category" id="nav_milestone">⛳️ 마일스톤</a>
-                    <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
-                   
-                    <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a>
-                    <a href="#delete" class="log_category" id="nav_delete">❌ 삭제하기</a>
-                     
-                    
+                    <!-- <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a> -->
+                    <!-- <a href="#clients" class="log_category" id="nav_date">🔗 첨부하기</a> -->
+                    <!-- <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a> -->
+                    <!-- 이중모달_날짜 지정 section -->
+                    <div class="w3-container">
+                        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">📅 날짜지정</button>
+                          
+                            <div id="id02" class="w3-modal">
+                              <div class="w3-modal-content">
+                                <header class="w3-container w3-teal"> 
+                                  <span onclick="document.getElementById('id02').style.display='none'" 
+                                  class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <br>
+                                <div class="date-container">
+                                    <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+                                    <button type=onclick class="push_button">Push!</button>
+                                    
+                                </div>
+                                <br>
+                              </div>
+                            </div>
+                          </div>
+                           <!--이중모달_날짜 지정 section end  -->
                     <!--이중모달_나의 노력section-->
                     
                     <div class="w3-container">
-                    <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">⏰ 나의노력</button>
+                    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">⏰ 나의노력</button>
                       
-                        <div id="id04" class="w3-modal">
+                        <div id="id03" class="w3-modal">
                           <div class="w3-modal-content">
                             <header class="w3-container w3-teal"> 
-                              <span onclick="document.getElementById('id04').style.display='none'" 
+                              <span onclick="document.getElementById('id03').style.display='none'" 
                               class="w3-button w3-display-topright">&times;</span>
                             </header>
                             <br>
@@ -240,7 +263,7 @@
                                 <br></p>
                                 <form action="/form/submit" method="post">
                                     <img src="../image/clock.png">    
-                                    <input type="number" min="1" max="24" step="1" name="number-of-colors">
+                                    <input type="number" min="1" max="24" step="1" name="number-of-colors" class="log_effort">
                                 </form>
                               
                                 <!-- <form action="/action_page.php">
@@ -268,41 +291,102 @@
                                 </label>
                               </form>
                               <br>
-                              <button type=onclick class="main_button" >OK!</h5>
+                              <button type=onclick class="main_button submit_effort" >OK!</button>
+
                             </div>
                             <br>
                           </div>
                         </div>
                       </div>
+                     <!--이중모달_나의 노력 section-->
+
+     <!--이중모달_푸시하기 section-->
+                    
+     <div class="w3-container">
+        <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">📣 푸시하기</button>
+          
+            <div id="id04" class="w3-modal">
+              <div class="w3-modal-content">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id04').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                </header>
+                <br>
+                <div class="push-container">
+                   <form action="/action_page.php">
+                    <label for="fname"><h6>팀원들에게 뭐라고 외칠까요?</h6></label>
+                        <input type="text" name="push_message" class="push_message" placeholder="제군들.. 나 마일스톤 달성했다!!"><br><br>
+                    <button type=onclick class="push_button">Push!</button>
+                    </form>
+                  </form> 
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+         <!--이중모달_푸시하기 section 끝-->
+
+<!--이중모달_첨부하기 section-->
+                                        
+                        <div class="w3-container">
+                            <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">🔗 첨부하기</button>
+                            
+                                <div id="id05" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <header class="w3-container w3-teal"> 
+                                    <span onclick="document.getElementById('id05').style.display='none'" 
+                                    class="w3-button w3-display-topright">&times;</span>
+                                    </header>
+                                    <br>
+                                    <div class="w3-container">         
+                                        <span class="url_title">URL </span>
+                                        <input type="text" name="link_add" class="link_add" placeholder="URL을 입력해주세요"><br><br>
+                                       <span class="url_title">파일</span>
+                                        <span class="filebox"> 
+                                            <input class="upload-name" placeholder="파일선택">
+                                            <input type="file" id="file">
+                                            <label for="file">선택</label> 
+                                          </span>
+                                        
+                                          <input type=text name="link_info" class="push_message" placeholder="자료에 대한 설명을 적어주세요.">
+                                         
+                                          <button type=onclick class="main_button" >OK!</button> 
+                                        
+                                    </div>
+                                    <br>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- 이중모달_첨부하기 section 끝--> 
+
+                            <!-- 이중모달 삭제하기 시작-->                 
+                        <div class="w3-container">
+                            <button onclick="document.getElementById('id06').style.display='block'" class="w3-button">❌ 삭제하기</button>
+                            
+                                <div id="id06" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <header class="w3-container w3-teal"> 
+                                    <span onclick="document.getElementById('id06').style.display='none'" 
+                                    class="w3-button w3-display-topright">&times;</span>
+                                    </header>
+                                    <br>
+                                    <div class="w3-container">         
+                                       
+                                        <h6>⚠️ <br> 정말 삭제할거에요오?👀 <br> 돌이킬 수 없는 강을 건너는거라우! </h6>
+                                        <button type=onclick class="main_button" >OK!</button> 
+                                        
+                                    </div>
+                                    <br>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- 이중모달 삭제하기 끝-->
 
 
-                     <!-- <a data-toggle="modal" href="#doublemodal" class="btn2 btn-primary">이중모달 테스트</a>
-
-                     <div class="modal" id="doublemodal">
-                         <div class="modal-dialog modal-lg">
-                           <div class="modal-content2">
-                             <div class="modal-header">
-                               <h4 class="modal-title">이중 모달 테스트</h4>    
-                             </div>
-                             <div class="container"></div>
-                             <div class="modal-body">
-                               Content for the dialog / modal goes here.
-                             </div>
-                             <div class="modal-footer">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default2" data-dismiss="modal">cancle</button>
-                                    <input type="submit" value="Submit" class="btn btn-default2" data-dismiss="modal">
-                                 <button type="button" class="btn btn-default" data-dismiss="modal">Save</button> -->
-                                <!-- </div>
-                             </div>
-                           </div>
-                         </div>
-                        </div>  -->
-                     <!--이중모달_나의 모력 section-->
                     </div>
                     </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default2" data-dismiss="modal">cancle</button>
+                    <button type="button" class="btn btn-default2" data-dismiss="modal">cancel</button>
                     <input type="submit" value="Submit" class="btn btn-default" data-dismiss="modal">
                 <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Save</button> -->
                 </div>
@@ -666,7 +750,7 @@
 hihi!
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script src="../../modules/vanilla-javascript-emoji-picker-master/fgEmojiPicker.js"></script>
