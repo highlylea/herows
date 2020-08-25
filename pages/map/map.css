@@ -4,6 +4,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+
 .navigator {
   display: flex;
   flex-direction: row;
@@ -194,13 +195,72 @@ body {
 }
 
 /*turns island img to gray*/ 
-.desti-empty-img-gray {
+.desti-empty-img {
   position: relative;
-  width:170px;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
-  filter: opacity(10%);
+  width:130px;
+  filter:opacity(10%);
+  transition: ease-in-out;
+  animation-name:none;
+  animation-duration:1.0s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
+
+/* 
+keyframes on .desti-empty animation */
+@keyframes destiDone{
+  0% {width:160px; filter:hue-rotate(0);}
+  40%{width:190px;}
+  100% {width:170px;filter:hue-rotate(2turn);}
+}
+/* 
+confetti test */
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+[class|="confetti"] {
+  position: absolute;
+}
+
+$colors: (#d13447, #ffbf00, #263672);
+
+@for $i from 0 through 150 {
+  $w: random(8);
+  $l: random(100);
+  .confetti-#{$i} {
+    width: #{$w}px;
+    height: #{$w*0.4}px;
+    background-color: nth($colors, random(3));
+    top: -10%;
+    left: unquote($l+"%");
+    opacity: random() + 0.5;
+    transform: rotate(#{random()*360}deg);
+    animation: drop-#{$i} unquote(4+random()+"s") unquote(random()+"s") infinite;
+  }
+
+  @keyframes drop-#{$i} {
+    100% {
+      top: 110%;
+      left: unquote($l+random(15)+"%");
+    }
+  }
+}
+
+
+
+
+/* 
+confetti test the end */
+
+
 
 
 /* visited destination 이미 달성한 데스티네이션*/
