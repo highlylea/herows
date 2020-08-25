@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="main_deck.css">
     <link rel="stylesheet" type="text/css" href="modal.css">
-    <script src="../../modules/jquery/jquery-3.5.1.min.js"></script>
+    <!-- for datepickr -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
+    <!-- for datepicker -->
 
     <title>HEROWS</title>
 
@@ -217,12 +222,30 @@
     </div>
 
                     <a href="#services" class="log_category" id="nav_milestone">⛳️ 마일스톤</a>
-                    <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a>
+                    <!-- <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a> -->
                     <!-- <a href="#clients" class="log_category" id="nav_date">🔗 첨부하기</a> -->
                     <!-- <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a> -->
-                
-                     
-                    
+                    <!-- 이중모달_날짜 지정 section -->
+                    <div class="w3-container">
+                        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">📅 날짜지정</button>
+                          
+                            <div id="id02" class="w3-modal">
+                              <div class="w3-modal-content">
+                                <header class="w3-container w3-teal"> 
+                                  <span onclick="document.getElementById('id02').style.display='none'" 
+                                  class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <br>
+                                <div class="date-container">
+                                    <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+                                    <button type=onclick class="push_button">Push!</button>
+                                    
+                                </div>
+                                <br>
+                              </div>
+                            </div>
+                          </div>
+                           <!--이중모달_날짜 지정 section end  -->
                     <!--이중모달_나의 노력section-->
                     
                     <div class="w3-container">
@@ -727,7 +750,7 @@
 hihi!
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script src="../../modules/vanilla-javascript-emoji-picker-master/fgEmojiPicker.js"></script>
