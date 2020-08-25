@@ -316,15 +316,19 @@
                                     </header>
                                     <br>
                                     <div class="w3-container">         
-                                        <span class="url_title">URL </span><input type="text" name="link_add" class="link_add" placeholder="URL을 입력해주세요"><br><br>
-                                        <span class="url_title">파일 </span>
-                                        <div class="filebox">
-                                            <input class="upload-name" value="파일선택" disabled="disabled"> 
-                                            <label for="ex_filename">첨부하기</label>
-                                            <input type="file" id="ex_filename" class="upload-hidden"> 
-                                        </div>
-                                        <input type=text name="link_info" placeholder="자료에 대한 설명을 적어주세요.">
-                                        <button type=onclick class="main_button" >OK!</button>
+                                        <span class="url_title">URL </span>
+                                        <input type="text" name="link_add" class="link_add" placeholder="URL을 입력해주세요"><br><br>
+                                       <span class="url_title">파일</span>
+                                        <span class="filebox"> 
+                                            <input class="upload-name" placeholder="파일선택">
+                                            <input type="file" id="file">
+                                            <label for="file">선택</label> 
+                                          </span>
+                                        
+                                          <input type=text name="link_info" class="push_message" placeholder="자료에 대한 설명을 적어주세요.">
+                                         
+                                          <button type=onclick class="main_button" >OK!</button> 
+                                        
                                     </div>
                                     <br>
                                 </div>

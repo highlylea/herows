@@ -103,7 +103,7 @@ $(':radio').change(function() {
 });
   
 
-// 모달 첨부하기
+// // 모달 첨부하기
 // $(document).ready(function(){ 
 //   var fileTarget = $('.filebox .upload-hidden'); 
 //   fileTarget.on('change', function(){ 
@@ -119,6 +119,11 @@ $(':radio').change(function() {
 //     $(this).siblings('.upload-name').val(filename); 
 //   }); 
 // });
+
+$("#file").on('change',function(){
+  var fileName = $("#file").val();
+  $(".upload-name").val(fileName);
+});
 
 
 
