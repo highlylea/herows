@@ -26,13 +26,13 @@ color:white;
 
 }
 
-input::placeholder{
-    color:white;
+/* input::placeholder{
+    color:white; */
 }
 
-input:focus::placeholder{
+/* input:focus::placeholder{
     color: rgb(207, 160, 6);
-}
+} */
 
 #datepicker {
     padding: 5px;
