@@ -573,12 +573,15 @@ a:hover{
 /*category test */
 
 .category_menu{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 240px;
+    height: content;
+
     padding: 15px 10px;
     margin: 13px;
     margin-bottom: 0px; 
@@ -586,6 +589,13 @@ a:hover{
     border-radius: 15px;
     /*display: none;*/
 }
+
+.category_container{
+    padding: 0px 10px;
+    overflow: auto;
+    height: 320px;
+}
+
 
 
 .search_value{
@@ -614,6 +624,7 @@ a:hover{
     align-items: center;
     border-radius: 10px;
 }
+
 
 
 .category_name{
@@ -647,6 +658,7 @@ a:hover{
 /* 버튼들 */
 
 .sub_button{
+    display: inline-block;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -655,9 +667,16 @@ a:hover{
     border-radius: 30px;
     width: content;
     padding: 3px 30px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
+
+.new_category{
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
 
 .sub_button:active{
     border: 0.3px solid rgb(185, 185, 185);
@@ -666,6 +685,7 @@ a:hover{
 
 
 .main_button{
+    display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -677,7 +697,7 @@ a:hover{
     width: 95px;
     padding: 3px 30px;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
 .main_button:active{
@@ -703,19 +723,26 @@ a:hover{
 
 .milestone_menu{
     display: flex;
+    overflow: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 240px;
     padding: 15px 10px;
-    margin: 13px;
+    margin: 0px 13px;
     margin-bottom: 0px; 
+    margin-top: 20px;
     background-color: white;
     border-radius: 15px;
     /*display: none;*/
 }
 
+.milestone_container{
+    overflow: auto;
+    height: 100px;
+    padding: 0px 10px;
+}
 
 .milestone_value{
     border: none;
@@ -760,5 +787,4 @@ a:hover{
     height: 20px;
     padding-left: 10px;
     display: none;
-
 }
