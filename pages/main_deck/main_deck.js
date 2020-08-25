@@ -191,3 +191,17 @@ $('.category_box').click(function checkLabel(){
   //이 블록이 현재 속한 Label class명
   console.log(currentLabel);
 });
+
+// 
+$(function(){
+  $('#add_log_button').click(function(){
+    $('.daily_log.user'+latest_user[latest_user.length-1]).append(`<div class="block hidden"></div>
+    <div class="block log">
+        <span class="category_color"></span>
+        <div class="log_info">
+            <p>생활코딩 JS 1강 수강</p>
+            <button class="emoji log_emoji">🤗</button>
+        </div>
+    </div>`)
+  })
+})
