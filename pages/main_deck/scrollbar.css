@@ -1,0 +1,44 @@
+
+::-webkit-scrollbar {
+  width: 10px;  /* 세로축 스크롤바 길이 */
+  height: 20px;  /* 가로축 스크롤바 길이 */
+}
+.log_section::-webkit-scrollbar {
+  width: 10px;  /* 세로축 스크롤바 길이 */
+  height: 2px;  /* 가로축 스크롤바 길이 */
+}
+/* ::-webkit-scrollbar-track {
+  background-color: lightblue;
+} */
+/* ::-webkit-scrollbar-track-piece {
+  background-color: gray;
+} */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #FFCC00;
+}
+.log_section::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #5AC8FA;
+}
+/* ::-webkit-scrollbar-button {
+  background-color: darkblue;
+  width: 20px;
+  height: 10px;
+} */
+/* ::-webkit-scrollbar-button:start {
+  background-color: red; /* Top, Left 방향의 이동버튼 */
+/* }
+::-webkit-scrollbar-button:end {
+  background-color: orange; /* Bottom, Right 방향의 이동버튼 */
+/* } */ 
+/* ::-webkit-scrollbar-button:vertical:increment {
+}
+::-webkit-scrollbar-button:vertical:decrement {
+} */
+/* ::-webkit-scrollbar-corner {
+  background-color: violet; /* 우측 하단의 코너 부분 */
+/* } */ 
+/* ::-webkit-resizer {
+  background-color: green;
+} */
