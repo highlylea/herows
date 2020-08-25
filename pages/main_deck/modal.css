@@ -48,7 +48,7 @@ button{
   }
 
   .modal-title{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -58,7 +58,7 @@ button{
   }
 
   .modal-header{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -67,7 +67,7 @@ button{
     text-align: center;
   }
   .modal-body{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -254,6 +254,7 @@ position: right;
 .w3-display-topright{
   text-align: right;
   padding-right: 10px;
+
 }
 
 footer{
@@ -387,73 +388,74 @@ footer{
 /* 모달_첨부하기 */
 
 
- .link_add{
-  display: inline-block;
-  height: 35px;
-  font-size:18px; 
-  padding: 0 10px;
- vertical-align: middle;
-  background-color:white;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  width: 200px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  
+.link_add{
+display: inline-block;
+height: 35px;
+font-size:18px; 
+padding: 0 10px;
+vertical-align: middle;
+background-color:white;
+border: 1px solid #ebebeb;
+border-radius: 5px;
+width: 200px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1.5rem;
 
- }
 
-    .url_title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    }   
+}
 
-    .filebox input[type="file"] {
-      position: absolute;
-      width: 0;
-      height: 0;
-      padding: 0;
-      overflow: hidden;
-      border: 0;
-      font-size: 1.7rem;
-      
-  }
-  
-  .filebox label {
-      display: inline-block;
-      padding: 5px 1px;
-      color: white;
-      vertical-align: middle;
-      background-color: #5856D6;
-      width: 40px;
-      cursor: pointer;
-      border-radius: 5px;
-      height: 35px;
-      text-align: center;
-      margin-bottom: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font:#AEAEB2;
-  
-  }
-  
-  /* named upload */
-  .filebox .upload-name {
-    display: inline-block;
-    height: 35px;
-    font-size:18px; 
-    padding: 0 10px;
-    margin-bottom: 10px;
-    vertical-align: middle;
-    background-color:white;
-    border: 1px solid #ebebeb;
-    border-radius: 5px;
-    width: 180px;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font:#AEAEB2;
-    text-align: left;
-  }
+.url_title{
+font-family: 'Noto Sans KR', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+margin-top: 10px;
+}   
+
+.filebox input[type="file"] {
+position: absolute;
+width: 0;
+height: 0;
+padding: 0;
+overflow: hidden;
+border: 0;
+font-size: 1.7rem;
+
+}
+
+.filebox label {
+display: inline-block;
+padding: 5px 1px;
+color: white;
+vertical-align: middle;
+background-color: #5856D6;
+width: 40px;
+cursor: pointer;
+border-radius: 5px;
+height: 35px;
+text-align: center;
+margin-bottom: 10px;
+font-family: 'Noto Sans KR', sans-serif;
+font:#AEAEB2;
+
+}
+
+/* named upload */
+.filebox .upload-name {
+display: inline-block;
+height: 35px;
+font-size:18px; 
+padding: 0 10px;
+margin-bottom: 10px;
+vertical-align: middle;
+background-color:white;
+border: 1px solid #ebebeb;
+border-radius: 5px;
+width: 180px;
+font-size: 1.5rem;
+font-family: 'Noto Sans KR', sans-serif;
+font:#AEAEB2;
+text-align: left;
+}
 
 
  
