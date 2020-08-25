@@ -101,7 +101,20 @@ $('.down_button').click(()=>$('.log_section').animate({
 $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
 });
-  
+
+
+var latest_user;
+$('.btn-info').click(function(){
+  console.log(this);
+  latest_user = $(this).parent().attr('class');
+  console.log(latest_user);
+});
+$('.submit_effort').click(function(){
+  let org_time = $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText.substr(0,2);
+  let add_time = $('.log_effort').val();
+  // $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1])+1].innerText.substr(0,2) = (org_time+add_time).toString();
+  $('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText=(parseInt(org_time)+parseInt(add_time)).toString()+$('.user_xp').find('p')[4*parseInt(latest_user[latest_user.length-1]-1)+1].innerText.substr(2,5);
+})  
 
 // 모달 첨부하기
 // $(document).ready(function(){ 
