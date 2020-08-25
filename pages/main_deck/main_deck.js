@@ -179,7 +179,9 @@ function search(){
     }
   }
 }
-
+$(function(){
+  $('#datepicker').datepicker();
+})
 
 /*클릭한 부분만 체크, 나머지 체크들은 해제하기*/
 $('.category_box').click(function checkLabel(){
