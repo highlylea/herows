@@ -483,7 +483,13 @@ border-radius: 20px;
     font-size: 24px;
     color: rgb(250, 61, 93);
     text-align: right;
+
     line-height: 35px;
     margin: 10px 30px;
 
+}
+
+.notification_body{
+    height: 400px;
+    overflow: auto;
 }

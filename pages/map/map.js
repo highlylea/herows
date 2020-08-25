@@ -24,7 +24,7 @@ function newDesti() {
 
   //insert date picker input box
   var destiDateInput = document.createElement("input");
-  destiDateInput.className="hasDatepicker";
+  // destiDateInput.className="hasDatepicker";
   destiDateInput.id="desti-datepicker";
   destiDateInput.setAttribute('type','text');
   destiDateInput.setAttribute('placeholder','디데이를 설정해주세요! 🗓');
@@ -43,6 +43,8 @@ function newDesti() {
   
   destiNameDiv.appendChild(destiName);
   destiLi.appendChild(destiNameDiv);
+  numOfDesti += 1;
+  UpdateDestiDatepicker();
 }
 
 
@@ -282,8 +284,9 @@ function newElement5() {
 
 
 //D-day 
-$(function () {
-  $("#desti-datepicker").datepicker({
+var numOfDesti = 0;
+function UpdateDestiDatepicker(){
+  $("[id=desti-datepicker]").eq(numOfDesti).datepicker({
     dateFormat: 'yy-mm-dd',
     onSelect: function (date) {
       var dday = date.split('-');
@@ -294,13 +297,16 @@ $(function () {
       var day_distance = Math.floor(distance / (1000 * 60 * 60 * 24));
       day_distance += 1;
       if (day_distance == 0) {
-        $('.hasDatepicker')[0].value = "D-day";
+        $('[id=desti-datepicker]')[numOfDesti].value = "D-day";
       } else if (day_distance > 0) {
-        $('.hasDatepicker')[0].value = '🥊 D-' + (day_distance).toString() + ' 🥊';
+        $('[id=desti-datepicker]')[numOfDesti].value = '🥊 D-' + (day_distance).toString() + ' 🥊';
       } else {
-        $('.hasDatepicker')[0].value = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
-      }
+        $('[id=desti-datepicker]')[numOfDesti].value = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
+      };
+      return;
     }
   });
-});
-
+  return;
+};
+$(function(){UpdateDestiDatepicker()});
+// issue : destination 입력 안하고 연속 추가시 오류 (추후 수정) , datepicker object가 하나라 
