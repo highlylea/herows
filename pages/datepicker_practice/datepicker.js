@@ -3,6 +3,7 @@ $( function() {
       );
   } );
 
+
 $('#show_d-day').click(function(){
   
   var dday = $('.hasDatepicker')[0].value.split('/');    

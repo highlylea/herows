@@ -281,7 +281,6 @@ function newElement5() {
 
 
 
-
 //D-day 
 $(function () {
   $("#desti-datepicker").datepicker({
