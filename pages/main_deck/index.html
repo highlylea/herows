@@ -219,21 +219,25 @@
                                         <span class="sub_button new_category" onclick="document.getElementById('id08').style.display='block'" class="w3-button">+ 새 카테고리 추가</span>
                                           
                                             <div id="id08" class="w3-modal">
-                                              <div class="w3-modal-content">
+                                              <div class="w3-modal-content modal_new_category">
                                                 <header class="w3-container w3-teal"> 
                                                   <span onclick="document.getElementById('id08').style.display='none'" 
                                                   class="w3-button w3-display-topright">&times;</span>
+                                                  <h6 class="new_category_header">새 카테고리 추가</h6>
                                                 </header>
-                                                <br>
-                                                <div class="push-container">
-                                                   <form action="/action_page.php">
-                                                    <label for="fname"><h6>팀원들에게 뭐라고 외칠까요?</h6></label>
-                                                        <input type="text" name="push_message" class="push_message" placeholder="제군들.. 나 마일스톤 달성했다!!"><br><br>
-                                                    <button type=onclick class="push_button">Push!</button>
-                                                    </form>
-                                                  </form> 
+                                                <div class="new_category_body">
+                                                    <div class="new_category_container">
+                                                        <h6 class="new_category_label">카테고리 이름:</h6>
+                                                        <input type="text" class="new_category_name">
+                                                    </div>
+                                                    <div class="new_category_container">
+                                                        <h6 class="new_category_label">color:</h6>
+                                                        <input type="color">
+                                                    </div>
+                                                    
+                                                    <span class="main_button">OK!</span>
                                                 </div>
-                                                <br>
+
                                               </div>
                                             </div>
                                           </div>

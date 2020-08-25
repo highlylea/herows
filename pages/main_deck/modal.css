@@ -458,4 +458,45 @@ text-align: left;
 }
 
 
+ /* 새 카테고리 추가 눌렀을때 나오는 모달 */
+
+ .modal_new_category{
+   position: relative;
+   left: 315px; /*삼중모달이므로 위치 조정함*/
+   height: 200px;
+ }
+
+ .new_category_header{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 18px;
+ }
+
+ .new_category_label{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-top: 0px;
+  margin-right: 10px;
+ }
  
+ .new_category_body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .new_category_name{
+   width: 100px;
+   height: 30px;
+ }
+
+ .new_category_container{
+   display: flex;
+   flex-direction: row;
+
+ }
