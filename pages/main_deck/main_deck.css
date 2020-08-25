@@ -564,7 +564,7 @@ a:hover{
 }
 
 .w3-teal, .w3-hover-teal:hover {
-    color: gray; !important;
+    color: gray !important;
     background-color: transparent !important;
     text-align: center;
 } /* 모달 닫는 x 아이콘 구역 서식이예요!*/
