@@ -16,7 +16,6 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
-  <!-- <script src="../datepicker_practice/datepicker.js"></script> -->
   <title>HEROWS</title> 
 </head> 
 
@@ -41,6 +40,9 @@
     </div> 
   
     <div class="desti-section">
+
+      <!-- 만들어둔 아래 카드들은 list안으로 편입될 것입니다. -->
+
 <!-- 
       팀 비전 보여주는 카드  -->
       <!-- <div class="desti-vision">
@@ -67,10 +69,12 @@
         <div> HEROWS 완성하기 </div>
       </div> -->
       
-      <!-- 클릭시 마일스톤 추가되는 곳 -->
-      <ul class="destiLi" id="destiTestId">
 
-        <!-- 팀 비전 보여주는 list -->
+      <!-- 위 카드들은 아래 리스트로 곧 편입될 것입니다. -->
+      <ul class="destiLi" id="destiLiId">
+
+        <!-- 팀 비전 보여주는 card형 list-->
+      
         <li class="newDestiLi" id="desti-vision-card">
           <div class="desti-vision">
             <p class="vision-text">🔥
@@ -79,14 +83,18 @@
           </div> 
         </li>
 
+        <!-- 새 데스티네이션 추가하기 디폴트 제공 카드  -->
         <li class="newDestiLi">
-          <img src="../image/desti.png" width=170px class="desti-empty-img-gray">
-         <!--디데이 카운드 다운 -->
-        <p class="datepickbox"><input type="text" id="desti-datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
-        <div class="upcoming-desti">
-          <input type="textarea" placeholder="Upcoming Destination"> 
-        </div>
+            <img src="../image/desti.png" class="desti-empty-img-gray">
+            <!--디데이 카운드 다운 -->
+           <p class="datepickbox"><input type="text" id="desti-datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+           <div class="upcoming-desti">
+             <input type="textarea" placeholder="여기를 클릭해 다음 목적지 입력.."> 
+          </div>
         </li>
+
+      
+
       </ul>
 
       <!-- 마일스톤 추가하는 카드
@@ -201,7 +209,7 @@
         </div>
     
         <ul id="miUl">
-          
+
         </ul>
 
       </div>

@@ -196,17 +196,12 @@ body {
 /*turns island img to gray*/ 
 .desti-empty-img-gray {
   position: relative;
-  -webkit-filter: grayscale(10%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(90%);
+  width:170px;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+  filter: opacity(10%);
 }
 
-.adding-desti-empty-img-gray {
-  position: relative;
-  -webkit-filter: grayscale(3%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(90%);
-}
 
 /* visited destination 이미 달성한 데스티네이션*/
 #visited-desti {
@@ -381,22 +376,19 @@ input.teamname{
 .milestLiInput{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
-  font-size: 10px;
-  text-align: center;
+  font-size: 12px;
   width: 70%;
-  color: black;
+  color:black;
   background: transparent;
   border: none;
 }
 
-.milestLiInput>input::placeholder{
+.milestLiInput::placeholder{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   font-size: 10px;
-  text-align: center;
   width: 70%;
-  color: black;
-
+  color: black;s
 }
 
 .vision-text{
@@ -596,7 +588,7 @@ span.cal-icon, .datepickjstest{
   padding: 5px;
   float: left;
   font-size: 13px;
-  color: black;
+  /* color: black; */
 }
 
 /* Style of input box when typing */
@@ -660,9 +652,21 @@ span.cal-icon, .datepickjstest{
   background-color: #5AC8FA;
   width: 100%;
   font-size: 20px;
-  font-weight:bold;
+  font-weight:300em;
   padding: 5px;
   font-family:"Montserrat";
+}
+
+.hasDatepicker {
+  font-size: 1em;
+  color: white;
+  padding: 0px;
+  background-color: rgb(255, 197, 5);
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  width: 200px;
+  height: 20px;
 }
 
 #desti-datepicker:hover{

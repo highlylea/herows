@@ -1,4 +1,50 @@
 
+//----------- destination section 
+
+//새로운 데스티네이션을 생성하는 함수 
+function newDesti() {
+  var destiLi = document.createElement("li"); //li생성
+  destiLi.className = "newDestiLi"; 
+  document.getElementById("destiLiId").appendChild(destiLi); //ul에 생성한 li추가
+
+  // if div is needed 
+  // var newDestiCard=document.createElement("div")//div 카드 생성
+  // newDestiCard.className="addedDestiDiv"; 
+  // destiLi.appendChild(newDestiCard);
+
+  //insert island image
+  var destiImg = document.createElement("img");
+  destiImg.className="desti-empty-img-gray";
+  destiImg.setAttribute('src','../image/desti.png');
+  destiLi.appendChild(destiImg);  //list에  img추가 
+
+  //insert datepicker container
+  var destiDatepicker = document.createElement("p");
+  destiDatepicker.className="datepickbox"; 
+
+  //insert date picker input box
+  var destiDateInput = document.createElement("input");
+  destiDateInput.className="hasDatepicker";
+  destiDateInput.id="desti-datepicker";
+  destiDateInput.setAttribute('type','text');
+  destiDateInput.setAttribute('placeholder','디데이를 설정해주세요! 🗓');
+
+  //put date picker in the container 
+  destiDatepicker.appendChild(destiDateInput);
+
+  //put the destiDatepicker into destiLi
+  destiLi.appendChild(destiDatepicker);
+
+  var destiNameDiv = document.createElement("div");
+  destiNameDiv.className="upcoming-desti";
+  var destiName = document.createElement("input");
+  destiName.setAttribute('type','textarea');
+  destiName.setAttribute('placeholder','여기를 클릭해 다음 목적지 입력..');
+  
+  destiNameDiv.appendChild(destiName);
+  destiLi.appendChild(destiNameDiv);
+}
+
 
 //get gem element
 var getGem = document.getElementsByClassName("gem-icon");
@@ -28,7 +74,6 @@ function milest_cal_pick_enable() {
   });
 };
 
-
 //마일스톤 달성 시 alert로 확인하고 Gem 색을 켜는 함수 
 function milestDone() {
   $(function () {
@@ -55,26 +100,11 @@ function milestDone() {
   });
 }
 
-//새로운 데스티네이션을 생성하는 함수 
-function newDesti() {
-  var destiLi = document.createElement("li"); //li생성
-  // var destiCard = document.createElement("div")//div생성
-  // destiLi.className="addedDestiLi";
-  // destiLi.appendChild(desticard);
-  destiLi.className = "newDestiLi";
-  document.getElementById("destiTestId").appendChild(destiLi);
 
-  // var newDestiCard=document.createElement("div")//div카드생성
-  // newDestiCard.className="addedDestiDiv";
-  // // document.getElementsByCLass("addedDestiLi").appendChild(newDestiCard);
-  // destiLi.appendChild(newDestiCard);
-
-}
+//----------- milestone section 
 
 
 // user1의 컬럼에 새로운 리스트 엘리먼트를 생성함
-// Create a new list item when clicking on the "Add" button
-
 function newElement1() {
 
   var li = document.createElement("li"); //Create list element
@@ -103,7 +133,7 @@ function newElement1() {
     document.getElementById("miUl").appendChild(li); //text to list
   }
 
-  // document.getElementById("myInput").value = "";
+  document.getElementById("myInput").value = ""; //resest input text area after adding to list
 
   //cal icon 
   var cal_box = document.createElement("div");
@@ -238,6 +268,9 @@ function newElement5() {
 
   milestDone();
 }
+
+
+
 
 //D-day 
 $(function () {
