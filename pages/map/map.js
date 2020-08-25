@@ -1,17 +1,8 @@
 
-// // Create a "gem-icon" button and append it to each list item
-// var myNodelist = document.getElementsById("LI"); 
-// var i; 
-// for (i = 0; i < myNodelist.length; i++) {
-//   var span = document.createElement("SPAN");
-//   var txt = document.createTextNode("💎");
-//   span.className = "gem-icon";
-//   span.id="id-gem"
-//   span.appendChild(txt);
-//   myNodelist[i].appendChild(span);
-// }
 
-var close = document.getElementsByClassName("gem-icon");
+//get gem element
+var getGem = document.getElementsByClassName("gem-icon");
+
 function milest_cal_pick_enable (){
   $(".cal-icon").click (function(){
   $(this).datepicker({
@@ -37,12 +28,14 @@ function milest_cal_pick_enable (){
 });
 };
 
+
+//마일스톤 달성 시 alert로 확인하고 Gem 색을 켜는 함수 
 function milestDone(){
   $(function () {
     $('span.gem-icon').click(function () {
 
-      for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
+      for (i = 0; i < getGem.length; i++) {
+        getGem[i].onclick = function () {
           var answer = confirm("마일스톤을 벌써 달성했어?🤭")
           if (answer) {
             alert("축하해! 내가 아끼는 보석 하나 주지!")
@@ -62,7 +55,7 @@ function milestDone(){
   });
 }
 
-//newDesti : 새로운 데스티네이션을 생성하는 함수 
+//새로운 데스티네이션을 생성하는 함수 
 function newDesti(){
   var destiLi = document.createElement("li"); //li생성
   // var destiCard = document.createElement("div")//div생성
@@ -79,13 +72,12 @@ function newDesti(){
 }
 
 
-
-// user1-adding milestone list
+// user1의 컬럼에 새로운 리스트 엘리먼트를 생성함
 // Create a new list item when clicking on the "Add" button
 function newElement1() {
 
-  var li = document.createElement("li"); //Create li element
-  var inputValue1 = document.getElementById("myInput").value;
+  var li = document.createElement("li"); //Create list element
+  var inputValue1 = document.getElementById("myInput").value; 
   var t = document.createTextNode(inputValue1);
 
   li.appendChild(t);
@@ -233,9 +225,8 @@ function newElement5() {
 }
 
 //D-day 
-
 $(function () {
-  $("#datepicker").datepicker({
+  $("#desti-datepicker").datepicker({
     dateFormat: 'yy-mm-dd',
     onSelect: function (date) {
       var dday = date.split('-');
@@ -256,4 +247,3 @@ $(function () {
   });
 });
 
-// 모달의모달
