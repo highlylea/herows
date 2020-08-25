@@ -226,7 +226,7 @@ function newElement5() {
 
 //D-day 
 $(function () {
-  $("#datepicker").datepicker({
+  $("#desti-datepicker").datepicker({
     dateFormat: 'yy-mm-dd',
     onSelect: function (date) {
       var dday = date.split('-');
