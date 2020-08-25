@@ -72,7 +72,7 @@ function newDesti() {
 }
 
 
-// User1
+// user1의 컬럼에 새로운 리스트 엘리먼트를 생성함
 // Create a new list item when clicking on the "Add" button
 
 function newElement1() {

@@ -4,6 +4,18 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 */
 
+body {
+    background: white; 
+    overflow-x:hidden;
+    
+        /* background: #E5E5E5; */
+    }
+    
+    
+
+
+
+
 .alert_button{
     position: fixed;
     right: 0%;
@@ -13,12 +25,8 @@ font-family: 'Noto Sans KR', sans-serif;
 }
 
 
-body {
-background: white; 
-overflow-x:hidden;
+/* navigator */
 
-    /* background: #E5E5E5; */
-}
 
 .navigator{
     display: flex;
@@ -132,7 +140,7 @@ th, td{
 }
 
 .store_person{
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
@@ -164,7 +172,7 @@ color: #000000;
 }
 
 .store_info{
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
@@ -182,7 +190,7 @@ padding-bottom: 13px;
 }
 
 .store_url{
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
 font-size: 15px;
@@ -209,7 +217,7 @@ height: 96px;
 left: 100px;
 top: 130px;
 
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
@@ -234,7 +242,7 @@ height: 25px;
 left: 418px;
 top: 233px;
 
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
 font-size: 11px;
@@ -280,7 +288,7 @@ height: 30px;
 left: 623px;
 top: 234px;
 
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
@@ -300,7 +308,7 @@ color: #000000;
 
 .deco_section { 
 
-font-family: Montserrat;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: bold;
 font-size: 15px;
@@ -398,20 +406,21 @@ color: #000000;
     /* background: #5AC8FA; */
 
 
-.modal-title{
-font-family: Montserrat;
+.modal-title{ /*AOAS에게 알립니다! 부분 */
+font-family: 'Noto Sans KR', sans-serif;
 font-style: normal;
-font-weight: bold;
-font-size: 18px;
+font-weight: 700;
+font-size: 20px;
 line-height: 20px;
 /* or 83% */
 text-align: center;
 letter-spacing: 0.25px;
 color: #000000;
+padding: 10px 0px;
 }
 
 .modal-body{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -440,4 +449,41 @@ color: #000000;
    
 box-sizing: border-box;
 border-radius: 20px;
+}
+
+
+/* notification modal 수정 */
+
+.notificatoin_block{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.noti_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.noti_name{
+    font-weight: 900;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.noti_label{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.noti_message{
+
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(250, 61, 93);
+    text-align: right;
+    line-height: 35px;
+    margin: 10px 30px;
+
 }

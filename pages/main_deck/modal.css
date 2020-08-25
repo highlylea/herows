@@ -2,6 +2,8 @@
 /* The Modal (background) */
 
 
+
+
 .log_emoji2{
     font-size: 4rem;
     margin: 0rem;
@@ -20,6 +22,8 @@
     text-align: right;
     margin-top: 1em;
 }
+
+
 
 button{
     border: none;
@@ -44,7 +48,7 @@ button{
   }
 
   .modal-title{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -54,7 +58,7 @@ button{
   }
 
   .modal-header{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -63,7 +67,7 @@ button{
     text-align: center;
   }
   .modal-body{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -76,10 +80,10 @@ button{
 position: right;
 }
   .btn.btn-default{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 111% */
     
@@ -92,7 +96,7 @@ position: right;
     color: #1C1C1E;
     border: none;
     background: #5AC8FA;    
-    border-radius: 10px; 
+    border-radius: 15px; 
 
 
     /* Inside Auto Layout */
@@ -101,6 +105,7 @@ position: right;
     order: 0;
     align-self: center;
     margin: 10px 0px;
+    padding: 3px 12px;
   }
 
 
@@ -116,23 +121,24 @@ position: right;
 }
 
   .btn.btn-default2{
-    font-family: Montserrat;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 111% */
     
     align-items: center;
     text-align: center;
     letter-spacing: 0.25px;
+    padding: 3px 12px;
     
     /* dark-theme-gray / 1 */
     
     color: #1C1C1E;
     border: none;
     background: orangered;    
-    border-radius: 10px; 
+    border-radius: 15px; 
 
 
     /* Inside Auto Layout */
@@ -162,8 +168,6 @@ position: right;
     height: 300px;
     width: 148px;
     position: fixed;
-    margin-top:17%;
-    margin-left:53%;
     z-index: 1;
     top: 0;
     left: 0;
@@ -173,8 +177,8 @@ position: right;
     border-radius: 1rem;
     overflow:hidden;
     text-align: left;
-    margin-top: 328px;
-    margin-left: 960px;
+    margin-top: 300px;
+    margin-left: 850px;
 
 }
 
@@ -204,7 +208,7 @@ position: right;
 /* 나의 노력 */
 .w3-button{
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0;
     padding-top: 0.2em;
     text-decoration: none;
@@ -224,7 +228,8 @@ position: right;
 .w3-button:hover{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
+    transition: 0.3s;
 
     color: black; 
     background-color: transparent !important}
@@ -242,9 +247,14 @@ position: right;
     margin-left: 780px;
 }
 
+.modal-footer{
+  margin-top: 15px;
+}
+
 .w3-display-topright{
   text-align: right;
   padding-right: 10px;
+
 }
 
 footer{
@@ -361,10 +371,10 @@ footer{
 }
 
 /* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
 
 #newlog_user1{
     width: 80%;
@@ -378,73 +388,115 @@ footer{
 /* 모달_첨부하기 */
 
 
- .link_add{
-  display: inline-block;
-  height: 35px;
-  font-size:18px; 
-  padding: 0 10px;
- vertical-align: middle;
-  background-color:white;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-  width: 200px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  
+.link_add{
+display: inline-block;
+height: 35px;
+font-size:18px; 
+padding: 0 10px;
+vertical-align: middle;
+background-color:white;
+border: 1px solid #ebebeb;
+border-radius: 5px;
+width: 200px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1.5rem;
 
+
+}
+
+.url_title{
+font-family: 'Noto Sans KR', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+margin-top: 10px;
+}   
+
+.filebox input[type="file"] {
+position: absolute;
+width: 0;
+height: 0;
+padding: 0;
+overflow: hidden;
+border: 0;
+font-size: 1.7rem;
+
+}
+
+.filebox label {
+display: inline-block;
+padding: 5px 1px;
+color: white;
+vertical-align: middle;
+background-color: #5856D6;
+width: 40px;
+cursor: pointer;
+border-radius: 5px;
+height: 35px;
+text-align: center;
+margin-bottom: 10px;
+font-family: 'Noto Sans KR', sans-serif;
+font:#AEAEB2;
+
+}
+
+/* named upload */
+.filebox .upload-name {
+display: inline-block;
+height: 35px;
+font-size:18px; 
+padding: 0 10px;
+margin-bottom: 10px;
+vertical-align: middle;
+background-color:white;
+border: 1px solid #ebebeb;
+border-radius: 5px;
+width: 180px;
+font-size: 1.5rem;
+font-family: 'Noto Sans KR', sans-serif;
+font:#AEAEB2;
+text-align: left;
+}
+
+
+ /* 새 카테고리 추가 눌렀을때 나오는 모달 */
+
+ .modal_new_category{
+   position: relative;
+   left: 315px; /*삼중모달이므로 위치 조정함*/
+   height: 200px;
  }
 
-    .url_title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    }   
+ .new_category_header{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 18px;
+ }
 
-    .filebox input[type="file"] {
-      position: absolute;
-      width: 0;
-      height: 0;
-      padding: 0;
-      overflow: hidden;
-      border: 0;
-      font-size: 1.7rem;
-      
-  }
-  
-  .filebox label {
-      display: inline-block;
-      padding: 5px 1px;
-      color: white;
-      vertical-align: middle;
-      background-color: #5856D6;
-      width: 40px;
-      cursor: pointer;
-      border-radius: 5px;
-      height: 35px;
-      text-align: center;
-      margin-bottom: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font:#AEAEB2;
-  
-  }
-  
-  /* named upload */
-  .filebox .upload-name {
-    display: inline-block;
-    height: 35px;
-    font-size:18px; 
-    padding: 0 10px;
-    margin-bottom: 10px;
-    vertical-align: middle;
-    background-color:white;
-    border: 1px solid #ebebeb;
-    border-radius: 5px;
-    width: 180px;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font:#AEAEB2;
-    text-align: left;
-  }
-
-
+ .new_category_label{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-top: 0px;
+  margin-right: 10px;
+ }
  
+ .new_category_body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .new_category_name{
+   width: 100px;
+   height: 30px;
+ }
+
+ .new_category_container{
+   display: flex;
+   flex-direction: row;
+
+ }

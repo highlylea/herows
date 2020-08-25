@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+        
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="storage.css">
@@ -25,22 +27,35 @@
             </ul>
         </nav>
 
-<!-- Modal -->
+<!-- Notification Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <p class="modal-title" id="myModalLabel"> 🚨 AOAS에게 알립니다 🚨 </p>
-      </div>
-      <div class="modal-body">
-        <br>
-        <br>
-        오늘도 포션 충전 완료?
-        <br>
-        <br>
-        <img class="storage-woobong" src="../image/woobongpotion.png">
-      </div>
+      </div> 
+      <div class="modal-body"> 
+        
+        <div class="notification_block"> <!--Notification 추가 단위!-->
+          <div class="noti_title"> <!--시스템 메시지-->
+            <h6 class="noti_name">JUNE</h6>
+            <h5 class="noti_label">마일스톤을 달성했다구!</h5>
+          </div>
+          <!--유저가 작성한 부분 로드-->
+          <h6 class="noti_message">'AJAX 완강'</h6>
+        </div> <!--Notification 추가 단위 끝-->
+        
+        <div class="notification_block"> <!--Notification 추가 단위!-->
+          <div class="noti_title"> <!--시스템 메시지-->
+            <h6 class="noti_name">SSOL</h6>
+            <h5 class="noti_label">친구들에게 전하고 싶은 말이 있대!</h5>
+          </div>
+          <!--유저가 작성한 부분 로드-->
+          <p class="noti_message">'구글에서 진행하는 데이터 교육! 깃허브 학생인증과 연동 가능!'</p>
+        </div>
+
+      </div> 
       <div class="modal-footer">
       </div>
     </div>
@@ -74,7 +89,7 @@
                     </tr>
                     
                     <!--자료 생성자 추가-->
-                    
+                  
                     <tr>
                         <td class="store_person">Scuba</td>
                         <td class="store_text">“UX UI Design 기초"</td>
