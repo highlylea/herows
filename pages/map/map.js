@@ -3,34 +3,34 @@
 //get gem element
 var getGem = document.getElementsByClassName("gem-icon");
 
-function milest_cal_pick_enable (){
-  $(".cal-icon").click (function(){
-  $(this).datepicker({
-    dateFormat: 'yy-mm-dd',
-    onSelect: function (date) {
-      var dday = date.split('-');
-      var deadline = new Date(`${dday[0]} ${dday[1]}, ${dday[2]} 00:00:00`).getTime();
-      var today = new Date();
-      today = today.getTime();
-      var distance = deadline - today;
-      var day_distance = Math.floor(distance / (1000 * 60 * 60 * 24));
-      day_distance += 1;
-      if (day_distance == 0) {
-        $(this)[0].innerText = "D-day";
-      } else if (day_distance > 0) {
-        $(this)[0].innerText = '🥊 D-' + (day_distance).toString() + ' 🥊';
-      } else {
-        $(this)[0].innerText = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
-      };
-      console.log($(this).text());
-    }
+function milest_cal_pick_enable() {
+  $(".cal-icon").click(function () {
+    $(this).datepicker({
+      dateFormat: 'yy-mm-dd',
+      onSelect: function (date) {
+        var dday = date.split('-');
+        var deadline = new Date(`${dday[0]} ${dday[1]}, ${dday[2]} 00:00:00`).getTime();
+        var today = new Date();
+        today = today.getTime();
+        var distance = deadline - today;
+        var day_distance = Math.floor(distance / (1000 * 60 * 60 * 24));
+        day_distance += 1;
+        if (day_distance == 0) {
+          $(this)[0].innerText = "D-day";
+        } else if (day_distance > 0) {
+          $(this)[0].innerText = '🥊 D-' + (day_distance).toString() + ' 🥊';
+        } else {
+          $(this)[0].innerText = '⌛️ D+' + (-1 * (day_distance)).toString() + ' ⌛️';
+        };
+        console.log($(this).text());
+      }
+    });
   });
-});
 };
 
 
 //마일스톤 달성 시 alert로 확인하고 Gem 색을 켜는 함수 
-function milestDone(){
+function milestDone() {
   $(function () {
     $('span.gem-icon').click(function () {
 
@@ -56,12 +56,12 @@ function milestDone(){
 }
 
 //새로운 데스티네이션을 생성하는 함수 
-function newDesti(){
+function newDesti() {
   var destiLi = document.createElement("li"); //li생성
   // var destiCard = document.createElement("div")//div생성
   // destiLi.className="addedDestiLi";
   // destiLi.appendChild(desticard);
-  destiLi.className="newDestiLi";
+  destiLi.className = "newDestiLi";
   document.getElementById("destiTestId").appendChild(destiLi);
 
   // var newDestiCard=document.createElement("div")//div카드생성
@@ -72,22 +72,38 @@ function newDesti(){
 }
 
 
-// user1의 컬럼에 새로운 리스트 엘리먼트를 생성함
+// User1
 // Create a new list item when clicking on the "Add" button
+
 function newElement1() {
 
   var li = document.createElement("li"); //Create list element
-  var inputValue1 = document.getElementById("myInput").value; 
+  var inputValue1 = document.getElementById("myInput").value; //input text
   var t = document.createTextNode(inputValue1);
 
-  li.appendChild(t);
+  // li.appendChild(t);
+
+  var milestLiInput = document.createElement("input");//create input text area
+  milestLiInput.setAttribute('type','text');
+  milestLiInput.className="milestLiInput" // class name 
+  milestLiInput.id="inputtestid"; //id name
+  milestLiInput.appendChild(t);
+  
+  li.appendChild(milestLiInput); //put input box in list
+
+  // var inputvaluetest = document.getElementsById('inputtestid').value;
+  // // document.getElementById("inputtestid").appendchild(inputValue1);
+
+  // li.appendChild(t);
+  
   if (inputValue1 === '') { //prevents empty list items 
     alert("마일스톤을 입력하라구!");
   } else {
+    milestLiInput.setAttribute('placeholder',inputValue1); 
     document.getElementById("miUl").appendChild(li); //text to list
   }
 
-  document.getElementById("myInput").value = "";
+  // document.getElementById("myInput").value = "";
 
   //cal icon 
   var cal_box = document.createElement("div");
@@ -96,11 +112,10 @@ function newElement1() {
   var txt2 = document.createTextNode(" 🗓 ");
   cal_box.className = "cal-box";
   span2.className = "cal-icon";
-  
-  
+
   span2.appendChild(txt2);
   li.appendChild(span2);
-  
+
   // //create gem icon
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("💎");
@@ -150,8 +165,8 @@ function newElement2() {
   span.className = "gem-icon";
   span.appendChild(txt);
   li.appendChild(span);
-  
-  milestDone(); 
+
+  milestDone();
 
 }
 

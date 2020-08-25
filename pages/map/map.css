@@ -362,7 +362,8 @@ body {
   background: transparent;
   border: none;
 }
-/* style of team name input area */
+
+/* desti section - style of team name input area */
 input.teamname{
   font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -373,6 +374,29 @@ input.teamname{
   color: white;
   background: transparent;
   border: none;
+}
+
+/* style of text area in added milestone list
+이미 생성된 마일스톤 리스트의 텍스트 입력창 스타일 */
+.milestLiInput{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  width: 70%;
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+.milestLiInput>input::placeholder{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  width: 70%;
+  color: black;
+
 }
 
 .vision-text{
