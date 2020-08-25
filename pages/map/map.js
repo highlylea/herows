@@ -83,6 +83,7 @@ function milest_cal_pick_enable() {
 
 
 
+
 //마일스톤 달성 시 alert로 확인하고 Gem 색을 켜는 함수 
 function milestDone() {
   $(function () {
@@ -115,29 +116,26 @@ function milestDone() {
   });
 }
 
+var getImg = document.getElementsByClassName("desti-empty-img");
 
 //destination 달성시 confirm받고 색 켜는 함수 
 function destiDone() {
-
   $(function () {
-    $("img.desti-empty-img").dblclick(function () {
-
+    $("img.desti-empty-img").dblclick(function (){
       var destiCheck = confirm("크루들, 목적지에 도달한거야?");
-
       if (destiCheck) {
-        alert("정말 대단해! 크루들이라면 해낼 줄 알았다구!");
-        $(this).css("filter", "opacity(100%)");
-        $(this).css("animation-name", "destiDone");
-        $(this).css("width", "170px");
+            alert("정말 대단해! 크루들이라면 해낼 줄 알았다구!");
+            $(this).css("filter", "opacity(100%)");
+            $(this).css("animation-name", "destiDone");
+            $(this).css("width", "170px");
 
       } else {
-        alert("고지가 멀지 않았어! 조금만 더 힘을 내🛶");
+            alert("고지가 멀지 않았어! 조금만 더 힘을 내🛶");
 
       }
     });
 
   });
-
 }
 destiDone();
 

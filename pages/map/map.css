@@ -197,13 +197,17 @@ body {
 /*turns island img to gray*/ 
 .desti-empty-img {
   position: relative;
-  width:130px;
+  width:160px;
   filter:opacity(10%);
   transition: ease-in-out;
   animation-name:none;
   animation-duration:1.0s;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
+}
+
+.desti-empty-img:hover{
+  cursor: pointer;
 }
 
 /* 
