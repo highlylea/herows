@@ -156,7 +156,6 @@ body {
 }
 
 /* detination추가하는 버튼의 style */
-
 .newDestiBtn{
   position:fixed;
   right:50px;
@@ -177,9 +176,8 @@ body {
 }
 
 .newDestiBtn:hover{
-  background-color: #bbb;
+  background-color: #ddd;
 }
-
 
 /*destination upcoming*/
 .desti-empty-img {
