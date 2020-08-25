@@ -9,6 +9,9 @@ html{
     background-color: rgb(235, 235, 235);
 }
 
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .navigator{
     display: flex;

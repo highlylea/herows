@@ -336,8 +336,27 @@
                             </div> 
                             <!-- 이중모달_첨부하기 section 끝--> 
 
-                            <!-- 이중모달 삭제하기 시작-->
-                            <a href="#delete" class="log_category" id="nav_delete">❌ 삭제하기</a>
+                            <!-- 이중모달 삭제하기 시작-->                 
+                        <div class="w3-container">
+                            <button onclick="document.getElementById('id06').style.display='block'" class="w3-button">❌ 삭제하기</button>
+                            
+                                <div id="id06" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <header class="w3-container w3-teal"> 
+                                    <span onclick="document.getElementById('id06').style.display='none'" 
+                                    class="w3-button w3-display-topright">&times;</span>
+                                    </header>
+                                    <br>
+                                    <div class="w3-container">         
+                                       
+                                        <h6>⚠️ <br> 정말 삭제할거에요오?👀 <br> 돌이킬 수 없는 강을 건너는거라우! </h6>
+                                        <button type=onclick class="main_button" >OK!</button> 
+                                        
+                                    </div>
+                                    <br>
+                                </div>
+                                </div>
+                            </div> 
                             <!-- 이중모달 삭제하기 끝-->
 
 
