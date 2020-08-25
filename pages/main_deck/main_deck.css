@@ -593,7 +593,7 @@ a:hover{
 .category_container{
     padding: 0px 10px;
     overflow: auto;
-    height: 320px;
+    height: 350px;
 }
 
 
@@ -740,7 +740,7 @@ a:hover{
 
 .milestone_container{
     overflow: auto;
-    height: 100px;
+    height: 300px;
     padding: 0px 10px;
 }
 

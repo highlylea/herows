@@ -27,22 +27,35 @@
             </ul>
         </nav>
 
-<!-- Modal -->
+<!-- Notification Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <p class="modal-title" id="myModalLabel"> 🚨 AOAS에게 알립니다 🚨 </p>
-      </div>
-      <div class="modal-body">
-        <br>
-        <br>
-        오늘도 포션 충전 완료?
-        <br>
-        <br>
-        <img class="storage-woobong" src="../image/woobongpotion.png">
-      </div>
+      </div> 
+      <div class="modal-body"> 
+        
+        <div class="notification_block"> <!--Notification 추가 단위!-->
+          <div class="noti_title"> <!--시스템 메시지-->
+            <h6 class="noti_name">JUNE</h6>
+            <h5 class="noti_label">마일스톤을 달성했다구!</h5>
+          </div>
+          <!--유저가 작성한 부분 로드-->
+          <h6 class="noti_message">'AJAX 완강'</h6>
+        </div> <!--Notification 추가 단위 끝-->
+        
+        <div class="notification_block"> <!--Notification 추가 단위!-->
+          <div class="noti_title"> <!--시스템 메시지-->
+            <h6 class="noti_name">SSOL</h6>
+            <h5 class="noti_label">친구들에게 전하고 싶은 말이 있대!</h5>
+          </div>
+          <!--유저가 작성한 부분 로드-->
+          <p class="noti_message">'구글에서 진행하는 데이터 교육! 깃허브 학생인증과 연동 가능!'</p>
+        </div>
+
+      </div> 
       <div class="modal-footer">
       </div>
     </div>
