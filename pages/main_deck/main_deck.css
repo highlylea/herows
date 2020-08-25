@@ -7,6 +7,7 @@ font-family: 'Noto Sans KR', sans-serif;
 html{
     font-size: 10px;
     background-color: rgb(235, 235, 235);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 p{
@@ -562,16 +563,25 @@ a:hover{
     padding: 0rem;
 }
 
+.w3-teal, .w3-hover-teal:hover {
+    color: gray !important;
+    background-color: transparent !important;
+    text-align: center;
+} /* 모달 닫는 x 아이콘 구역 서식이예요!*/
+
 
 /*category test */
 
 .category_menu{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 240px;
+    height: content;
+
     padding: 15px 10px;
     margin: 13px;
     margin-bottom: 0px; 
@@ -580,11 +590,13 @@ a:hover{
     /*display: none;*/
 }
 
-.w3-teal, .w3-hover-teal:hover {
-    color: gray; !important;
-    background-color: transparent !important;
-    text-align: center;
+.category_container{
+    padding: 0px 10px;
+    overflow: auto;
+    height: 320px;
 }
+
+
 
 .search_value{
     border: none;
@@ -612,6 +624,7 @@ a:hover{
     align-items: center;
     border-radius: 10px;
 }
+
 
 
 .category_name{
@@ -645,6 +658,7 @@ a:hover{
 /* 버튼들 */
 
 .sub_button{
+    display: inline-block;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -653,9 +667,16 @@ a:hover{
     border-radius: 30px;
     width: content;
     padding: 3px 30px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
+
+.new_category{
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
 
 .sub_button:active{
     border: 0.3px solid rgb(185, 185, 185);
@@ -664,6 +685,7 @@ a:hover{
 
 
 .main_button{
+    display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -674,8 +696,8 @@ a:hover{
     border-radius: 15px;
     width: 95px;
     padding: 3px 30px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .main_button:active{
@@ -696,3 +718,73 @@ a:hover{
     margin-bottom: 0px;  
 }
 
+/* 이중모달_milestone 서식 */
+
+
+.milestone_menu{
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    padding: 15px 10px;
+    margin: 0px 13px;
+    margin-bottom: 0px; 
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+    /*display: none;*/
+}
+
+.milestone_container{
+    overflow: auto;
+    height: 100px;
+    padding: 0px 10px;
+}
+
+.milestone_value{
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 220px;
+    height: 30px;
+    border-bottom: 0.5px solid grey;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.milestone_box{
+    width: 210px;
+    height: 30px;
+    margin: 3px 0px;
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(255, 183, 29);
+}
+
+
+.milestone_name{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin: 0px;
+}
+
+
+.milestone_check{
+    width: 25px;
+    height: 20px;
+    padding-left: 10px;
+    display: none;
+}

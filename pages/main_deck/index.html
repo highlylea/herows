@@ -159,80 +159,145 @@
                         <br>
                     </div>
                 <!--드롭다운-->
-                    <div class="sidenav" >
+                    <div class="sidenav">
                         <div class="w3-container">
                             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">🌈 카테고리</button>
-                            <!--Modal id01-->
+                            <!--Modal id01 카테고리 설정 모달 시작-->
                             <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content">
                                 <span onclick="document.getElementById('id01').style.display='none'" 
                                 class="w3-button w3-display-topright">&times;</span>
                                 <div class="w3-container"> <!--중앙블럭-->
                                     <div class="category_menu">
-                                        <input class="search_value" type="text" placeholder=" 여기에 검색할 텍스트를 입력해!" onkeyup="search()" id="value">
-                                        <div class="category_box cat1">
-                                            <h5 class="category_name">기획</h5>
-                                            <img class="category_check" src="../image/check.png">
+                                        <input class="search_value" type="text" placeholder=" 여기에 검색할 텍스트를 입력해!" onkeyup="searchCategory()" id="value1">
+                                        <div class="category_container">
+                                            <div class="category_box cat1">
+                                                <h5 class="category_name">기획</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat2">
+                                                <h5 class="category_name">디자인</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat3">
+                                                <h5 class="category_name">개발</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat4">
+                                                <h5 class="category_name">데이터</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat5">
+                                                <h5 class="category_name">UX</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat6">
+                                                <h5 class="category_name">비즈니스</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat7">
+                                                <h5 class="category_name">마케팅</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat8">
+                                                <h5 class="category_name">Label 8</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat9">
+                                                <h5 class="category_name">Label 9</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
+                                            <div class="category_box cat10">
+                                                <h5 class="category_name">Label 10</h5>
+                                                <img class="category_check" src="../image/check.png">
+                                            </div>
                                         </div>
-                                        <div class="category_box cat2">
-                                            <h5 class="category_name">디자인</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat3">
-                                            <h5 class="category_name">개발</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat4">
-                                            <h5 class="category_name">데이터</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat5">
-                                            <h5 class="category_name">UX</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat6">
-                                            <h5 class="category_name">비즈니스</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat7">
-                                            <h5 class="category_name">마케팅</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat8">
-                                            <h5 class="category_name">Label 8</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat9">
-                                            <h5 class="category_name">Label 9</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <div class="category_box cat10">
-                                            <h5 class="category_name">Label 10</h5>
-                                            <img class="category_check" src="../image/check.png">
-                                        </div>
-                                        <h5 class="sub_button">+ 새 카테고리 추가</h5>
-                                        <h5 class="main_button">OK!</h5>
-                                    </div>
+                                        
+                                    </div> <!--category menu end-->
+                                    
+                                    <div class="w3-container">
+                                        <span class="sub_button new_category" onclick="document.getElementById('id08').style.display='block'" class="w3-button">+ 새 카테고리 추가</span>
+                                          
+                                            <div id="id08" class="w3-modal">
+                                              <div class="w3-modal-content modal_new_category">
+                                                <header class="w3-container w3-teal"> 
+                                                  <span onclick="document.getElementById('id08').style.display='none'" 
+                                                  class="w3-button w3-display-topright">&times;</span>
+                                                  <h6 class="new_category_header">새 카테고리 추가</h6>
+                                                </header>
+                                                <div class="new_category_body">
+                                                    <div class="new_category_container">
+                                                        <h6 class="new_category_label">카테고리 이름:</h6>
+                                                        <input type="text" class="new_category_name">
+                                                    </div>
+                                                    <div class="new_category_container">
+                                                        <h6 class="new_category_label">color:</h6>
+                                                        <input type="color">
+                                                    </div>
+                                                    
+                                                    <span class="main_button">OK!</span>
+                                                </div>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                    <span class="main_button">OK!</span>
                                 </div>
                             
                             <footer class="w3-container w3-teal"> <!--Footer--> 
                             </footer>
                            </div><!--w3-modal-content ends-->
-        </div><!--Modal id01 Ends-->
+        </div><!--Modal id01 Ends 카테고리 설정 모달 끝-->
     </div>
 
-                    <a href="#services" class="log_category" id="nav_milestone">⛳️ 마일스톤</a>
-                    <!-- <a href="#clients" class="log_category" id="nav_date">📅 날짜지정</a> -->
-                    <!-- <a href="#clients" class="log_category" id="nav_date">🔗 첨부하기</a> -->
-                    <!-- <a href="#push" class="log_category" id="nav_push">📣 푸시하기</a> -->
+        <div class="w3-container"> <!--이중모달_마일스톤 section 시작-->
+                <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">⛳️ 마일스톤</button>
+                <!--Modal id02 마일스톤 이중모달 시작-->
+                <div id="id02" class="w3-modal">
+                    <div class="w3-modal-content">
+                    <span onclick="document.getElementById('id02').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <div class="w3-container"> <!--중앙블럭 내용-->
+                        <div class="milestone_menu">
+                            <input class="search_value" type="text" placeholder=" 여기에 마일스톤을 검색해!" onkeyup="searchMilestone()" id="value2">
+                            <div class="milestone_container">
+                                <div class="milestone_box mil1"> <!--각 마일스톤 표시 단위-->
+                                    <h5 class="milestone_name">마일스톤1</h5>
+                                    <img class="milestone_check" src="../image/check.png">
+                                </div>
+                                <div class="milestone_box mil2"> <!--각 마일스톤 표시 단위-->
+                                    <h5 class="milestone_name">마일스톤2</h5>
+                                    <img class="milestone_check" src="../image/check.png">
+                                </div>
+                                <div class="milestone_box mil3"> <!--각 마일스톤 표시 단위-->
+                                    <h5 class="milestone_name">마일스톤3</h5>
+                                    <img class="milestone_check" src="../image/check.png">
+                                </div>
+                                <div class="milestone_box mil4"> <!--각 마일스톤 표시 단위-->
+                                    <h5 class="milestone_name">마일스톤4</h5>
+                                    <img class="milestone_check" src="../image/check.png">
+                                </div>
+                            </div>
+                           
+
+                            <h5 class="main_button">OK!</h5>
+                        </div>
+                    </div>
+                
+                <footer class="w3-container w3-teal"> <!--Footer--> 
+                </footer>
+                </div><!--w3-modal-content ends-->
+        </div><!--Modal id01 Ends 마일스톤 설정 모달 끝-->
+    </div> <!--이중모달_마일스톤 section 끝-->
+
                     <!-- 이중모달_날짜 지정 section -->
                     <div class="w3-container">
-                        <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">📅 날짜지정</button>
+                        <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">📅 날짜지정</button>
                           
-                            <div id="id02" class="w3-modal">
+                            <div id="id03" class="w3-modal">
                               <div class="w3-modal-content">
                                 <header class="w3-container w3-teal"> 
-                                  <span onclick="document.getElementById('id02').style.display='none'" 
+                                  <span onclick="document.getElementById('id03').style.display='none'" 
                                   class="w3-button w3-display-topright">&times;</span>
                                 </header>
                                 <br>
@@ -249,12 +314,12 @@
                     <!--이중모달_나의 노력section-->
                     
                     <div class="w3-container">
-                    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">⏰ 나의노력</button>
+                    <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">⏰ 나의노력</button>
                       
-                        <div id="id03" class="w3-modal">
+                        <div id="id04" class="w3-modal">
                           <div class="w3-modal-content">
                             <header class="w3-container w3-teal"> 
-                              <span onclick="document.getElementById('id03').style.display='none'" 
+                              <span onclick="document.getElementById('id04').style.display='none'" 
                               class="w3-button w3-display-topright">&times;</span>
                             </header>
                             <br>
@@ -303,12 +368,12 @@
      <!--이중모달_푸시하기 section-->
                     
      <div class="w3-container">
-        <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">📣 푸시하기</button>
+        <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">📣 푸시하기</button>
           
-            <div id="id04" class="w3-modal">
+            <div id="id05" class="w3-modal">
               <div class="w3-modal-content">
                 <header class="w3-container w3-teal"> 
-                  <span onclick="document.getElementById('id04').style.display='none'" 
+                  <span onclick="document.getElementById('id05').style.display='none'" 
                   class="w3-button w3-display-topright">&times;</span>
                 </header>
                 <br>
@@ -326,15 +391,15 @@
           </div>
          <!--이중모달_푸시하기 section 끝-->
 
-<!--이중모달_첨부하기 section-->
+            <!--이중모달_첨부하기 section-->
                                         
                         <div class="w3-container">
-                            <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">🔗 첨부하기</button>
+                            <button onclick="document.getElementById('id06').style.display='block'" class="w3-button">🔗 첨부하기</button>
                             
-                                <div id="id05" class="w3-modal">
+                                <div id="id06" class="w3-modal">
                                 <div class="w3-modal-content">
                                     <header class="w3-container w3-teal"> 
-                                    <span onclick="document.getElementById('id05').style.display='none'" 
+                                    <span onclick="document.getElementById('id06').style.display='none'" 
                                     class="w3-button w3-display-topright">&times;</span>
                                     </header>
                                     <br>
@@ -361,12 +426,12 @@
 
                             <!-- 이중모달 삭제하기 시작-->                 
                         <div class="w3-container">
-                            <button onclick="document.getElementById('id06').style.display='block'" class="w3-button">❌ 삭제하기</button>
+                            <button onclick="document.getElementById('id07').style.display='block'" class="w3-button">❌ 삭제하기</button>
                             
-                                <div id="id06" class="w3-modal">
+                                <div id="id07" class="w3-modal">
                                 <div class="w3-modal-content">
                                     <header class="w3-container w3-teal"> 
-                                    <span onclick="document.getElementById('id06').style.display='none'" 
+                                    <span onclick="document.getElementById('id07').style.display='none'" 
                                     class="w3-button w3-display-topright">&times;</span>
                                     </header>
                                     <br>
@@ -387,7 +452,7 @@
                     </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default2" data-dismiss="modal">cancel</button>
-                    <input type="submit" value="Submit" class="btn btn-default" data-dismiss="modal">
+                    <input type="submit" value="Submit" class="btn btn-default" data-dismiss="modal" id="add_log_button">
                 <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Save</button> -->
                 </div>
             </div>    
@@ -446,6 +511,7 @@
                             <button class="emoji log_emoji">🤗</button>
                         </div>
                     </div>
+                    
                 </div>
     
                 <div class="daily_log user2">
@@ -703,51 +769,7 @@
 
 
 
-<div class="category_menu">
-    <input class="search_value" type="text" placeholder=" 여기에 검색할 텍스트를 입력해!" onkeyup="search()" id="value">
-    <div class="category_box cat1">
-        <h5 class="category_name">기획</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat2">
-        <h5 class="category_name">디자인</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat3">
-        <h5 class="category_name">개발</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat4">
-        <h5 class="category_name">데이터</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat5">
-        <h5 class="category_name">UX</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat6">
-        <h5 class="category_name">비즈니스</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat7">
-        <h5 class="category_name">마케팅</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat8">
-        <h5 class="category_name">Label 8</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat9">
-        <h5 class="category_name">Label 9</h5>
-        <img class="category_check" src="../image/check.png">
-    </div>
-    <div class="category_box cat10">
-        <h5 class="category_name">Label 10</h5>
-        <img class="category_check" src="../image/check.png">
 
-</div>
-
-hihi!
 
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->

@@ -164,10 +164,10 @@ $('.cat10').css('background-color', color_label['dark-gray']);
 
 
 /*입력한 문자가 포함된 문자열 찾기*/
-function search(){
+function searchCategory(){
   var value, name, item, i;
 
-  value = document.getElementById("value").value.toUpperCase();
+  value = document.getElementById("value1").value.toUpperCase();
   item = document.getElementsByClassName("category_box");
 
   for(i=0;i<item.length;i++){
@@ -179,9 +179,30 @@ function search(){
     }
   }
 }
+
+function searchMilestone(){
+  var value, name, item, i;
+
+  value = document.getElementById("value2").value.toUpperCase();
+  item = document.getElementsByClassName("milestone_box");
+
+  for(i=0;i<item.length;i++){
+    name = item[i].getElementsByClassName("milestone_name");
+    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      item[i].style.display = "flex";
+    }else{
+      item[i].style.display = "none";
+    }
+  }
+}
+
+
+
 $(function(){
   $('#datepicker').datepicker();
 })
+
+
 
 /*클릭한 부분만 체크, 나머지 체크들은 해제하기*/
 $('.category_box').click(function checkLabel(){
@@ -191,3 +212,26 @@ $('.category_box').click(function checkLabel(){
   //이 블록이 현재 속한 Label class명
   console.log(currentLabel);
 });
+
+
+/*클릭 시 토글*/
+$('.milestone_box').click(function checkMilestone(){
+	if($(this).find('img').css('display') == "none"){
+		$(this).find('img').show();
+	}else{
+		$(this).find('img').hide();
+	}
+});
+// 
+$(function(){
+  $('#add_log_button').click(function(){
+    $('.daily_log.user'+latest_user[latest_user.length-1]).append(`<div class="block hidden"></div>
+    <div class="block log">
+        <span class="category_color"></span>
+        <div class="log_info">
+            <p>생활코딩 JS 1강 수강</p>
+            <button class="emoji log_emoji">🤗</button>
+        </div>
+    </div>`)
+  })
+})
