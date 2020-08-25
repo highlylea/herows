@@ -26,11 +26,19 @@ color:white;
 
 }
 
+<<<<<<< HEAD
 /* input::placeholder{
     color:white; */
 }
 
 /* input:focus::placeholder{
+=======
+#datepicker ::placeholder{
+    color:white;
+}
+
+#datepicker :focus::placeholder{
+>>>>>>> c089f1170134adc1e65b920aeb9e6dfdc59cee4e
     color: rgb(207, 160, 6);
 } */
 
