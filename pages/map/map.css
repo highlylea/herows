@@ -603,7 +603,7 @@ span.cal-icon, .datepickjstest{
 }
 
 /* color changes when hovering on adding button */
-.addBtn:hover, {
+.addBtn:hover {
   background-color: #bbb;
 }
 
@@ -634,15 +634,24 @@ span.cal-icon, .datepickjstest{
   font: 'Montserrat', sans-serif; 
 }
 
-#datepicker{
+#desti-datepicker{
   background-color: #5AC8FA;
   width: 100%;
   font-size: 20px;
   font-weight:bold;
+  padding: 5px;
+  font-family:"Montserrat";
 }
 
-#datepicker:hover{
+#desti-datepicker:hover{
 color: #FFCC00;
 
 }
 
+#desti-datepicker::placeholder{
+  color:white;
+}
+
+#desti-datepicker:focus::placeholder{
+  color: rgb(207, 160, 6);
+}
