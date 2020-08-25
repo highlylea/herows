@@ -1,5 +1,7 @@
 
-
+const idToName={
+  1:"SOLL",2:"SAAN",3:"ZOZE",4:"SCUBA",5:"JUNE"
+}
 //get gem element
 var getGem = document.getElementsByClassName("gem-icon");
 
@@ -40,6 +42,12 @@ function milestDone() {
           if (answer) {
             alert("축하해! 내가 아끼는 보석 하나 주지!")
             $(this).css("filter", "grayscale(0%)");
+            let mile_fin_user_name = idToName[$(this).first().parent().parent().parent().attr('class').slice(-1)];
+            let mile_name = $(this).parent().find('input').text();
+            // $.get('../storage/storage.html',function(data){
+            //   console.log(data);
+              
+            // });
           }
           else {
             alert("조금 더 노를 저으라구!")
