@@ -74,6 +74,7 @@ button{
     line-height: 28px;    
     color: #1C1C1E;
     text-align: center;
+    
   }
   
 .button.close {
@@ -152,22 +153,30 @@ position: right;
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin-top:  30vh;
-    margin-left: 20%;
+    margin-top:  9%;
+    margin-left: 57%;
+
+    position: relative;
+    right: 430px;
+
+    width: 420px;
+    height:150px;
 
     padding: 20px;
     border: 1qpx solid #888;
-    width: 420px;
-    height:150px;
+
     border-radius: 1rem;
+    justify-items: center;
+    align-items: center;
 
   }
   
 /* new log modal dropdown */
     /* Fixed sidenav, full height */
 .sidenav {
+
     margin-top: 15%;
-    margin-left: 50%;
+    margin-left: 57%;
 
     height: 270px;
     width: 148px;
