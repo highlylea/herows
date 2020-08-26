@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
-
+    
+    <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
     <!-- for datepicker -->
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" type="text/css" href="../datepicker_practice/datepicker.css">
-    <script src="../datepicker_practice/datepicker.js"></script>
     <title>HEROWS</title>
 
 </head>
@@ -36,7 +34,7 @@
 
     
 
-<div class="jumbotron">
+<div class="jumbotron main_deck">
     <h1 class="slogan">
         HERE WE ROW, <br> HEROWS!
     </h1>
@@ -228,7 +226,7 @@
                                                 <header class="w3-container w3-teal"> 
                                                   <span onclick="document.getElementById('id08').style.display='none'" 
                                                   class="w3-button w3-display-topright">&times;</span>
-                                                  <h6 class="modal_label">새 카테고리 추가</h6>
+                                                  <h6 class="new_category_header">새 카테고리 추가</h6>
                                                 </header>
                                                 <div class="new_category_body">
                                                     <div class="new_category_container">
@@ -310,7 +308,7 @@
                                 <br>
                                 <div class="date-container">
                                     <h6 class="modal_label">날짜 변경하기</h6>
-                                    <p class="datepickbox log_datepickbox hasDatepicker"><input type="text" id="datepicker" placeholder="어떤 날짜로 옮길까요?"></p>
+                                    <p class="datepickbox log_datepickbox"><input type="text" id="datepicker" placeholder="어떤 날짜로 옮길까요?"></p>
                                     <button type=onclick class="push_button">Push!</button>
                                     
                                 </div>
@@ -474,7 +472,7 @@
 
         <div class="new_log user2">
                 <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-lg" data-tog gle="modal" data-target="#myModal">+Add new log</button>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+Add new log</button>
         </div>
      
         <div class="new_log user3">
