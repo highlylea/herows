@@ -32,61 +32,61 @@ color:white;
 
 #datepicker {
     padding: 5px;
-    font-family:"Montserrat";
-    
-    }
+}
+
 
 .hasDatepicker{
-    font-size:1em;
-    color: white;
-    padding: 0px;
-    background-color: rgb(255, 197, 5);
-    border-radius: 30px;
-    border:none;
-  
-    text-align:center;
-    width: 200px;
-    height: 20px;
-    }
+font-family: 'Noto Sans KR', sans-serif;
+font-size:1.4em;
+color: black;
+padding: 0px;
+background-color: transparent;
+border-radius: 30px;
+border:none;
+
+text-align:center;
+width: 200px;
+height: 30px;
+}
     
-    .ui-datepicker {
-    background-color: #fff;
-    border-radius: 20px;
-    }
-    
-    .ui-datepicker-header {
-    background-color: rgb(175, 68, 68);
-    border-radius: 20px;
-    font-family: "Montserrat";
-    }
-    
-    .ui-datepicker-title {
-    color: white;
-    }
-    
-    .ui-widget-content .ui-state-default {
-    border: 0px;
-    text-align: center;
-    background: #fff;
-    font-weight: normal;
-    color: #000;
-    font-family: "Montserrat";
-    }
-    
-    .ui-widget-content .ui-state-default:hover {
-    border: 0px;
-    text-align: center;
-    background: #000;
-    font-weight: normal;
-    color: #fff;
-    font-family: "Montserrat";
-    }
-    
-    .ui-widget-content .ui-state-active {
-    border: 30px;
-    background: rgb(175, 68, 68);
-    color: #fff;
-    }
+.ui-datepicker {
+background-color: #fff;
+border-radius: 20px;
+}
+
+.ui-datepicker-header {
+background-color: rgb(255, 197, 5);
+border-radius: 20px;
+font-family: "Montserrat";
+}
+
+.ui-datepicker-title {
+color: white;
+}
+
+.ui-widget-content .ui-state-default {
+border: 0px;
+text-align: center;
+background: #fff;
+font-weight: normal;
+color: #000;
+font-family: "Montserrat";
+}
+
+.ui-widget-content .ui-state-default:hover {
+border: 0px;
+text-align: center;
+background: #000;
+font-weight: normal;
+color: #fff;
+font-family: "Montserrat";
+}
+
+.ui-widget-content .ui-state-active {
+border: 30px;
+background: rgb(255, 197, 5);
+color: #fff;
+}
 
 
 

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../datepicker_practice/datepicker.css">
     <!-- for datepicker -->
     <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../datepicker_practice/datepicker.css">
     <title>HEROWS</title>
 
 </head>
@@ -167,8 +168,9 @@
                                 <div class="w3-modal-content">
                                 <span onclick="document.getElementById('id01').style.display='none'" 
                                 class="w3-button w3-display-topright">&times;</span>
-                                <div class="w3-container"> <!--중앙블럭-->
+                                <div class="w3-container "> <!--중앙블럭-->
                                     <div class="category_menu">
+                                        <h6 class="modal_label">카테고리 변경하기</h6>
                                         <input class="search_value" type="text" placeholder=" 여기에 검색할 텍스트를 입력해!" onkeyup="searchCategory()" id="value1">
                                         <div class="category_container">
                                             <div class="category_box cat1">
@@ -259,6 +261,7 @@
                     class="w3-button w3-display-topright">&times;</span>
                     <div class="w3-container"> <!--중앙블럭 내용-->
                         <div class="milestone_menu">
+                            <h6 class="modal_label">마일스톤으로 보내기</h6>
                             <input class="search_value" type="text" placeholder=" 여기에 마일스톤을 검색해!" onkeyup="searchMilestone()" id="value2">
                             <div class="milestone_container">
                                 <div class="milestone_box mil1"> <!--각 마일스톤 표시 단위-->
@@ -299,10 +302,12 @@
                                 <header class="w3-container w3-teal"> 
                                   <span onclick="document.getElementById('id03').style.display='none'" 
                                   class="w3-button w3-display-topright">&times;</span>
+                                  
                                 </header>
                                 <br>
                                 <div class="date-container">
-                                    <p class="datepickbox"><input type="text" id="datepicker" placeholder="디데이를 설정해주세요! 🗓"></p>
+                                    <h6 class="modal_label">날짜 변경하기</h6>
+                                    <p class="datepickbox log_datepickbox"><input type="text" id="datepicker" placeholder="어떤 날짜로 옮길까요?"></p>
                                     <button type=onclick class="push_button">Push!</button>
                                     
                                 </div>
@@ -324,6 +329,7 @@
                             </header>
                             <br>
                             <div class="w3-container">
+                                <h6 class="modal_label">나의 노력 설정</h6>
                                <p>얼마나 오랫동안 노를 저었나요? 
                                 <br></p>
                                 <form action="/form/submit" method="post">
@@ -377,6 +383,7 @@
                   class="w3-button w3-display-topright">&times;</span>
                 </header>
                 <br>
+                <h6 class="modal_label">푸시 알림 보내기</h6>
                 <div class="push-container">
                    <form action="/action_page.php">
                     <label for="fname"><h6>팀원들에게 뭐라고 외칠까요?</h6></label>
@@ -403,6 +410,7 @@
                                     class="w3-button w3-display-topright">&times;</span>
                                     </header>
                                     <br>
+                                    <h6 class="modal_label">로그에 자료 첨부하기</h6>
                                     <div class="w3-container">         
                                         <span class="url_title">URL </span>
                                         <input type="text" name="link_add" class="link_add" placeholder="URL을 입력해주세요"><br><br>
@@ -435,6 +443,7 @@
                                     class="w3-button w3-display-topright">&times;</span>
                                     </header>
                                     <br>
+                                    <h6 class="modal_label">로그 영구삭제</h6>
                                     <div class="w3-container">         
                                        
                                         <h6>⚠️ <br> 정말 삭제할거에요오?👀 <br> 돌이킬 수 없는 강을 건너는거라우! </h6>
