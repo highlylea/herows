@@ -230,9 +230,7 @@ $('.milestone_box').click(function checkMilestone(){
 		$(this).find('img').hide();
 	}
 });
-
-
-// add log 누를 시 각 row에 블록 추가
+// 
 $(function(){
   $('#add_log_button').click(function(){
     $('.daily_log.user'+latest_user[latest_user.length-1]).append(`<div class="block hidden"></div>

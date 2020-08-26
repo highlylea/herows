@@ -147,12 +147,12 @@ a:hover{
 
 /* 데스티네이션 카드에 hover하면 scale이 커짐  */
 .profile:hover{
-    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.2); 
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);  
+    box-shadow: 0 3px 16px 0 rgba(0,0,0,0.2); 
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);  
     transition: all 0.3s ease-in-out;
   }
 
@@ -727,7 +727,7 @@ a:hover{
     background-color: #5AC8FA;
     border-radius: 15px;
     width: 95px;
-    margin-left: 0;
+   margin-left: 0;
     margin-bottom: 0px;  
 }
 
