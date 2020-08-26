@@ -95,6 +95,36 @@ body {
   display: none; }
 
 
+/* 드래그 스크롤 */
+.dragscroll {
+  /* border: 1px solid rgb(31, 40, 49);
+  background-color : #283849; */
+  overflow: auto;
+}
+.horizontal.dragscroll {
+  margin-top : 10px;
+  width: 100%;
+  margin-left: auto;
+  /* background-color: #000000; */
+  margin-right: auto;
+}
+
+.horizontal {
+  cursor : -webkit-grab;
+  cursor : -moz-grab;
+  cursor : -o-grab;
+  cursor : grab;
+}
+
+
+.horizontal:active {
+  cursor : -webkit-grabbing;
+  cursor : -moz-grabbing;
+  cursor : -o-grabbing;
+  cursor : grabbing;
+}
+
+
 
 /* whole box of destination cards 데스티네이션 카드의 container */
 .destiLi {
@@ -183,6 +213,7 @@ body {
   cursor: pointer;
   transition: 0.3s; 
   border-radius: 5em;
+  
 }
 
 .newDestiBtn:hover{

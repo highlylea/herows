@@ -331,3 +331,5 @@ function UpdateDestiDatepicker() {
 };
 $(function () { UpdateDestiDatepicker() });
 // issue : destination 입력 안하고 연속 추가시 오류 (추후 수정) , datepicker object가 하나라
+
+
