@@ -1,46 +1,30 @@
-/* //VARIABLES BECAUSE CSS PREPROCESSORS ARE COOL
-$gray: #555;
-$yellow: #f2e968;
-$white: #efefef; */
-
-/* //GET THE GOOGLE FONT SPECIMEN
-@import url(https://fonts.googleapis.com/css?family=Rubik); */
-
+/* @import url(https://fonts.googleapis.com/css?family=Rubik);
 body,
 html {
   color: #fff;
   text-align: center;
-  background: $white;
+  background: #efefef;
   font-family: Helvetica, sans-serif;
   margin: 0;
 }
 
 .grid-container {
-  background: $white;
-  font-family: 'Rubik', sans-serif;
+  background: #efefef;
+  font-family: "Rubik", sans-serif;
 }
 
-//ENABLE CSS GRID FOR LIFT OFF  🚀
-@supports(display: grid) {
-
+@supports (display: grid) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
-    
-    //Let the craziness begin!!!
-    grid-template-areas:
-      "header header header"
-      "title title footer"
-      "main main main";}
-    @media screen and (max-width: 500px) {
+    grid-template-areas: "header header header" "title title footer" "main main main";
+  }
+  @media screen and (max-width: 500px) {
+    .grid-container {
       grid-template-columns: 1fr;
       grid-template-rows: 0.3fr 1fr auto 1fr;
-      grid-template-areas: 
-        "header"
-        "title"
-        "main"
-        "footer";
+      grid-template-areas: "header" "title" "main" "footer";
     }
   }
 
@@ -51,30 +35,30 @@ html {
     font-size: 1em;
     font-weight: 700;
   }
-  
+
   .header {
-    background-color: darken(skyblue, 60%);
+    background-color: #092a37;
     grid-area: header;
     padding: 1em;
   }
-  
+
   .title {
-    color: $gray;
-    background-color: lighten(skyblue, 25%);
+    color: #555;
+    background-color: #f4fbfd;
     grid-area: title;
   }
 
   .main {
-    color: lighten($gray, 25%);
-    background-color: lighten(skyblue, 60%);
+    color: #959595;
+    background-color: white;
     grid-area: main;
     padding: 0;
     overflow-x: scroll;
     overflow-y: hidden;
   }
-  
+
   .footer {
-    background-color: darken(skyblue, 10%);
+    background-color: #5bbce4;
     grid-area: footer;
     padding: 0.6em;
   }
@@ -93,7 +77,7 @@ html {
   }
 
   .items.active {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
     transform: scale(1);
@@ -101,28 +85,26 @@ html {
 
   .item {
     display: inline-block;
-    background: springgreen;
+    background: skyblue;
     min-height: 250px;
     min-width: 400px;
-    margin: 2em 1em;}
-
-    @media screen and (max-width: 500px) {
+    margin: 2em 1em;
+  }
+  @media screen and (max-width: 500px) {
+    .item {
       min-height: 200px;
       min-width: 200px;
     }
   }
 }
-
-
 a {
   display: block;
-  color: lighten(skyblue, 15%);
+  color: #c9e9f6;
   text-decoration: underline;
   margin: 1em auto;
-}]
+}
 a:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 p {
@@ -133,4 +115,124 @@ p {
 
 i {
   color: skyblue;
+} */
+
+
+/* 드래그앤드롭 */
+/* *{ box-sizing:border-box; margin:0; padding:0;}
+    body {
+       font-family: sans-serif;
+		color: #414141;
+		font-size: 14px;
+		background:#f9f9f9;
+    }
+   
+		.container{
+		width:100%; 
+		min-height:100vh; 
+    position:relative;
+		float:left;
+    display:flex;
+	}
+	.sidebar{		
+		width:200px;
+    float:right;
+		font-family: sans-serif;
+		color: #414141;
+		font-size: 14px;
+	}
+	
+	.elements{ padding:5px; border:1px dashed #ccc; margin:5px 0; float:left;}
+	
+	.sidebar .elements{ width:100%; }
+
+	.droppable-div{
+		width:calc(100% - 250px); 
+		flex:1;
+		position:relative;
+  } */
+  
+
+
+  body {
+    color : #A4C7DF;
+    background-color : #334455;
+    font-family: 'PT Sans', sans-serif;
+    font-size : 14px;
+    cursor : default;
 }
+
+a {
+    color: #B6E3F3;
+    text-shadow: 0px 0px 3px rgba(100, 187, 214, 0.31);
+}
+
+a:hover {
+    color: #D2F3FF;
+    text-shadow: 0px 0px 4px rgba(180, 237, 255, 0.31);
+}
+
+
+.title {
+    padding-top : 30px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.container {
+    width: 700px;
+    height: 400px;
+    margin-top : 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dragscroll {
+    border: 1px solid rgb(31, 40, 49);
+    background-color : #283849;
+    overflow: auto;
+}
+
+.vertical.dragscroll {
+    width: 270px;
+    height: 380px;
+    float: left;
+    padding: 10px;
+}
+
+.free.dragscroll {
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+
+.horizontal.dragscroll {
+    margin-top : 10px;
+    width: 700px;
+    margin-left: auto;
+    background-color: #000000;
+    margin-right: auto;
+}
+
+.free, .horizontal {
+    cursor : -webkit-grab;
+    cursor : -moz-grab;
+    cursor : -o-grab;
+    cursor : grab;
+}
+
+
+.free:active, .horizontal:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
+
+
