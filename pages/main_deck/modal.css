@@ -246,9 +246,9 @@ position: right;
 
 .w3-container{
     text-align: center;
-    width: 20em;
-   
+    width: 20em;   
 }
+
 
 .w3-modal-content{
     width: 20em;
@@ -514,4 +514,15 @@ text-align: left;
    display: flex;
    flex-direction: row;
 
+ }
+
+
+ /* 날짜 변경하기 css */
+
+ .modal_label{
+   font-family: 'Noto Sans KR', sans-serif;
+   font-size: 20px;
+   color: black;
+   font-weight: 700;
+   margin-bottom: 20px;
  }
