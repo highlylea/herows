@@ -717,9 +717,7 @@ a:hover{
     border: 0.3px solid rgb(185, 185, 185);
 }
 
-
 .push_button{
-    display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -729,11 +727,9 @@ a:hover{
     background-color: #5AC8FA;
     border-radius: 15px;
     width: 95px;
-    padding: 3px 30px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin-left: 0;
+    margin-bottom: 0px;  
 }
-
 
 /* 이중모달_milestone 서식 */
 

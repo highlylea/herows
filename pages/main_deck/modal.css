@@ -531,14 +531,17 @@ text-align: left;
    margin-bottom: 20px;
  }
 
+<<<<<<< Updated upstream
  /* 이중모달 위치 */
 .w3-modal-content{
   margin-top:5%;
   margin-left:56%;
 }
+=======
  .date-container{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
  }
+>>>>>>> Stashed changes
