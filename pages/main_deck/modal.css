@@ -153,9 +153,9 @@ position: right;
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin-top:  9%;
-    margin-left: 57%;
-
+    margin-top:  5%;
+    margin-left: 45%;
+    
     position: relative;
     right: 430px;
 
@@ -175,8 +175,8 @@ position: right;
     /* Fixed sidenav, full height */
 .sidenav {
 
-    margin-top: 15%;
-    margin-left: 57%;
+    margin-top: 12%;
+    margin-left: 45%;
 
     height: 270px;
     width: 148px;
@@ -472,6 +472,11 @@ font:#AEAEB2;
 text-align: left;
 }
 
+/* 카테고리 모달 */
+.category_container{
+  height: 200px;
+}
+
 
  /* 새 카테고리 추가 눌렀을때 나오는 모달 */
 
@@ -513,7 +518,6 @@ text-align: left;
  .new_category_container{
    display: flex;
    flex-direction: row;
-
  }
 
 
@@ -526,3 +530,9 @@ text-align: left;
    font-weight: 700;
    margin-bottom: 20px;
  }
+
+ /* 이중모달 위치 */
+.w3-modal-content{
+  margin-top:5%;
+  margin-left:56%;
+}
